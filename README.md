@@ -1,5 +1,6 @@
 # Theremino 
-###  Baue dein eigenes Musikinstrument mit einem Arduino
+
+##  Baue dein eigenes Musikinstrument mit einem Arduino
 
 Willkommen im Kurs! Heute werdet Ihr lernen, wie man ein sogenanntes Theremin mit Hilfe eines Arduinos selber bauen kann. Und ganz nebenbei lernt Ihr außerdem die Grundlagen des Programmierens :)
 <img style="align: right"><img src="img/Theremin.jpg" width="300" alt="Theremin"></img>
