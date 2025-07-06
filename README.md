@@ -11,5 +11,8 @@ In diesem Kurs findet ihr folgende Inhalte:
 3. Grundlagen 3 - Button anschließen
 4. Grundlagen 4 - Button und LED verbinden
 5. Grundlagen 5 - Ton erzeugen
-
+6. Grundlagen 7 - Eine Melodie spielen
+7. Sensoren 1 - Ultraschallsensor anschließen
+8. Sensoren 2 - Phototransistor anschließen (OPTIONAL)
+9. Theremin bauen
 
