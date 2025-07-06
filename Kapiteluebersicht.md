@@ -11,8 +11,7 @@
 
 ## Sensoren
 
-- [Sensoren 1 – Ultraschallsensor anschließen](Sensoren)
-- [Sensoren 2 – Phototransistor anschließen](Sensoren1)
+- [Sensoren 1 – Ultraschallsensor anschließen](Sensoren1)
 - [Sensoren 2 – Phototransistor anschließen (BONUS)](Sensoren2)
 
 ## Projekt
