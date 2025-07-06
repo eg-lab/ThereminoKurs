@@ -12,6 +12,8 @@ Einer Schallwelle kann man außerdem eine *Frequenz f* zuordnen. Diese gibt an, 
 
 Um Töne abzuspielen, nutzen wir einen **Piezo-Summer**. In diesem ist ein Piezo-Kristall verbaut. Der Piezo-Kristall dehnt sich aus, wenn wir eine Spannung anlegen, und kehrt in seinen ursprünglichen Zustand zurück, wenn wir die Spannung wieder wegnehmen. Um nun einen Ton einer bestimmten Frequenz zu erzeugen, schalten wir die Spannung in einem bestimmten Takt ein und wieder aus. Das darfst Du nun einmal selbst ausprobieren.
 
+<p align="left"><img src="img/SinusHighLow.jpg" width="300" alt="Sinus und Rechteck-Funktion"></p>
+
 ## 🛠️ Aufgabe: Kammerton a erzeugen
 
 Wir wollen zunächst den Kammerton **a** erzeugen. 
