@@ -1,4 +1,4 @@
-[Zurück zur Kapitelübersicht](Kapiteluebersicht)
+[🏠 Start](index) \| [📚 Kapitelübersicht](Kapiteluebersicht)
 ---
 # Grundlagen 2 - LED anschließen 💡
 
@@ -55,4 +55,6 @@ Um zu wissen, wie man Bauteile verbinden soll, kann man in den Schaltplan schaue
 > *💡 Tipp: Wenn du nichts beobachten kannst, überprüfe bitte deine Schaltung.*
 
 ---
-[Weiter zu Grundlagen 3](Grundlagen3) \| [Zurück zur Kapitelübersicht](Kapiteluebersicht)
+<p align="center">
+[➡️ Weiter zu Grundlagen 3](Grundlagen3) \| [📚 Kapitelübersicht](Kapiteluebersicht)
+</p>
