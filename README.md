@@ -8,6 +8,8 @@ Ein Theremin ist ein Instrument, das berührungslos gespielt wird. Anders als be
 In diesem Kurs findet ihr folgende Inhalte: 
 1. Grundlagen 1 - Kennlernen des Arduinos
 2. Grundlagen 2 - LED anschließen
-3. Grundlagen 3 - 
+3. Grundlagen 3 - Button anschließen
+4. Grundlagen 4 - Button und LED verbinden
+5. Grundlagen 5 - Ton erzeugen
 
 
