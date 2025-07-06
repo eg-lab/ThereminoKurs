@@ -1,5 +1,7 @@
 # Grundlagen 2 - LED anschließen 💡
 
+[Zurück zur Kapitelübersicht](Kapiteluebersicht)
+
 **In diesem Kapitel lernst du, wie du eine LED richtig anschließt und sie mit dem Arduino blinken lässt.**
 
 **LED** bedeutet *Light Emitting Diode*. LEDs können Licht produzieren, wenn man einen Strom an sie anlegt. Dabei ist es jedoch wichtig in welche Richtung man sie anschließt. Den Pluspol schließt man bei einer LED immer an das lange Beinchen, den Minuspol immer an das kürzere.
@@ -52,4 +54,4 @@ Um zu wissen, wie man Bauteile verbinden soll, kann man in den Schaltplan schaue
 
 > *💡 Tipp: Wenn du nichts beobachten kannst, überprüfe bitte deine Schaltung.*
 
-<a href="https://github.com/eg-lab/ThereminoKurs/blob/main/Grundlagen3.md"> Weiter zu Grundlagen 3 </a>
+[Weiter zu Grundlagen 3](Grundlagen3) \| [Zurück zur Kapitelübersicht](Kapiteluebersicht)
