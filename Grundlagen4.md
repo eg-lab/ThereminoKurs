@@ -5,14 +5,14 @@
   <a href="Grundlagen5" class="button">Weiter</a>
 </div>
 
-## Grundlagen 4 - Button und LED verbinden ▶️ ➕ 💡
+## Grundlagen 4 – Button und LED verbinden ▶️ ➕ 💡
 
-**In diesem Kapitel lernst du, wie du den Button mit einer LED verbindest.**  
+**In diesem Kapitel lernst du, wie du den Button mit einer LED verbindest.**
 
 Die LED soll leuchten, solange du den Button gedrückt hältst. Damit das funktioniert, müssen wir zunächst ein neues Konzept verstehen: **Bedingungen**. Mit `if` (wenn) kannst du dem Arduino sagen:
 
-> ***Wenn** eine Bedingung stimmt, mache etwas.*<br>
-> ***Sonst** mache etwas anderes.*
+> *Wenn eine Bedingung stimmt, mache etwas.*  
+> *Sonst mache etwas anderes.*
 
 **Beispiel:**
 
@@ -27,86 +27,105 @@ else {
 
 In unserem Fall ist die Bedingung, ob der Button gedrückt ist.
 
-## Erste kleine Aufgabe: Status ausgeben
+---
 
-Bevor du die LED anschließt, probiere zunächst noch einmal folgenden Code aus, mit dem du im Serial Monitor sehen kannst, ob der Button gedrückt ist. So kannst du sicherstellen, dass deine Schaltung funktioniert, bevor du die LED anschließt.
+<div class="aufgabe">
+<h3>🛠️ Erste kleine Aufgabe: Status ausgeben</h3>
+<ol>
+  <li>Verwende den Aufbau aus <strong>Grundlagen 3</strong>.</li>
+  <li>Lade folgenden Code auf den Arduino hoch:
+  
+<pre class="no-bg"><code>#define BUTTON_PIN D1
 
-1. **Schaltung:**  
-Verwende einfach den Aufbau aus **Grundlagen 3**.
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(BUTTON_PIN, INPUT_PULLUP);
+}
 
-2. **Code:**
+void loop()
+{
+  byte buttonState = digitalRead(BUTTON_PIN);
+  
+  if (buttonState == LOW) {
+      Serial.println("Button is pressed");
+  }
+  else {
+      Serial.println("Button is not pressed");
+  }
+  delay(100);
+}
+</code></pre>
+  </li>
+  <li>Öffne den Serial Monitor. Drücke den Button und schaue, ob sich der Text ändert.</li>
+</ol>
+</div>
 
-    ```cpp
-    #define BUTTON_PIN D1
-
-    void setup()
-    {
-      Serial.begin(9600);
-      pinMode(BUTTON_PIN, INPUT_PULLUP);
-    }
-
-    void loop()
-    {
-      byte buttonState = digitalRead(BUTTON_PIN);
-      
-      if (buttonState == LOW) {
-          Serial.println("Button is pressed");
-      }
-      else {
-          Serial.println("Button is not pressed");
-      }
-      delay(100);
-    }
-    ```
-
-3. Öffne den Serial Monitor. Drücke den Button und schaue, ob der Text sich ändert.
-
-> 💡 *Wenn du `INPUT_PULLUP` nutzt, bedeutet das:*<br>
-> Nicht gedrückt = `HIGH` (1)  
-> Gedrückt = `LOW` (0)
-
-Wenn das funktioniert, kannst du nun die LED hinzufügen. Wenn nicht, frag nochmal nach Hilfe.
-
-<p align="center"><img src="img/Schaltung_g4.jpg" width="500" alt="Schaltplan Button und LED"></p>
-
-## 🛠️ Aufgabe: LED mit dem Button steuern
-
-Jetzt sollst du deinen eigenen Code schreiben, der die LED steuert.
-
-1. Baue die Schaltung aus dem Schaltplan nach.  
-   - Ein Pin des Buttons wird mit GND verbunden.  
-   - Der andere Pin geht an D1.  
-   - Die LED wird mit einem Vorwiderstand an D7 angeschlossen.  
-   - Achte darauf, dass das lange Bein der LED an D7 angeschlossen ist.
-2. Schreibe **deinen eigenen Code**, der folgendes tut:
-   - Den Status des Buttons lesen.
-   - Mit `if` prüfen, ob der Button gedrückt ist.
-   - Die LED einschalten, solange der Button gedrückt ist.
-   - Die LED ausschalten, wenn der Button nicht gedrückt ist.
-3. Teste deine Schaltung. Drücke den Button – die LED sollte leuchten, solange du ihn gedrückt hältst.
-
-> 💡 *Tipp: Falls du nicht weiterweißt, schaue dir den Code aus den Grundlagen 3 (Button lesen) und den Code aus den Grundlagen 2 (LED blinken) an und kombiniere beide Ideen.*
+<div class="merkbox">
+💡 Wenn du <code>INPUT_PULLUP</code> nutzt, bedeutet das:<br>
+Nicht gedrückt = <code>HIGH</code> (1)<br>
+Gedrückt = <code>LOW</code> (0)
+</div>
 
 ---
 
-## ✨ Bonusaufgabe für ganz Schnelle
+<p align="center">
+  <img src="img/Schaltung_g4.jpg" width="500" class="rounded" alt="Schaltplan Button und LED">
+</p>
 
-**Kannst du den Button so programmieren, dass die LED bei jedem Drücken umschaltet?**
+---
 
-**Beispiel:**
+<div class="aufgabe">
+<h3>🛠️ Aufgabe: LED mit dem Button steuern</h3>
+<ol>
+  <li>Baue die Schaltung aus dem Schaltplan nach.
+    <ul>
+      <li>Ein Pin des Buttons wird mit GND verbunden.</li>
+      <li>Der andere Pin geht an D1.</li>
+      <li>Die LED wird mit einem Vorwiderstand an D7 angeschlossen.</li>
+      <li>Achte darauf, dass das lange Bein der LED an D7 angeschlossen ist.</li>
+    </ul>
+  </li>
+  <li>Schreibe deinen eigenen Code, der folgendes tut:
+    <ul>
+      <li>Den Status des Buttons lesen.</li>
+      <li>Mit <code>if</code> prüfen, ob der Button gedrückt ist.</li>
+      <li>Die LED einschalten, solange der Button gedrückt ist.</li>
+      <li>Die LED ausschalten, wenn der Button nicht gedrückt ist.</li>
+    </ul>
+  </li>
+  <li>Teste deine Schaltung. Drücke den Button – die LED sollte leuchten, solange du ihn gedrückt hältst.</li>
+</ol>
+</div>
 
-- Beim ersten Druck geht die LED an.
-- Beim zweiten Druck geht sie aus.
-- Beim dritten Druck wieder an.
-- Und so weiter.
+<details>
+<summary>💡 Tipp anzeigen</summary>
+<p><em>Falls du nicht weiterweißt, schaue dir den Code aus <strong>Grundlagen 3</strong> (Button lesen) und den Code aus <strong>Grundlagen 2</strong> (LED blinken) an und kombiniere beide Ideen.</em></p>
+</details>
 
-> 💡 *Tipp: Du brauchst folgende Komponenten.*
->
-> - *Eine Variable, die speichert, ob die LED gerade an oder aus ist.*
-> - *Eine Abfrage, ob der Button **neu gedrückt wurde** (also vom Zustand HIGH auf LOW gewechselt ist).*
-> - *Ein Umschalten mit `digitalWrite` und `!` (Ausrufezeichen).*
+---
 
-<p class="spacing-1">&nbsp;</p>
+<div class="aufgabe">
+<h3>✨ Bonusaufgabe für ganz Schnelle</h3>
+<p>Kannst du den Button so programmieren, dass die LED bei jedem Drücken umschaltet?</p>
+<ul>
+  <li>Beim ersten Druck geht die LED an.</li>
+  <li>Beim zweiten Druck geht sie aus.</li>
+  <li>Beim dritten Druck wieder an.</li>
+  <li>Und so weiter.</li>
+</ul>
+</div>
+
+<div class="merkbox">
+💡 Tipp: Du brauchst folgende Komponenten:
+<ul>
+  <li>Eine Variable, die speichert, ob die LED gerade an oder aus ist.</li>
+  <li>Eine Abfrage, ob der Button <strong>neu gedrückt wurde</strong> (also vom Zustand HIGH auf LOW gewechselt ist).</li>
+  <li>Ein Umschalten mit <code>digitalWrite</code> und <code>!</code> (Ausrufezeichen).</li>
+</ul>
+</div>
+
+<p class="spacing-2">&nbsp;</p>
 
 ---
 
