@@ -3,29 +3,22 @@
 Willkommen im Starcode-Theremino-Kurs!  
 In diesem Projekt lernen Schülerinnen, wie man ein eigenes elektronisches Musikinstrument baut. Gleichzeitig werden die Grundlagen des Programmierens mit dem Arduino spielerisch vermittelt.
 
----
-
 ## 📝 Inhalte
 
 Die vollständigen Kursmaterialien gibt es hier:
 
-- 🎓 **[Link zum Kurs für Schülerinnen](https://eg-lab.github.io/ThereminoKurs)**  
+- **[Link zum Kurs für Schülerinnen](https://eg-lab.github.io/ThereminoKurs)**  
   (Alle Kapitel mit Anleitungen, Aufgaben und Erklärungen)
 
 - Die Lösungen findest du im Repository. Diese sind nicht iauf der Kurs-Website enthalten.
-
----
 
 ## 📂 Materialien
 
 Hier findest du weitere hilfreiche Dateien:
 
-- 🖼️ **[Bilder und Videos](https://adobe.ly/402SNEn)**  
-  Zusatzmaterial für Präsentationen oder Erklärungen
+- **[Bilder und Videos](https://adobe.ly/402SNEn)**
 
----
-
-## 🧰 Materialübersicht
+### Materialübersicht
 
 Für diesen Kurs benötigt jede Arbeitsgruppe (bestehend aus 1 bis 2 Schülerinnen):
 
@@ -42,20 +35,14 @@ Für diesen Kurs benötigt jede Arbeitsgruppe (bestehend aus 1 bis 2 Schülerinn
 | Optional: Phototransistor | 1                | für Bonus-Aufgaben                            |
 | Laptop mit Arduino IDE    | 1                |                                               |
 
----
-
 ## 🔗 Quellen & Inspiration
 
 - Grundlagen 3 – Button Tutorial:  
   [roboticsbackend.com/arduino-push-button-tutorial](https://roboticsbackend.com/arduino-push-button-tutorial/)
 
----
-
 ## 🌐 Externe Bildquellen
 
 - Grundlagen 5: [Theremin-Foto](https://web.physics.ucsb.edu/~lecturedemonstrations/digital%20photos/Theremin.jpg)
-
----
 
 ## 🚧 To Dos
 
@@ -66,17 +53,12 @@ Für diesen Kurs benötigt jede Arbeitsgruppe (bestehend aus 1 bis 2 Schülerinn
 - [ ] Materialien überprüfen
 - [ ] Kurs durchführen und Feedback einholen
 
----
-
 ## 💡 Hinweise für Lehrkräfte
 
 - Alle Aufgaben sind so gestaltet, dass sie ohne Vorkenntnisse lösbar sind.
 - Tipps und Hintergrundinfos sind in ausklappbaren Boxen hinterlegt (`<details>`).
 - Bonusaufgaben können flexibel eingesetzt oder weggelassen werden.
 - Achte darauf, dass alle Schaltungen sorgfältig überprüft werden, bevor Strom angeschlossen wird.
-
-
----
 
 ## 📄 Lizenz und Nutzung
 
