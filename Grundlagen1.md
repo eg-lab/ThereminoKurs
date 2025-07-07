@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="assets/css/custom.css?v=2">
 
 <div class="nav-container">
-  <a href="index" class="button">Zurück</a>
+  <a href="Sicherheit" class="button">Zurück</a>
   <a href="Grundlagen2" class="button">Weiter</a>
 </div>
 
@@ -110,6 +110,6 @@ Das müsste alles sein für das Thema, fas muss aber noch alles angepasst werden
 ---
 
 <div class="nav-container">
-  <a href="index" class="button">Zurück</a>
+  <a href="Sicherheit" class="button">Zurück</a>
   <a href="Grundlagen2" class="button">Weiter</a>
 </div>
