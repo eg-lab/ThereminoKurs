@@ -5,9 +5,7 @@
   <a href="Grundlagen3" class="button">Weiter</a>
 </div>
 
-<p class="spacing-1">&nbsp;</p>
-
-# Grundlagen 2 – LED anschließen 💡
+## Grundlagen 2 – LED anschließen 💡
 
 **In diesem Kapitel lernst du, wie du eine LED richtig anschließt und sie mit dem Arduino blinken lässt.**
 

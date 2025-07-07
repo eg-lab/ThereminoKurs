@@ -5,9 +5,7 @@
   <a href="Grundlagen2" class="button">Weiter</a>
 </div>
 
-<p class="spacing-1">&nbsp;</p>
-
-# Grundlagen 1 - Den Arduino kennenlernen
+## Grundlagen 1 - Den Arduino kennenlernen
 
 Wie ihr wisst, wollen wir heute mit Arduinos arbeiten. Aber was ist das überhaupt? Ein Arduino ist ein Mikrocontroller, also im Prinzip ein kleiner Computer, der auf ein bestimmte Aufgabe spezialisiert ist. Man kann sie selber programmieren, damit sie genau das machen was Du möchtest.
 

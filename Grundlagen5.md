@@ -5,9 +5,7 @@
   <a href="Grundlagen6" class="button">Weiter</a>
 </div>
 
-<p class="spacing-1">&nbsp;</p>
-
-# Grundlagen 5 - Ton erzeugen 🎶
+## Grundlagen 5 - Ton erzeugen 🎶
 
 **In diesem Kapitel lernst Du, wie man mit einem Piezo-Summer einen Ton spielen kann.** 
 

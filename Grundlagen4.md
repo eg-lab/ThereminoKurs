@@ -5,11 +5,7 @@
   <a href="Grundlagen5" class="button">Weiter</a>
 </div>
 
-<p class="spacing-1">&nbsp;</p>
-
-# Grundlagen 4 - Button und LED verbinden ▶️ ➕ 💡
-
-[Zurück zur Kapitelübersicht](Kapiteluebersicht)
+## Grundlagen 4 - Button und LED verbinden ▶️ ➕ 💡
 
 **In diesem Kapitel lernst du, wie du den Button mit einer LED verbindest.**  
 

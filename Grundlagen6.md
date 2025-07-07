@@ -5,9 +5,7 @@
   <a href="Sensoren" class="button">Weiter</a>
 </div>
 
-<p class="spacing-1">&nbsp;</p>
-
-# Grundlagen 6 - Eine Melodie spielen
+## Grundlagen 6 - Eine Melodie spielen
 
 Grundlagen 6 (Arrays und Schleifen)
 
