@@ -27,8 +27,6 @@ else {
 
 In unserem Fall ist die Bedingung, ob der Button gedrückt ist.
 
----
-
 <div class="aufgabe">
 <h3>🛠️ Erste kleine Aufgabe: Status ausgeben</h3>
 <ol>
@@ -67,13 +65,9 @@ Nicht gedrückt = <code>HIGH</code> (1)<br>
 Gedrückt = <code>LOW</code> (0)
 </div>
 
----
-
-<p align="center">
-  <img src="img/Schaltung_g4.jpg" width="500" class="rounded" alt="Schaltplan Button und LED">
-</p>
-
----
+<div class="schaltplan-box">
+  <img src="img/Schaltung_g4.jpg" alt="Schaltplan Button und LED">
+</div>
 
 <div class="aufgabe">
 <h3>🛠️ Aufgabe: LED mit dem Button steuern</h3>
@@ -105,6 +99,13 @@ Gedrückt = <code>LOW</code> (0)
 
 ---
 
+<div class="nav-container">
+  <a href="Grundlagen3" class="button">Zurück</a>
+  <a href="Grundlagen5" class="button">Weiter</a>
+</div>
+
+---
+
 <div class="aufgabe">
 <h3>✨ Bonusaufgabe für ganz Schnelle</h3>
 <p>Kannst du den Button so programmieren, dass die LED bei jedem Drücken umschaltet?</p>
@@ -116,20 +117,14 @@ Gedrückt = <code>LOW</code> (0)
 </ul>
 </div>
 
-<div class="merkbox">
-💡 Tipp: Du brauchst folgende Komponenten:
+<details>
+<summary>💡 Tipp anzeigen</summary>
+<p><em>Du brauchst folgende Komponenten:</em></p>
 <ul>
   <li>Eine Variable, die speichert, ob die LED gerade an oder aus ist.</li>
   <li>Eine Abfrage, ob der Button <strong>neu gedrückt wurde</strong> (also vom Zustand HIGH auf LOW gewechselt ist).</li>
   <li>Ein Umschalten mit <code>digitalWrite</code> und <code>!</code> (Ausrufezeichen).</li>
 </ul>
-</div>
+</details>
 
 <p class="spacing-2">&nbsp;</p>
-
----
-
-<div class="nav-container">
-  <a href="Grundlagen3" class="button">Zurück</a>
-  <a href="Grundlagen5" class="button">Weiter</a>
-</div>
