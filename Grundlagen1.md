@@ -1,4 +1,13 @@
-## Grundlagen 1 - Den Arduino kennenlernen
+<link rel="stylesheet" href="assets/css/custom.css?v=2">
+
+<div class="nav-container">
+  <a href="index" class="button">Zurück</a>
+  <a href="Grundlagen2" class="button">Weiter</a>
+</div>
+
+<p class="spacing-1">&nbsp;</p>
+
+# Grundlagen 1 - Den Arduino kennenlernen
 
 Wie ihr wisst, wollen wir heute mit Arduinos arbeiten. Aber was ist das überhaupt? Ein Arduino ist ein Mikrocontroller, also im Prinzip ein kleiner Computer, der auf ein bestimmte Aufgabe spezialisiert ist. Man kann sie selber programmieren, damit sie genau das machen was Du möchtest.
 
@@ -97,3 +106,12 @@ Kommentare macht man mit //
 
 
 Das müsste alles sein für das Thema, fas muss aber noch alles angepasst werden.
+
+<p class="spacing-1">&nbsp;</p>
+
+---
+
+<div class="nav-container">
+  <a href="index" class="button">Zurück</a>
+  <a href="Grundlagen2" class="button">Weiter</a>
+</div>
