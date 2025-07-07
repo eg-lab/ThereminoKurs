@@ -1,6 +1,15 @@
-# Grundlagen 3 - Button anschließen ▶️
+<link rel="stylesheet" href="assets/css/custom.css?v=2">
 
-[Zurück zur Kapitelübersicht](Kapiteluebersicht)
+<div class="nav-container">
+  <a href="Grundlagen2" class="button">Zurück</a>
+  <a href="Grundlagen4" class="button">Weiter</a>
+</div>
+
+---
+
+<p class="spacing-1">&nbsp;</p>
+
+# Grundlagen 3 - Button anschließen ▶️
 
 **In diesem Kapitel lernst du, wie du einen Button anschließt und erkennst, ob er gedrückt ist.**
 
@@ -44,4 +53,11 @@ Damit wir sehen können, ob der Button gedrückt ist, geben wir den Status im Se
 > 💡 *Warum kommt 1, wenn der Button nicht gedrückt ist?
 > Wir nutzen `INPUT_PULLUP`. Das bedeutet, der Pin wird vom Arduino intern auf `HIGH` gezogen. Wenn du den Button drückst, wird der Pin auf GND gezogen – dann ist er `LOW`.*
 
-[Weiter zu Grundlagen 4](Grundlagen4) \| [Zurück zur Kapitelübersicht](Kapiteluebersicht)
+<p class="spacing-1">&nbsp;</p>
+
+---
+
+<div class="nav-container">
+  <a href="Grundlagen2" class="button">Zurück</a>
+  <a href="Grundlagen4" class="button">Weiter</a>
+</div>

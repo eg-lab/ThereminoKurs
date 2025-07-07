@@ -1,3 +1,14 @@
+<link rel="stylesheet" href="assets/css/custom.css?v=2">
+
+<div class="nav-container">
+  <a href="Grundlagen3" class="button">Zurück</a>
+  <a href="Grundlagen5" class="button">Weiter</a>
+</div>
+
+---
+
+<p class="spacing-1">&nbsp;</p>
+
 # Grundlagen 4 - Button und LED verbinden ▶️ ➕ 💡
 
 [Zurück zur Kapitelübersicht](Kapiteluebersicht)
@@ -101,4 +112,11 @@ Jetzt sollst du deinen eigenen Code schreiben, der die LED steuert.
 > - *Eine Abfrage, ob der Button **neu gedrückt wurde** (also vom Zustand HIGH auf LOW gewechselt ist).*
 > - *Ein Umschalten mit `digitalWrite` und `!` (Ausrufezeichen).*
 
-[Weiter zu Grundlagen 5](Grundlagen5) \| [Zurück zur Kapitelübersicht](Kapiteluebersicht)
+<p class="spacing-1">&nbsp;</p>
+
+---
+
+<div class="nav-container">
+  <a href="Grundlagen3" class="button">Zurück</a>
+  <a href="Grundlagen5" class="button">Weiter</a>
+</div>

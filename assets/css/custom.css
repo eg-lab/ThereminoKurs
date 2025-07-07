@@ -1,0 +1,139 @@
+/* Grundschrift */
+body {
+    font: 1rem 'Roboto', 'Trebuchet MS', sans-serif;
+    color: #413F3F;
+    background-color: #f5f6f8b6;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  /* Links */
+  a {
+    color: #5C67DB;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Überschriften */
+  h1, h2{
+    color: #413F3F;
+    font-size: 1.4em;
+  }
+
+  h3 {
+    color: #5C67DB;
+  }
+
+
+  /* Aufgaben-Box */
+  div.aufgabe {
+    border: 1px solid #6271e5b9;
+    border-radius: 11px;
+    padding: 1em;
+    color: #5C67DB;
+    margin: 1em 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  /* Merkkasten */
+  div.merkbox {
+    border: 1px solid #70EABE;
+    border-radius: 11px;
+    padding: 1em;
+    margin: 1em 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  /* Buttons */
+  a.button {
+    display: inline-block;
+    background-color: #6272E5;
+    color: #f8f9ff;
+    padding: 0.4em 1em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border: none;
+    box-shadow: 0 2px 4px #c4ccfe91;
+    transition: background-color 0.2s ease;
+  }
+  a.button:hover {
+    background-color: #6271e5b9;
+  }
+  a.button:active {
+    background-color: #6272E5;
+  }
+  
+  /* Abgerundete Bilder */
+  img.rounded {
+    border-radius: 11px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  /* Summary (Titel der ausklappbaren Box) */
+  details summary {
+    color: #413F3F;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Inhalt der Box */
+  details p {
+    color: #413F3F;
+    font-style: italic;
+    font-weight: normal;
+  }
+
+  /* Schaltplan-Box */
+  div.schaltplan-box {
+    background: #ffffff;
+    border: 1px solid #6272E5;
+    border-radius: 11px;
+    padding: 2em;
+    margin: 1em 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  div.schaltplan-box img {
+    border-radius: 0;
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Tabellen */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  table th, table td {
+    border: 1px solid #c4ccfe91;
+    padding: 0.5em;
+  }
+  table th {
+    background: #f8f9ff;
+  }
+  
+  /* Zentrale Navigation */
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+  }
+  
+  /* Zentrierte Box */
+  .centered {
+    text-align: center;
+  }
+
+  .spacing-1 {
+    margin-top: 1em;
+  }
+  pre {
+    background: transparent;
+  }
