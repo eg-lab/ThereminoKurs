@@ -5,8 +5,6 @@
   <a href="Grundlagen3" class="button">Weiter</a>
 </div>
 
----
-
 <p class="spacing-1">&nbsp;</p>
 
 # Grundlagen 2 – LED anschließen 💡
