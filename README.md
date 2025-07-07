@@ -7,18 +7,15 @@ In diesem Projekt lernen Schülerinnen, wie man ein eigenes elektronisches Musik
 
 Die vollständigen Kursmaterialien gibt es hier:
 
-- **[Link zum Kurs für Schülerinnen](https://eg-lab.github.io/ThereminoKurs)**  
-  (Alle Kapitel mit Anleitungen, Aufgaben und Erklärungen)
+- **[Link zum Kurs für Schülerinnen](https://eg-lab.github.io/ThereminoKurs)**
 
-- Die Lösungen findest du im Repository. Diese sind nicht iauf der Kurs-Website enthalten.
+- Die Lösungen findest du hier im Repository. Diese sind nicht auf der Kurs-Website.
+  - [Lösungen Grundlagen 4](https://github.com/eg-lab/ThereminoKurs/blob/main/Grundlagen4_loesung.mdn)
+  - [Lösungen Grundlagen 5](https://github.com/eg-lab/ThereminoKurs/blob/main/Grundlagen5_loesung.mdn)
 
 ## 📂 Materialien
 
-Hier findest du weitere hilfreiche Dateien:
-
-- **[Bilder und Videos](https://adobe.ly/402SNEn)**
-
-### Materialübersicht
+Hier findest du [Bilder und Videos](https://adobe.ly/402SNEn).
 
 Für diesen Kurs benötigt jede Arbeitsgruppe (bestehend aus 1 bis 2 Schülerinnen):
 
@@ -37,8 +34,7 @@ Für diesen Kurs benötigt jede Arbeitsgruppe (bestehend aus 1 bis 2 Schülerinn
 
 ## 🔗 Quellen & Inspiration
 
-- Grundlagen 3 – Button Tutorial:  
-  [roboticsbackend.com/arduino-push-button-tutorial](https://roboticsbackend.com/arduino-push-button-tutorial/)
+- Grundlagen 3 – Button Tutorial: [roboticsbackend.com/arduino-push-button-tutorial](https://roboticsbackend.com/arduino-push-button-tutorial/)
 
 ## 🌐 Externe Bildquellen
 
@@ -62,10 +58,8 @@ Für diesen Kurs benötigt jede Arbeitsgruppe (bestehend aus 1 bis 2 Schülerinn
 
 ## 📄 Lizenz und Nutzung
 
-Dieser Kurs wurde entwickelt von Emma, Elena und Rabea. Der Kurs darf **von allen Menschen zu nicht-kommerziellen Zwecken frei verwendet werden** – insbesondere Schulen, Bildungseinrichtungen und gemeinnützigen Projekten ist die Nutzung ausdrücklich gestattet und erwünscht.
+Dieser Kurs wurde von Emma, Elena und Rabea entwickelt. Der Kurs darf **von allen Menschen zu nicht-kommerziellen Zwecken frei verwendet werden**. Insbesondere für Schulen, Bildungseinrichtungen und gemeinnützigen Projekten ist die Nutzung ausdrücklich gestattet und erwünscht.
 
-Kommerzielle Verwendung, Verbreitung gegen Entgelt oder Veränderungen des Materials mit dem Ziel kommerziellen Gewinns sind ohne vorherige Rücksprache nicht gestattet.
-
-Falls Sie Fragen zur Nutzung oder Lizenz haben, schreiben Sie uns gerne.
+Kommerzielle Verwendung, Verbreitung gegen Entgelt oder Veränderungen des Materials mit dem Ziel kommerziellen Gewinns sind ohne vorherige Rücksprache nicht gestattet. Falls du Fragen zur Nutzung oder Lizenz hast, [schreib uns gerne](info@starcode.de).
 
 © 2025 Emma Galow, Elena Lopez Gerner, Rabea Eschenhagen
