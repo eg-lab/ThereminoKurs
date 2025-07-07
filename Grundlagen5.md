@@ -1,6 +1,13 @@
-## Grundlagen 5 - Ton erzeugen 🎶
+<link rel="stylesheet" href="assets/css/custom.css?v=2">
 
-[Zurück zur Kapitelübersicht](Kapiteluebersicht)
+<div class="nav-container">
+  <a href="Grundlagen4" class="button">Zurück</a>
+  <a href="Grundlagen6" class="button">Weiter</a>
+</div>
+
+<p class="spacing-1">&nbsp;</p>
+
+# Grundlagen 5 - Ton erzeugen 🎶
 
 **In diesem Kapitel lernst Du, wie man mit einem Piezo-Summer einen Ton spielen kann.** 
 
@@ -60,14 +67,11 @@ Das Geräusch, das der Piezo-Summer macht, ist nicht unbedingt besonders schön.
 
 > 💡 *Tipp: Orientiere Dich an dem Code, den Du in Grundlagen 4 geschrieben hast!*
 
+<p class="spacing-1">&nbsp;</p>
 
-[Weiter zu Grundlagen 6](Grundlagen6) \| [Zurück zur Kapitelübersicht](Kapiteluebersicht)
+---
 
-
-
-
-
-
-
-
-
+<div class="nav-container">
+  <a href="Grundlagen4" class="button">Zurück</a>
+  <a href="Grundlagen6" class="button">Weiter</a>
+</div>

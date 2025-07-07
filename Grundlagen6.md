@@ -1,4 +1,13 @@
-## Grundlagen 6 - Eine Melodie spielen
+<link rel="stylesheet" href="assets/css/custom.css?v=2">
+
+<div class="nav-container">
+  <a href="Grundlagen5" class="button">Zurück</a>
+  <a href="Sensoren" class="button">Weiter</a>
+</div>
+
+<p class="spacing-1">&nbsp;</p>
+
+# Grundlagen 6 - Eine Melodie spielen
 
 Grundlagen 6 (Arrays und Schleifen)
 
@@ -93,3 +102,12 @@ for (int i = 0; i < 6; i++) {
         tone(OUTPUT_PIN, melodie[i]);
         delay(1000);
 }
+
+<p class="spacing-1">&nbsp;</p>
+
+---
+
+<div class="nav-container">
+  <a href="Grundlagen5" class="button">Zurück</a>
+  <a href="Sensoren" class="button">Weiter</a>
+</div>

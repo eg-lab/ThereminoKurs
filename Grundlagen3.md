@@ -5,8 +5,6 @@
   <a href="Grundlagen4" class="button">Weiter</a>
 </div>
 
----
-
 <p class="spacing-1">&nbsp;</p>
 
 # Grundlagen 3 - Button anschließen ▶️
