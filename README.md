@@ -60,6 +60,6 @@ Für diesen Kurs benötigt jede Arbeitsgruppe (bestehend aus 1 bis 2 Schülerinn
 
 Dieser Kurs wurde von Emma, Elena und Rabea entwickelt. Der Kurs darf **von allen Menschen zu nicht-kommerziellen Zwecken frei verwendet werden**. Insbesondere Schulen, Bildungseinrichtungen und gemeinnützigen Projekten ist die Nutzung ausdrücklich gestattet und erwünscht.
 
-Kommerzielle Verwendung, Verbreitung gegen Entgelt oder Veränderungen des Materials mit dem Ziel kommerziellen Gewinns sind ohne vorherige Rücksprache nicht gestattet. Falls du Fragen zur Nutzung oder Lizenz hast, [schreib uns gerne](info@starcode.de).
+Kommerzielle Verwendung, Verbreitung gegen Entgelt oder Veränderungen des Materials mit dem Ziel kommerziellen Gewinns sind ohne vorherige Rücksprache nicht gestattet. Falls du Fragen zur Nutzung oder Lizenz hast, [schreib uns gerne](tech@starcode.de).
 
 © 2025 Emma Galow, Elena Lopez Gerner, Rabea Eschenhagen
