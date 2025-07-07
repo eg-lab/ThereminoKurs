@@ -1,10 +1,5 @@
 <link rel="stylesheet" href="assets/css/custom.css?v=2">
 
-<div class="nav-container">
-  <a href="index" class="button">Zurück</a>
-  <a href="Sicherheit" class="button">Weiter</a>
-</div>
-
 ## Los geht's!
 
 In diesem Kurs findest du alle Informationen, Aufgaben und Beispiele, die du brauchst, um Schritt für Schritt dein eigenes Theremin zu bauen. Du kannst dich mit den **Zurück**- und **Weiter**-Buttons am oberen und unteren Rand jeder Seite durch die Kapitel bewegen. Wenn du auf die große Überschrift **ThereminoKurs** oben auf der Seite klickst, kommst du jederzeit wieder zur Startseite mit der Kapitelübersicht.
