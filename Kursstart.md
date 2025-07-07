@@ -27,7 +27,7 @@ In diesem Kurs findest du alle Informationen, Aufgaben und Beispiele, die du bra
 - **Zusatzinfos**: Manche Abschnitte enthalten Zusatzwissen, das nicht unbedingt nötig ist, um die Aufgaben zu lösen. Solche Inhalte sind hinter einem ausklappbaren Bereich versteckt, den du auf Wunsch öffnen kannst:
 
   <details>
-  <summary>ℹ️</summary>
+  <summary>ℹ️ Mehr Infos</summary>
   <p>
   Hier findest du zusätzliche Hintergrundinfos.
   </p>
@@ -36,7 +36,7 @@ In diesem Kurs findest du alle Informationen, Aufgaben und Beispiele, die du bra
 - **Tipps und Hilfestellungen**, die dir beim Lösen einer Aufgabe helfen, findest du ebenfalls zum Aufklappen. Öffne diese Tipps nur, wenn du nicht weiterkommst:
 
   <details>
-  <summary>💡</summary>
+  <summary>💡 Hinweis anzeigen</summary>
   <p>
   Hier steht ein Tipp, der dir weiterhilft.
   </p>
