@@ -58,7 +58,7 @@ Für diesen Kurs benötigt jede Arbeitsgruppe (bestehend aus 1 bis 2 Schülerinn
 
 ## 📄 Lizenz und Nutzung
 
-Dieser Kurs wurde von Emma, Elena und Rabea entwickelt. Der Kurs darf **von allen Menschen zu nicht-kommerziellen Zwecken frei verwendet werden**. Insbesondere Schulen, Bildungseinrichtungen und gemeinnützigen Projekten ist die Nutzung ausdrücklich gestattet und erwünscht.
+Dieser Kurs wurde von Emma, Elena und Rabea entwickelt. Der Kurs darf **von allen Menschen zu nicht-kommerziellen Zwecken frei verwendet werden**. Insbesondere Schulen, Bildungseinrichtungen und gemeinnützigen Projekten ist die Nutzung ausdrücklich gestattet.
 
 Kommerzielle Verwendung, Verbreitung gegen Entgelt oder Veränderungen des Materials mit dem Ziel kommerziellen Gewinns sind ohne vorherige Rücksprache nicht gestattet. Falls du Fragen zur Nutzung oder Lizenz hast, [schreib uns gerne](tech@starcode.de).
 
