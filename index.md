@@ -14,6 +14,11 @@ Ein Theremin ist ein Instrument, das berührungslos gespielt wird. Anders als be
 
 ## Kapitelübersicht
 
+### Kursstart
+
+- [Los geht's!](Kursstart)
+- [Sicherheitshinweise](Sicherheit)
+
 ### Grundlagen
 
 - [Grundlagen 1 – Kennlernen des Arduinos](Grundlagen1)
