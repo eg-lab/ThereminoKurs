@@ -1,10 +1,16 @@
-# Theremino 
+# Theremino-Kurs
 
-##  Baue dein eigenes Musikinstrument mit einem Arduino
+## How to Theremino
 
-Willkommen im Kurs! Heute werdet Ihr lernen, wie man ein sogenanntes Theremin mit Hilfe eines Arduinos selber bauen kann. Und ganz nebenbei lernt Ihr außerdem die Grundlagen des Programmierens.
-<p align="left"><img src="img/Theremin.jpg" width="300" alt="Theremin"></p>
-Ein Theremin ist ein Instrument, das berührungslos gespielt wird. Anders als bei Instrumenten, die Euch wahrscheinlich geläufiger sind, muss man beim Theremin keine Taste drücken oder Saiten zupfen, sondern einfach die Hand in die Nähe des Instruments halten. Welcher Ton gespielt wird, hängt davon ab, wie weit entfernt die Hand zum Instrument ist. In seiner ursprünglichen Form basiert das Prinzip des Theremins darauf, dass die Hand, je nachdem wie weit entfernt, ein elektrisches Feld mehr oder weniger beeinflusst. Wir wollen ein anderes Prinzip nutzen: Die Messung des Abstands zu Eurer Hand mit Hilfe eines Ultraschallsensors. 
+- <a href="https://eg-lab.github.io/ThereminoKurs">Link zum Kurs für Schülerinnen</a>
+- <a href="https://adobe.ly/402SNEn">Bilder und Videos</a>
+- <a href="https://roboticsbackend.com/arduino-push-button-tutorial/">Quelle und weitere Infos zu Grundlagen 3</a>
 
- 
-[Zur Übersicht der Kapitel](Kapiteluebersicht)
+## Materialien
+
+## Externe Bildquellen
+
+- Grundlagen 5: [Theremin](https://web.physics.ucsb.edu/~lecturedemonstrations/digital%20photos/Theremin.jpg)
+
+# To dos
+
