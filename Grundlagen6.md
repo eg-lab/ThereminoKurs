@@ -2,7 +2,7 @@
 
 <div class="nav-container">
   <a href="Grundlagen5" class="button">Zurück</a>
-  <a href="Sensoren1.md" class="button">Weiter</a>
+  <a href="Sensoren1" class="button">Weiter</a>
 </div>
 
 ## Grundlagen 6 - Eine Melodie spielen
@@ -97,5 +97,5 @@ for (int i = 0; i < 6; i++) {
 
 <div class="nav-container">
   <a href="Grundlagen5" class="button">Zurück</a>
-  <a href="Sensoren1.md" class="button">Weiter</a>
+  <a href="Sensoren1" class="button">Weiter</a>
 </div>
