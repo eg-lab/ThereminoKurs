@@ -39,7 +39,10 @@ Für diesen Kurs benötigt jede Arbeitsgruppe (bestehend aus 1 bis 2 Schülerinn
 
 ## 🌐 Externe Bildquellen
 
-- Grundlagen 5: [Theremin-Foto](https://web.physics.ucsb.edu/~lecturedemonstrations/digital%20photos/Theremin.jpg)
+- Startseite: [Theremin-Foto](https://web.physics.ucsb.edu/~lecturedemonstrations/digital%20photos/Theremin.jpg)
+- Sensoren 1: [Fledermaus-Bild](https://nawi-werft.de/bausteine/ultraschallsensor/Bilder/fledermaus.jpg)
+
+
 
 ## 🚧 To Dos
 
