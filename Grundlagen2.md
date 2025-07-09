@@ -75,7 +75,9 @@ Ein Schaltplan ist wie eine <strong>Landkarte für Elektronik</strong>. Er zeigt
 <ol>
   <li>Baue die Schaltung aus dem Schaltplan nach.</li>
   <li>Lade folgenden Code auf den Arduino hoch:
-    <pre class="no-bg"><code>#define ledPin D1
+    <pre><code class="language-cpp">
+    
+#define ledPin D1
 
 void setup() {
   pinMode(ledPin, OUTPUT);
