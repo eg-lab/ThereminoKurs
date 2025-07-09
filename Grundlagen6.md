@@ -7,10 +7,10 @@
 
 ## Grundlagen 6 - Eine Melodie spielen
 
-Nun wisst ihr wie man einen Ton spielt und wie man dessen Höhe anpassen kann. Jetzt wollen wir uns kurz anschauen, wie man eine ganze Melodie spielt.
+Nun wisst ihr wie man einen Ton spielt und wie man dessen Höhe anpassen kann. Jetzt wollen wir uns kurz anschauen, wie man mit wenig Code eine ganze Melodie spielt.
 
 Natürlich könnte man einen Ton spielen, ein Delay einfügen, um festzulegen wie lange dieser gespielt wird und das für jeden Ton den man spielen möchte wiederholen.
-Aber hier wollen wir euch ein paar neue Grundkonzepte des Programmierens näherbringen und zwar **Arrays und Schleifen**.
+Aber hier wollen wir euch ein paar neue Grundkonzepte des Programmierens näherbringen um so etwas einfacher zu machen und zwar **Arrays und Schleifen**.
 
 ### Arrays
 
@@ -20,67 +20,86 @@ Aber wie erstellt man ein solches Array. Hier einmal die Syntax:
 
     int array[10]; // Ein Array mit dem Namen "array" erzeugen, das aus 10 Integern besteht
 
-Anschließend kann man auf die **einzelnen Variablen im Array** mit einem **Index** zugreifen, den man in die **eckigen Klammern [ ]** schreibt. Dabei wird im Prinzip jeder Integer im Array nummeriert, wobei mit 0 für das erste Element begonnen wird.
+Anschließend kann man auf die **einzelnen Variablen im Array** mit einem **Index** zugreifen, den man in die **eckigen Klammern [ ]** schreibt. Dabei wird im Prinzip jeder Integer im Array nummeriert, wobei mit 0 für das erste Element begonnen wird. Diesen Kann man nutzen, um einem Integer im Array einen bestimmten Wert zuzuweisen.
 
-    array[0] // erster eintrag des arrays
-    array[9] // letztes Eintrag des Arrays
+    array[0] // erster Eintrag des Arrays
+    array[9] // letztes Eintrag eines Arrays der Länge 10
 
-Man kann auch die **Werte der Variablen direkt zuweisen**, wenn man das Array erstellt. Die **Länge wird dabei automatisch festgelegt** und die Werte werden in **geschweiften Klammern { }** getrennt mit Kommas angegeben
+    array[0] = 3; //ersten Eintrag als 3 festlegen
+
+Man kann auch die **Werte der Variablen direkt zuweisen, wenn man das Array erstellt**. Die **Länge wird dabei automatisch festgelegt** und die Werte werden in **geschweiften Klammern { }** getrennt mit Kommas angegeben
 
     int array[] = {1, 2, 3, 4, 5};
 
-Aufgabe: Wie kann man Arrays nutzen, um bei unserer Melodie zu helfen.
+<div class="aufgabe">
+<h3>🛠️ Aufgabe</h3>
+<ol>
+  <li>Denke darüber nach wie dir Arrays beim Spielen einer Melodie helfen können.</li>
+  <li>Was könnte man in dem Array speichern?</li>
+</ol>
+</div>
 
 ### Schleifen
 
-**Schleifen** sind ein grundlegendes Konzept beim Programmieren. Man nutzt sie, wenn man den **gleichen oder einen ähnlichen Code Abschnitt mehrere Male durchführen** möchte. Allgemein gibt es eine Bedingung, die gegeben sein muss damit die Schleife sich weiter wiederholt und ein Codeabschmitt der wiederholt werden soll. Dabei gibt es einige verschiedene Varianten an Schleifen, die sich leicht unterscheiden.
+**Schleifen** sind ein grundlegendes Konzept beim Programmieren. Man nutzt sie, wenn man den **gleichen oder einen ähnlichen Code Abschnitt mehrere Male durchführen** möchte. Allgemein gibt es eine Bedingung, die gegeben sein muss damit die Schleife sich weiter wiederholt und ein Codeabschnitt der wiederholt werden soll. Dabei gibt es einige verschiedene Varianten an Schleifen, die sich leicht unterscheiden. Die Bedingung steht in den regulären Klammern ( ). Die man zusammen mit der Angabe um welche Schleifenart es sich handelt den **Schleifenkopf**.
+
+
 
 #### While Schleife
 
-Die **While** (= englisch für "während") Schleife führt einen Code Abschnitt **während eine bestimmte Bedingung wahr ist**.
+Die **While** (= englisch für "während") Schleife führt einen Code Abschnitt solange aus **während eine bestimmte Bedingung wahr ist**.
 
-    while (bedingung) {
-          //Code
+    while (Bedingung) {
+          //Code der wiederholt wird
     }
 
-Die **Bedingung** kann dabei zum Beispiel ein **Vergleich von zwei Werten** sein wie zwei Variablen Variable1 > Variable2 oder auch ein booolean. In diesem Fall läuft die Schleife solange der boolean den Wert true hat.
+Die **Bedingung** kann dabei zum Beispiel ein **Vergleich von zwei Werten** sein. Beispielsweise die Aussage: Variable1 > Variable2. In diesem Fall läuft die Schleife solange diese Aussage stimmt.
+
+Wichtig ist dabei, dass die Schleife erst abbricht sobald der Code im Schleifenkörper einmal zuende durchgelaufen ist. Ob die Bedingung wahr ist wird nämlich nur geprüft, wenn dieser wieder neu anfangen würde.
 
 
 #### For-Schleife
 
-Die **For-Schleife** ist besonders **praktisch wenn man genau weiß wie oft ein Code Abschnitt wiederholt werden muss**. Diese arbeitet auch mit einer Bedingung, der sogenannte **Schleifenkopf**, in dem zuvor nur die Bedingung stand ist aber etwas komplizierter aufgebaut.
+Die **For-Schleife** ist besonders **praktisch wenn man genau weiß wie oft ein Code Abschnitt wiederholt werden muss**. Und ist für uns auch hier am hilfreichsten. Sie arbeitet wie die While-Schleife auch mit einer Bedingung. Der **Schleifenkopf**, in dem zuvor nur die Bedingung stand ist aber etwas komplizierter aufgebaut.
 
     for (Schleifenvariable deklarieren ; Abbruchbedingung ; Anpassen der Schleifenvariable) {
-          //Code
+          //Code der wiederholt wird
     }
 
-Im ersten teil des Schleifenkopfes erstellt man die sogenannte **Schleifenvariable**. Diese könnt ihr euch als **Zähler** vorstellen, der zählt bei dem **wievielten Schleifendurchlauf** wir uns zur Zeit befinden und ist standardmäßig ein Integer mit dem Namen **"i"**, der als 0 festgelegt wird. Als nächstes legt man die **Abbruchbedingung** fest. Diese könnt ihr euch vorstellen wie die Bedingung bei der **While-Schleife**. Sobald die Bedingung nicht mehr wahr ist hört die Schleife auf. Die Bedingung enthält normalerweise die Schleifenvariable und wie oft die Schleife wiederholt werden soll. Man würde also sagen, solange die Schleifenvariable kleiner als ein bestimmter Wert ist, soll die Schleife laufen. Und zuletzt das anpassen der Schleifenvariable. Wenn wie oft unsre Schleife durchläuft davon abängt welchen Wert die Schleifenvariable hat, dann muss sich diese mit der zeit ändern. Also wird hier die Variable standardmäßig immer um eins erhöht. 
+Im ersten Teil des Schleifenkopfes erstellt man die sogenannte **Schleifenvariable**. Diese könnt ihr euch als **Zähler** vorstellen, der zählt bei dem **wievielten Schleifendurchlauf** wir uns zur Zeit befinden und ist standardmäßig ein Integer mit dem Namen **"i"**, dem zu beginn der Wert 0 zugewiesen wird. Als nächstes legt man die **Abbruchbedingung** fest. Diese könnt ihr euch vorstellen wie die Bedingung bei der **While-Schleife**. Sobald die Bedingung nicht mehr wahr ist und der Schleifenkörper zuende durchlaufen wurde bricht die Schleife ab. Die Bedingung enthält standardmäßig die **Schleifenvariable** und **wie oft die Schleife wiederholt werden soll**. Man würde also zum Beispiel sagen, solange die Schleifenvariable kleiner als ein bestimmter Wert ist, soll die Schleife laufen. Zuletzt wird im Schleifenkopf auch das Anpassen der Schleifenvariable festgelegt. Wenn wie oft die Schleife durchläuft davon abängt welchen Wert die Schleifenvariable hat, dann muss sich diese mit der Zeit ändern. Hierbei wird die Variable standardmäßig immer um eins erhöht. 
 
-Man könnte die for scheife also fantastisch benutzen, um ein Array zu durchlaufen, weil wir die Länge kennen.
+Man kann **For-Schleifen** sehr gut nutzen, um Arrays zu durchlaufen.
 
+Beispiel:
 Wir haben ein Array mit 5 Werten
 
-int array[] = {1, 2, 3, 4, 5};
+    int array[] = {1, 2, 3, 4, 5};
 
-Hierbei ist die Abbruchbedingung "i < 5" , sie wiederholt sich also so lange wie i kleiner als 5 ist. Dabei beginnt i bei dem Wert 0, und jedes Mal nachdem der Code in der Schleife einmal durchgelaufen ist, wird i um 1 erhöht. Ihr könnt euch vorstellen, dass jedes mal, wenn die Schleife einmal durchläuft zurück in den Schleifenkopfe gesprungen wird, hier wird dann erneut überprüft, ob die Bedingung noch wahr ist und wenn ja, wird die Schleife wieder ausgeführt. i ist also zu beginn 0, nach dem nächsten durchlauf 1, nach dem nächsten 2 etc.
+Hierbei ist die Abbruchbedingung "i < 5" , sie wiederholt sich also so lange wie i kleiner als 5 ist. Dabei beginnt i bei dem Wert 0, und jedes Mal nachdem der Code in der Schleife einmal durchgelaufen ist, wird i um 1 erhöht. Ihr könnt euch vorstellen, dass jedes mal, wenn die Schleife einmal durchläuft zurück in den Schleifenkopfe gesprungen wird, hier wird dann erneut überprüft, ob die Bedingung noch wahr ist und wenn ja, wird die Schleife wieder ausgeführt. i ist also zu Beginn 0, nach dem nächsten Durchlauf 1, nach dem nächsten 2 etc.
 
-for (int i = 0; i < 5; i++) {
-      printf("array[i])
-}
+    for (int i = 0; i < 5; i++) {
+          Serial.println("%d", array[i]);
+    }
 
-praktischerweise ist i auch eine reguläre Variable und kann innerhalb der Schleife als solche benutzt werden. Da i die werte von 0 bis 4 durchläuft, und ein arry der Länge 5 mit den Zahlen 0 bis 4 nummeriert ist, kann man i perfekt nutzen um auf arrayvariablen zuzugreifen.
+Praktischerweise ist i auch eine reguläre Variable und kann innerhalb der Schleife als solche benutzt werden. Da i die Werte von 0 bis 4 durchläuft, und ein Array der Länge 5 mit den Zahlen 0 bis 4 nummeriert ist, kann man i perfekt nutzen um auf die Variablen im Array zuzugreifen.
 
 diese Schleife würde also alle werte im array durchegehen und ausgeben
 
-fun fact i++ ist die kurzschreibweise für i = i + 1 (yay yay)
+Extrainfo:
+Hier seht ihr im Schleifenkopf dort, wo die Schleifenvariable erhöht werden soll den Ausdruck "i++". Dies ist lediglich eine verkürzte Schreibweise für "i = i + 1" und erhöht i um 1:
+
+<div class="aufgabe">
+<h3>🛠️ Aufgabe</h3>
+<ol>
+  <li>Denke darüber nach, wie man eine Schleife jetzt nutzen könnte, um eine zusammenhängende Melodie zu spielen.</li>
+  <li>Bereite eine Melodie mithilfe eines Arrays vor und nutze eine Schleife, um sie zu spielen</li>
+</ol>
+</div>
 
 
+Lösung:
 
-
-
-Nun könnt ihr vielleicht sehen wie man dieses array und die Schleifen nutzen kann, um eine melodie zu spielen.
-
-man kann ein array mit den Frequenzen der einzelnen Töne, die man spielen möchte in der Reihenfolge, die man möchte erstellen, und es dann mit ener Schleife durchgehen.
+Man kann ein Array mit den Frequenzen der einzelnen Töne, die man spielen möchte in der Reihenfolge, die man möchte erstellen, und es dann mit ener Schleife durchgehen.
 
 und viel praktischer als zehn identische zeilen um verschiedene Noten zu spielen hehe
 
