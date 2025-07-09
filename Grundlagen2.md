@@ -66,10 +66,13 @@ Ein Schaltplan ist wie eine <strong>Landkarte für Elektronik</strong>. Er zeigt
 </p>
 </details>
 
+### Schaltplan
 
 <div class="schaltplan-box">
   <img src="img/Schaltung_g2.jpg" alt="Schaltplan LED">
 </div>
+
+### Code
 
 ```cpp
 #define ledPin D1

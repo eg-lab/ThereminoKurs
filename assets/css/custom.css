@@ -10,7 +10,7 @@ body {
   
   /* Links */
   a {
-    color: #5C67DB;
+    color: #4935dc;
     text-decoration: none;
   }
   a:hover {
@@ -24,7 +24,7 @@ body {
   }
 
   h3 {
-    color: #5C67DB;
+    color: #4935dc;
   }
 
 
@@ -33,7 +33,7 @@ body {
     border: 1px solid #6271e5b9;
     border-radius: 11px;
     padding: 1em;
-    color: #5C67DB;
+    color: #4935dc;
     margin: 1em 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   }
@@ -50,7 +50,7 @@ body {
   /* Buttons */
   a.button {
     display: inline-block;
-    background-color: #6272E5;
+    background-color: #4935dc;
     color: #f8f9ff;
     padding: 0.4em 1em;
     border-radius: 5px;
@@ -65,7 +65,7 @@ body {
     background-color: #6271e5b9;
   }
   a.button:active {
-    background-color: #6272E5;
+    background-color: #4935dc;
   }
   
   /* Abgerundete Bilder */
@@ -97,7 +97,6 @@ body {
     text-align: center;
     /* box-shadow: 0 2px 4px rgba(0,0,0,0.05); */
   }
-  
   
   div.schaltplan-box img {
     border-radius: 0;
@@ -133,7 +132,4 @@ body {
 
   .spacing-1 {
     margin-top: 1em;
-  }
-  pre {
-    background: transparent;
   }
