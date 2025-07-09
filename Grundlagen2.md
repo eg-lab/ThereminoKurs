@@ -74,9 +74,11 @@ Ein Schaltplan ist wie eine <strong>Landkarte für Elektronik</strong>. Er zeigt
 <h3>🛠️ Aufgabe</h3>
 <ol>
   <li>Baue die Schaltung aus dem Schaltplan nach.</li>
-  <li>Lade folgenden Code auf den Arduino hoch:
-    <pre><code class="language-cpp">
-    
+  <li>Lade folgenden Code auf den Arduino hoch:</li>
+</ol>
+</div>
+
+```cpp
 #define ledPin D1
 
 void setup() {
@@ -89,8 +91,10 @@ void loop() {
   digitalWrite(ledPin, LOW);
   delay(500);
 }
-</code></pre>
-  </li>
+```
+
+<div class="aufgabe">
+<ol start="3">
   <li>Beobachte, was passiert. Was macht der Code?</li>
 </ol>
 </div>
