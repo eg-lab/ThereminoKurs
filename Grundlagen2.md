@@ -1,4 +1,6 @@
 <link rel="stylesheet" href="assets/css/custom.css?v=2">
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1/prism.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-cpp.min.js"></script>
 
 <div class="nav-container">
   <a href="Grundlagen1" class="button">Zurück</a>
@@ -65,6 +67,22 @@ Um zu wissen, wie man Bauteile verbinden soll, erstellt man zuerst einen **Schal
 Ein Schaltplan ist wie eine <strong>Landkarte für Elektronik</strong>. Er zeigt genau, welche Bauteile verwendet werden – zum Beispiel LEDs, Widerstände oder Taster – und wie diese miteinander verbunden sind. Außerdem erkennt man im Schaltplan, welche Anschlüsse an Plus oder Minus angeschlossen werden und welche Pins des Arduino genutzt werden. Meistens verwendet man für Bauteile bestimmte Symbole: Eine LED wird oft als Kreis mit kleinen Zacken dargestellt, ein Widerstand als Zickzack-Linie und Kabelverbindungen als einfache Striche mit Punkten an den Verknüpfungen. In professionellen Projekten werden Schaltpläne vor dem Aufbau sehr sorgfältig geprüft, damit nichts falsch angeschlossen wird oder Bauteile kaputtgehen. Ein guter Schaltplan hilft also, Fehler zu vermeiden und die Schaltung sicher und richtig aufzubauen.
 </p>
 </details>
+
+<pre><code class="language-cpp">
+#define ledPin D1
+
+void setup() {
+  pinMode(ledPin, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(ledPin, HIGH);
+  delay(500);
+  digitalWrite(ledPin, LOW);
+  delay(500);
+}
+</code></pre>
+
 
 <div class="schaltplan-box">
   <img src="img/Schaltung_g2.jpg" alt="Schaltplan LED">
