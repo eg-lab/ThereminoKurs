@@ -66,29 +66,6 @@ Ein Schaltplan ist wie eine <strong>Landkarte für Elektronik</strong>. Er zeigt
 </p>
 </details>
 
-### Schaltplan
-
-<div class="schaltplan-box">
-  <img src="img/Schaltung_g2.jpg" alt="Schaltplan LED">
-</div>
-
-### Code
-
-```cpp
-#define ledPin D1
-
-void setup() {
-  pinMode(ledPin, OUTPUT);
-}
-
-void loop() {
-  digitalWrite(ledPin, HIGH);
-  delay(500);
-  digitalWrite(ledPin, LOW);
-  delay(500);
-}
-```
-
 <div class="aufgabe">
 <h3>🛠️ Aufgabe</h3>
 <ol>
@@ -102,6 +79,29 @@ void loop() {
 <summary>💡 Hinweis anzeigen</summary>
 <p><em>Wenn du nichts beobachten kannst, überprüfe bitte deine Schaltung.</em></p>
 </details>
+
+### Schaltplan
+
+<div class="schaltplan-box">
+  <img src="img/Schaltung_g2_uno.png" alt="Schaltplan LED">
+</div>
+
+### Code
+
+```cpp
+#define ledPin 8 
+
+void setup() {
+  pinMode(ledPin, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(ledPin, HIGH);
+  delay(500);
+  digitalWrite(ledPin, LOW);
+  delay(500);
+}
+```
 
 <p class="spacing-1">&nbsp;</p>
 
