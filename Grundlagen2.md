@@ -1,6 +1,4 @@
 <link rel="stylesheet" href="assets/css/custom.css?v=2">
-<script src="https://cdn.jsdelivr.net/npm/prismjs@1/prism.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-cpp.min.js"></script>
 
 <div class="nav-container">
   <a href="Grundlagen1" class="button">Zurück</a>
@@ -68,32 +66,9 @@ Ein Schaltplan ist wie eine <strong>Landkarte für Elektronik</strong>. Er zeigt
 </p>
 </details>
 
-<pre><code class="language-cpp">
-#define ledPin D1
-
-void setup() {
-  pinMode(ledPin, OUTPUT);
-}
-
-void loop() {
-  digitalWrite(ledPin, HIGH);
-  delay(500);
-  digitalWrite(ledPin, LOW);
-  delay(500);
-}
-</code></pre>
-
 
 <div class="schaltplan-box">
   <img src="img/Schaltung_g2.jpg" alt="Schaltplan LED">
-</div>
-
-<div class="aufgabe">
-<h3>🛠️ Aufgabe</h3>
-<ol>
-  <li>Baue die Schaltung aus dem Schaltplan nach.</li>
-  <li>Lade folgenden Code auf den Arduino hoch:</li>
-</ol>
 </div>
 
 ```cpp
@@ -112,7 +87,10 @@ void loop() {
 ```
 
 <div class="aufgabe">
-<ol start="3">
+<h3>🛠️ Aufgabe</h3>
+<ol>
+  <li>Baue die Schaltung aus dem Schaltplan nach.</li>
+  <li>Lade den bereitgestellten Code auf den Arduino hoch.</li>
   <li>Beobachte, was passiert. Was macht der Code?</li>
 </ol>
 </div>

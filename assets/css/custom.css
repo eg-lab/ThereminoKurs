@@ -90,14 +90,21 @@ body {
   /* Schaltplan-Box */
   div.schaltplan-box {
     background: #ffffff;
-    border: 1px solid #6272E5;
-    border-radius: 11px;
-    padding: 2em;
+    /* border: 1px solid #6272E5; */
+    /* border-radius: 11px; */
+    padding: 1em;
     margin: 1em 0;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    /* box-shadow: 0 2px 4px rgba(0,0,0,0.05); */
   }
   
+  
+  div.schaltplan-box img {
+    border-radius: 0;
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+  }
   
   /* Tabellen */
   table {
