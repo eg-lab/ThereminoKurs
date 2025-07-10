@@ -102,8 +102,8 @@ Praktischerweise ist i auch eine reguläre Variable und kann innerhalb der Schle
 Diese Schleife würde also alle Werte im Array durchgehen und ausgeben.
 
 
-> 💡 **Hinweise:**
-> - Hier seht Ihr im Schleifenkopf dort, wo die Schleifenvariable erhöht werden soll den Ausdruck "i++". Dies ist lediglich eine verkürzte Schreibweise für "i = i  + 1" und erhöht i um 1.
+> 💡 **Hinweis:**
+> - *Hier seht Ihr im Schleifenkopf dort, wo die Schleifenvariable erhöht werden soll den Ausdruck "i++". Dies ist lediglich eine verkürzte Schreibweise für "i = i  + 1" und erhöht i um 1.*
 
 
 <div class="aufgabe">
