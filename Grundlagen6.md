@@ -7,14 +7,14 @@
 
 ## Grundlagen 6 - Eine Melodie spielen
 
-Nun wisst ihr wie man einen Ton spielt und wie man dessen Höhe anpassen kann. Jetzt wollen wir uns kurz anschauen, wie man mit wenig Code eine ganze Melodie spielt.
+Nun wisst Ihr wie man einen Ton spielt und wie man dessen Höhe anpassen kann. Jetzt wollen wir uns kurz anschauen, wie man mit wenig Code eine ganze Melodie spielt.
 
 Natürlich könnte man einen Ton spielen, ein Delay einfügen, um festzulegen wie lange dieser gespielt wird und das für jeden Ton den man spielen möchte wiederholen.
-Aber hier wollen wir euch ein paar neue Grundkonzepte des Programmierens näherbringen um so etwas einfacher zu machen und zwar **Arrays und Schleifen**.
+Aber hier wollen wir Euch ein paar neue Grundkonzepte des Programmierens näherbringen um so etwas einfacher zu machen und zwar **Arrays und Schleifen**.
 
 ### Arrays
 
-**Arrays** könnt ihr euch vorstellen wie eine **Liste oder Tabelle** an einzelnen **Variablen vom gleichen Datentyp**. Also zum Beispiel einem Integer (ganzer Zahl) oder einem double (Kommazahl). Ihr könnt beim Erstellen dieser Liste **festlegen wie lang** sie sein soll und sie anschließend **mit verschiedenen Werten füllen**.
+**Arrays** könnt Ihr euch vorstellen wie eine **Liste oder Tabelle** an einzelnen **Variablen vom gleichen Datentyp**. Also zum Beispiel einem Integer oder einem float. Ihr könnt beim Erstellen dieser Liste **festlegen wie lang** sie sein soll und sie anschließend **mit verschiedenen Werten füllen**.
 
 Aber wie erstellt man ein solches Array. Hier einmal die Syntax:
 
@@ -66,7 +66,7 @@ Die **For-Schleife** ist besonders **praktisch wenn man genau weiß wie oft ein 
           //Code der wiederholt wird
     }
 
-Im ersten Teil des Schleifenkopfes erstellt man die sogenannte **Schleifenvariable**. Diese könnt ihr euch als **Zähler** vorstellen, der zählt bei dem **wievielten Schleifendurchlauf** wir uns zur Zeit befinden und ist standardmäßig ein Integer mit dem Namen **"i"**, dem zu beginn der Wert 0 zugewiesen wird. Als nächstes legt man die **Abbruchbedingung** fest. Diese könnt ihr euch vorstellen wie die Bedingung bei der **While-Schleife**. Sobald die Bedingung nicht mehr wahr ist und der Schleifenkörper zuende durchlaufen wurde bricht die Schleife ab. Die Bedingung enthält standardmäßig die **Schleifenvariable** und **wie oft die Schleife wiederholt werden soll**. Man würde also zum Beispiel sagen, solange die Schleifenvariable kleiner als ein bestimmter Wert ist, soll die Schleife laufen. Zuletzt wird im Schleifenkopf auch das Anpassen der Schleifenvariable festgelegt. Wenn wie oft die Schleife durchläuft davon abängt welchen Wert die Schleifenvariable hat, dann muss sich diese mit der Zeit ändern. Hierbei wird die Variable standardmäßig immer um eins erhöht. 
+Im ersten Teil des Schleifenkopfes erstellt man die sogenannte **Schleifenvariable**. Diese könnt Ihr euch als **Zähler** vorstellen, der zählt bei dem **wievielten Schleifendurchlauf** wir uns zur Zeit befinden und ist standardmäßig ein Integer mit dem Namen **"i"**, dem zu beginn der Wert 0 zugewiesen wird. Als nächstes legt man die **Abbruchbedingung** fest. Diese könnt Ihr euch vorstellen wie die Bedingung bei der **While-Schleife**. Sobald die Bedingung nicht mehr wahr ist und der Schleifenkörper zuende durchlaufen wurde bricht die Schleife ab. Die Bedingung enthält standardmäßig die **Schleifenvariable** und **wie oft die Schleife wiederholt werden soll**. Man würde also zum Beispiel sagen, solange die Schleifenvariable kleiner als ein bestimmter Wert ist, soll die Schleife laufen. Zuletzt wird im Schleifenkopf auch das Anpassen der Schleifenvariable festgelegt. Wenn wie oft die Schleife durchläuft davon abängt welchen Wert die Schleifenvariable hat, dann muss sich diese mit der Zeit ändern. Hierbei wird die Variable standardmäßig immer um eins erhöht. 
 
 Man kann **For-Schleifen** sehr gut nutzen, um Arrays zu durchlaufen.
 
@@ -86,7 +86,7 @@ Praktischerweise ist i auch eine reguläre Variable und kann innerhalb der Schle
 diese Schleife würde also alle werte im array durchegehen und ausgeben
 
 Extrainfo:
-Hier seht ihr im Schleifenkopf dort, wo die Schleifenvariable erhöht werden soll den Ausdruck "i++". Dies ist lediglich eine verkürzte Schreibweise für "i = i + 1" und erhöht i um 1:
+Hier seht Ihr im Schleifenkopf dort, wo die Schleifenvariable erhöht werden soll den Ausdruck "i++". Dies ist lediglich eine verkürzte Schreibweise für "i = i + 1" und erhöht i um 1:
 
 <div class="aufgabe">
 <h3>🛠️ Aufgabe</h3>
@@ -95,20 +95,6 @@ Hier seht ihr im Schleifenkopf dort, wo die Schleifenvariable erhöht werden sol
   <li>Bereite eine Melodie mithilfe eines Arrays vor und nutze eine Schleife, um sie zu spielen</li>
 </ol>
 </div>
-
-
-Lösung:
-
-Man kann ein Array mit den Frequenzen der einzelnen Töne, die man spielen möchte in der Reihenfolge, die man möchte erstellen, und es dann mit ener Schleife durchgehen.
-
-und viel praktischer als zehn identische zeilen um verschiedene Noten zu spielen hehe
-
-float melodie[] = {261.63, 293.66, 349.23, 293.66, 392.00, 392.00, 349.23};
-
-for (int i = 0; i < 6; i++) {
-        tone(OUTPUT_PIN, melodie[i]);
-        delay(1000);
-}
 
 <p class="spacing-1">&nbsp;</p>
 
