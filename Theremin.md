@@ -76,7 +76,9 @@ Falls du nicht weißt, wo du anfangen sollst: Starte mit dem Theremin-Code aus d
 Stellt euer Instrument der Gruppe vor. Erklärt, wie ihr es gebaut habt, und zeigt live, wie es funktioniert. Wer mag, kann ein kleines Konzert spielen oder ein lustiges Geräusch vorstellen.
 </p>
 
-<p class="spacing-2">&nbsp;</p>
+<p class="spacing-1">&nbsp;</p>
+
+---
 
 <div class="nav-container">
   <a href="Sensoren2" class="button">Zurück</a>

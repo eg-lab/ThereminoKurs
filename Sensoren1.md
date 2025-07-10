@@ -1,3 +1,10 @@
+<link rel="stylesheet" href="assets/css/custom.css?v=2">
+
+<div class="nav-container">
+  <a href="Grundlagen6" class="button">Zurück</a>
+  <a href="Sensoren2" class="button">Weiter</a>
+</div>
+
 ## Sensoren 1 - Ultraschallsensor anschließen 🔊
 
 [Zurück zur Kapitelübersicht](Kapiteluebersicht)
@@ -90,11 +97,14 @@ void loop() {
 
 Nun hast Du alle Grundlagen, die Du brauchst um ein Theremin zu bauen. Wenn Du Lust hast kannst Du gleich damit starten. Falls Du Dir noch einen weiteren Sensor anschauen möchtest, kannst Du das jedoch auch gerne tun. Im optionalen Kapitel Sensoren 2 kannst Du lernen, wie man einen Phototransistor anschließt, und diesen anschließend auch in Dein Theremin einbauen.
 
-[Zurück zur Kapitelübersicht](Kapiteluebersicht)
-[Theremin bauen](Theremin)
-[Sensoren 2](Sensoren2)
+<p class="spacing-1">&nbsp;</p>
 
+---
 
+<div class="nav-container">
+  <a href="Grundlagen6" class="button">Zurück</a>
+  <a href="Sensoren2" class="button">Weiter</a>
+</div>
 
 
 

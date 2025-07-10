@@ -34,6 +34,7 @@ Wenn ihr die Arduino IDE öffnet seht ihr direkt einen sogenannten neuen **Sketc
 
 Wenn du einen neuen Sketch öffnest siehst du direkt einige Zeilen Code. Dies ist die allgemeine Struktur für einen Arduino Sketch. Man schriebt den Code zwar in der Programmiersprache C++, aber für Arduinos und so zimelich jeden Mikrocontroller kann man sich an diese Struktur halten. 
 
+```cpp
     int setup() {
         //smthg
     }
@@ -41,6 +42,7 @@ Wenn du einen neuen Sketch öffnest siehst du direkt einige Zeilen Code. Dies is
     int loop() {
         //smthg else
     }
+```
 
 Was du hier siehst sind zwei **Funktionen**, Codeblöcke die einen Namen haben und von einem Programm aufgerufen werden können. In den **geschweifeten Klammern { }** steht was diese Funktionen tun, also der Code der abgearbeitet wird, wenn sie aufgerufen werden. 
 
@@ -67,7 +69,9 @@ Jetzt wollen wir euch ein paar wichtige Grundfunktionen der Arduino IDE näherbr
 
 Funktionen kennt ihr schon von Setup und Loop. Im Allgemeinen kann eine Funktion aber alles mögliche sein. Oft kann man ihr gewisse Werte geben, mit denen die Funktion arbeiten soll. Und man erhält einen Wert als Rückgabe oder Ergebnis der Funktion. Ein regulärer Funktionsaufruf einer Funtion "beispiel" sähe also zum Beispiel so aus
 
+    ```cpp
     int variable = beispiel(parameter_a, parameter_b);
+    ```
 
 Hier würde eine Funktion "beispiel" mit den Parametern parameter_a und parameter_b aufgerufen werden. Diese nutzt dann die ihr übergebenen Paramter und berechnet zum Beispiel irgendeinen neuen Wert. Dieser Wert kann in einer neuen Variablen gespeichert werden, hier in "variable":
 
@@ -76,7 +80,9 @@ Wir haben ja schon Pins besprochen und dass man diese als Input oder Output fest
 
 Also Beispielsweise so:
 
+    ```cpp
     pinMode(10, INPUT);
+    ```
 
 
 ##### Read- und Write Funktionen
@@ -108,7 +114,9 @@ Code beispiele
 
 Auch praktisch ist die **delay Funktion**. Diese sorgt dafür, dass das gesamte Programm eine gweisse Zeit anhält. Hier kann man in den Klammern als Parameter einfach angeben, wie lange das Programm warten soll, bis es weiterläuft. Die Zeit gibt man dabei in Millisekunden an. Ein Delay von einer Sekunde sähe also zum Beispiel so aus.
 
+    ```cpp
     delay(1000);
+    ```
 
 
 ##### Kommentare

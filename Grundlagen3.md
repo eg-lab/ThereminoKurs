@@ -18,10 +18,6 @@ Wenn du den Button drückst, wird ein Signal an den Arduino geschickt. So kannst
 
 Wir verbinden den Button so, dass der Arduino erkennen kann, ob er gedrückt wird oder nicht. Dabei ist wichtig, dass du den Button mit **GND** (*Minus*) verbindest, damit der Pin auf `LOW` gezogen wird, wenn der Button nicht gedrückt ist.
 
-<div class="schaltplan-box">
-  <img src="img/Schaltung_g3_v2.jpg" alt="Schaltplan Button">
-</div>
-
 <div class="merkbox">
 💡 Der Button schließt den Stromkreis nur, wenn du ihn drückst. Lässt du ihn los, ist der Stromkreis wieder offen.
 </div>
@@ -36,20 +32,7 @@ Damit wir sehen können, ob der Button gedrückt ist, geben wir den Status im Se
 <h3>🛠️ Aufgabe</h3>
 <ol>
   <li>Baue die Schaltung aus dem Schaltplan nach. Achte darauf, dass ein Pin an GND angeschlossen ist. Schließe den Arduino an deinen Computer an.</li>
-  <li>Lade folgenden Code auf den Arduino hoch:
-  
-<pre class="no-bg"><code>#define buttonPin D1
-
-void setup() {
-  Serial.begin(9600);
-  pinMode(buttonPin, INPUT_PULLUP);
-}
-
-void loop() {
-  int buttonStatus = digitalRead(buttonPin);
-  Serial.println(buttonStatus);
-}
-</code></pre>
+  <li>Lade den bereitgestellten Code auf den Arduino hoch.
   </li>
   <li>Öffne den Serial Monitor in der Arduino IDE. Dafür musst du oben rechts auf das Lupensymbol klicken.</li>
   <li>Drücke den Button und beobachte, welche Zahl angezeigt wird.</li>
@@ -62,7 +45,29 @@ void loop() {
 Warum? Wir nutzen <code>INPUT_PULLUP</code>. Das bedeutet: Der Pin wird vom Arduino intern auf <code>HIGH</code> gezogen. Wenn du den Button drückst, wird der Pin auf GND gezogen – dann ist er <code>LOW</code>.</em></p>
 </details>
 
-<p class="spacing-2">&nbsp;</p>
+### Schaltplan
+
+<div class="schaltplan-box">
+  <img src="img/Schaltung_g3_v2.jpg" alt="Schaltplan Button">
+</div>
+
+### Code
+
+```cpp
+#define buttonPin D1
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(buttonPin, INPUT_PULLUP);
+}
+
+void loop() {
+  int buttonStatus = digitalRead(buttonPin);
+  Serial.println(buttonStatus);
+}
+```
+
+<p class="spacing-1">&nbsp;</p>
 
 ---
 

@@ -63,7 +63,11 @@ Schreibe nun Dein Programm aus der vorherigen Aufgabe so um, dass Du anstelle de
 
 Das Geräusch, das der Piezo-Summer macht, ist nicht unbedingt besonders schön. Daher ist es praktisch, den Piezo nur dann spielen zu lassen, wenn ein Button gedrückt wird, um Euch und Eure Mitmenschen zu schonen.
 
-> 💡 *Tipp: Orientiere Dich an dem Code, den Du in Grundlagen 4 geschrieben hast!*
+<details>
+<summary>💡 Tipp anzeigen</summary>
+<p>Orientiere Dich an dem Code, den Du in Grundlagen 4 geschrieben hast!</p>
+</details>
+
 
 <p class="spacing-1">&nbsp;</p>
 
