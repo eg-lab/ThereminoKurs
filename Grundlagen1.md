@@ -9,6 +9,11 @@
 
 Wie ihr wisst, wollen wir heute mit Arduinos arbeiten. Aber was ist das überhaupt? Ein Arduino ist ein Mikrocontroller, also im Prinzip ein kleiner Computer, der auf ein bestimmte Aufgabe spezialisiert ist. Man kann sie selber programmieren, damit sie genau das machen was Du möchtest.
 
+<div class="schaltplan-box">
+  <img src="img/Arduinos.png" width="300" class="rounded" alt="LED.">
+</div>
+
+
 ### Aufbau des Arduinos
 #### Pins
 Aber wie arbeitet man mit einem Arduino. Am wichtigsten für die Kommunikation mit dem Arduino sind die verschiedenen Anschlüsse oder **Pins**.
@@ -190,7 +195,7 @@ delay(1000);
 
 #### Kommentare
 
-Wenn ihr für bessere Verständlichkeit kleine Notizen zu eurem Code machen möchtet könnt ihr einfach Kommentare direkt in den Quellcode schreiben. // am Beginn einer Zeile signalisieren dabei einen Kommentar und sorgen dafür, dass diese Zeile einfach vom Computer ignoriert wird.
+Wenn ihr für bessere Verständlichkeit kleine Notizen zu eurem Code machen möchtet könnt ihr einfach Kommentare direkt in den Quellcode schreiben. <code>//</code> am Beginn einer Zeile signalisieren dabei einen Kommentar und sorgen dafür, dass diese Zeile einfach vom Computer ignoriert wird.
 
 
 <p class="spacing-1">&nbsp;</p>
