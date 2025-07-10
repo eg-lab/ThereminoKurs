@@ -7,8 +7,6 @@
 
 ## Sensoren 1 - Ultraschallsensor anschließen 🔊
 
-[Zurück zur Kapitelübersicht](Kapiteluebersicht)
-
 Nun wollen wir uns dem Thema Sensoren widmen. Sensoren sind ganz allgemein elektronische Bauteile, die auf irgendeine Art Ihre Umgebung und Änderungen in der Umgebung wahrnehmen und die gewonnen Informationen an den Microcontroller weitergeben können. Ihr habt bereits einen Sensor kennegelernt: den Button. Auch sammelt eine Information über seine Umgebung (*wurde er gerdückt/ nicht gedrückt*) und gibt sie an den Arduino weiter.
 
 Da Auslesen von Sensor-Daten funktionert häufig über einen ``read``-Befehl. Es gibt zwei verschiedenen Versionen:
