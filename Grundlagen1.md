@@ -18,7 +18,7 @@ Bei den Pins für die **Stromversorgung** handelt es sich im Prinzip um Plus und
 
 Weiterhin gibt es die **digitalen und analogen Pins**. Das sind im Prinzip alles Pins die wir benutzen können um Signale von außen an den Arduino weiterzuleiten oder Signale vom Arduino selbst an andere Bauteile auszusenden. Beim Arduino sind diese Signale einfach verschieden hohe Spannungen, die vom Arduino und anderen Beispielen entsprechend interpretiert werden.
 
-Man kann die Pins also als **Input** für den Arduino oder **Output** aus dem Arduino heraus benutzen. Ein Beispiel wäre ein Temperatursensor. Dieser misst die Temperatur und gibt ein Signal zurück, das die Informationen für die Temperatur enthält. Dieses Signal kann dan an einen Input Pin des Arduinos weitergeleitet werden. Dieser erhält dann die Infos von dem Temperatursensor und kann damit arbeiten. Von den Output Pins aus kann der Arduino dann selbst Signale an ein anderes Bauteil weiterleiten. Zum Beispiel kann er einem Display signalisieren, was dieser anzeigen soll.
+Man kann die Pins also als **Input** für den Arduino oder **Output** aus dem Arduino heraus benutzen. Ein Beispiel wäre ein Temperatursensor. Dieser misst die Temperatur und gibt ein Signal zurück, das die Informationen für die Temperatur enthält. Dieses Signal kann dann an einen Input Pin des Arduinos weitergeleitet werden. Dieser erhält dann die Infos von dem Temperatursensor und kann damit arbeiten. Von den Output Pins aus kann der Arduino dann selbst Signale an ein anderes Bauteil weiterleiten. Zum Beispiel kann er einem Display signalisieren, was dieser anzeigen soll.
 
 Aber was ist nun der Unterschied zwischen analogen und digitalen Pins? Der liegt einfach darin, was für Signale die Pins empfangen und weiterleiten können. **Digitale Pins** senden nur digitale Signale. Das heißt, dass diese Signale **nur bestimmte Zustände annehmen können**: bei uns sind das **HIGH** und **LOW**. Dabei entspricht **HIGH** einer **hohen Spannung** an diesem Pin und **LOW** einer **niedrigen Spannung**. Ihr könnt euch HIGH als ein "an" und LOW als ein "aus" vorstellen.
 
@@ -36,7 +36,7 @@ Aber was ist nun der Unterschied zwischen analogen und digitalen Pins? Der liegt
 ### Die Arduino IDE
 Wie schon erwähnt können wir digitale und analoge Pins sowohl als Input oder als Output benutzen. Wofür ein Pin genau benutzt wird ist erstmal nicht klar festgelegt, das können wir aber durch Programmieren der Arduinos festlegen.
 
-Dafür schauen wir uns jetzt mal an wie wir das machen. Genauer schauen wir uns jetzt die **Arduino IDE** an. IDE ist kurz für Integrated Development Enviroment und ist einfach nur ein Programm in dem wir unseren Code schreiben können und das uns hilft diesen dann auf die Arduinos hochzuladen. 
+Dafür schauen wir uns jetzt mal an wie wir das machen. Genauer schauen wir uns jetzt die **Arduino IDE** an. IDE ist kurz für Integrated Development Environment und ist einfach nur ein Programm in dem wir unseren Code schreiben können und das uns hilft diesen dann auf die Arduinos hochzuladen. 
 
 <div class="aufgabe">
 <h3>🛠️ Aufgabe</h3>
@@ -48,7 +48,7 @@ Dafür schauen wir uns jetzt mal an wie wir das machen. Genauer schauen wir uns 
 
 Wenn ihr die Arduino IDE öffnet seht ihr direkt einen sogenannten neuen **Sketch**. Das ist einfach eine vorbereitete fast leere Datei in den ihr euren Code schreiben werdet
 
-Wenn du einen neuen Sketch öffnest siehst du direkt einige Zeilen Code. Dies ist die allgemeine Struktur für einen Arduino Sketch. Man schriebt den Code zwar in der Programmiersprache C++, aber für Arduinos und so zimelich jeden Mikrocontroller kann man sich an diese Struktur halten. 
+Wenn du einen neuen Sketch öffnest siehst du direkt einige Zeilen Code. Dies ist die allgemeine Struktur für einen Arduino Sketch. Man schriebt den Code zwar in der Programmiersprache C++, aber für Arduinos und so ziemlich jeden Mikrocontroller kann man sich an diese Struktur halten. 
 
 ```cpp
 void setup() {
@@ -60,12 +60,12 @@ void loop() {
 }
 ```
 
-Was du hier siehst sind zwei **Funktionen**, Codeblöcke die einen Namen haben und von einem Programm aufgerufen werden können. In den **geschweifeten Klammern { }** steht was diese Funktionen tun, also der Code der abgearbeitet wird, wenn sie aufgerufen werden. 
+Was du hier siehst sind zwei **Funktionen**, Codeblöcke die einen Namen haben und von einem Programm aufgerufen werden können. In den **geschweiften Klammern { }** steht was diese Funktionen tun, also der Code der abgearbeitet wird, wenn sie aufgerufen werden. 
 
 
-Die **Setup Funktion** wird automatisch **einmal zu Beginn des Programms** aufgerufen, also direkt sobald du deinen Code auf den Arduino geladen hast. Hier kannst du also einmalig bestimte Werte im Vornherein festlegen. Festlegen ob deine Pins als In- oder Output funktionieren etc. Diese Funktion **wird nur einmal aufgerufen**.
+Die **Setup Funktion** wird automatisch **einmal zu Beginn des Programms** aufgerufen, also direkt sobald du deinen Code auf den Arduino geladen hast. Hier kannst du also einmalig bestimmte Werte im Vornherein festlegen. Etwa ob deine Pins als In- oder Output funktionieren etc. Diese Funktion **wird nur einmal aufgerufen**.
 
-Die **Loop Funktion** ist, so wie es der name sagt eine Schleife, der Code den man in diese Funktion schreibt wird also **immer wieder, endlos oft ausgeführt**. Sie stellt den Hauptteil deines Programms dar. Hier drin kannst du zum Beispiel wenn du einen Temperatursensor an deinen Arduino anschließen willst, bei jeder der Widerholungen der Schleife einmal den Wert lesen, den der Sensor dir gibt und ihn dir anzeigen lassen.
+Die **Loop Funktion** ist, so wie es der Name sagt eine Schleife, der Code den man in diese Funktion schreibt wird also **immer wieder, endlos oft ausgeführt**. Sie stellt den Hauptteil deines Programms dar. Hier drin kannst du zum Beispiel wenn du einen Temperatursensor an deinen Arduino anschließen willst, bei jeder der Wiederholungen der Schleife einmal den Wert lesen, den der Sensor dir gibt und ihn dir anzeigen lassen.
 
 Für unser Projekt wirst du dich eigentlich nur in diesen beiden Funktionen wiederfinden. Man kann weitere schreiben, das ist aber für unsere Zwecke nicht notwendig.
 
@@ -83,25 +83,25 @@ Ein offener Sketch sollte so aussehen
 </div>
 
 Neben dieser Auswahlleiste sind auch drei andere Knöpfe. Der **Haken** kompiliert euren Code einmal. Das heißt, dass er ihn **für den Computer und den Arduino verständlich macht**. Und checkt außerdem, ob ihr irgendwelche syntaktischen Fehler in eurem Code gemacht habt. z.B ein Semikolon vergessen. Ob der Code auch so funktioniert wie ihr möchtet kann dabei nur begrenzt getestet werden.
-Der **Pfeil nach rechts** **läd euer Programm auf den Arduino**, wobei der Code auch nochmal **kompiliert** wird. Der Arduino führt sobald der Code hochgeladen wurde **einmal die Setup Funktion** durch und **danach immer wieder die Loop Funktion**.
+Der **Pfeil nach rechts** **lädt euer Programm auf den Arduino**, wobei der Code auch nochmal **kompiliert** wird. Der Arduino führt sobald der Code hochgeladen wurde **einmal die Setup Funktion** durch und **danach immer wieder die Loop Funktion**.
 
-Der Letzte Knopf mit dem **Dreieck und dem kleinen Käfer** ist für **Debugging**. Also um deinen Code auf Fehler zu testen. Damit werden wir uns hier aber noch nicht auseiandersetzen weil wir nicht so komplizierte Dinge machen 
+Der Letzte Knopf mit dem **Dreieck und dem kleinen Käfer** ist für **Debugging**. Also um deinen Code auf Fehler zu testen. Damit werden wir uns hier aber noch nicht auseinandersetzen weil wir nicht so komplizierte Dinge machen 
 
 
 #### Grundlegende Funktionen der Arduino IDE
 
 Jetzt wollen wir euch ein paar wichtige Grundfunktionen der Arduino IDE näherbringen.
 
-Funktionen kennt ihr schon von Setup und Loop. Im Allgemeinen kann eine Funktion aber alles mögliche sein. Oft kann man ihr gewisse Werte geben, mit denen die Funktion arbeiten soll. Und man erhält einen Wert als Rückgabe oder Ergebnis der Funktion. Ein regulärer Funktionsaufruf einer Funtion "beispiel" sähe also zum Beispiel so aus
+Funktionen kennt ihr schon von Setup und Loop. Im Allgemeinen kann eine Funktion aber alles mögliche sein. Oft kann man ihr gewisse Werte geben, mit denen die Funktion arbeiten soll. Und man erhält einen Wert als Rückgabe oder Ergebnis der Funktion. Ein regulärer Funktionsaufruf einer Funktion "beispiel" sähe also zum Beispiel so aus
 
 ```cpp
 int variable = beispiel(parameter_a, parameter_b);
 ```
 
-Hier würde eine Funktion "beispiel" mit den Parametern parameter_a und parameter_b aufgerufen werden. Diese nutzt dann die ihr übergebenen Paramter und berechnet zum Beispiel irgendeinen neuen Wert. Dieser Wert kann in einer neuen Variablen gespeichert werden, hier in "variable":
+Hier würde eine Funktion "beispiel" mit den Parametern parameter_a und parameter_b aufgerufen werden. Diese nutzt dann die ihr übergebenen Parameter und berechnet zum Beispiel irgendeinen neuen Wert. Dieser Wert kann in einer neuen Variablen gespeichert werden, hier in "variable":
 
 ##### pinMode
-Wir haben ja schon Pins besprochen und dass man diese als Input oder Output festlegen muss. Das kann man jetzt in der IDE machen! Ob ein Pin Input oder Output ist legt man nur einmal fest. Das kommt also **in die Setup Funktion**. Zum Festlegen von Input und Output gitb es bereits eine vorgefertigte Funktion **"pinMode"**. Dieser gibt man als Argumente einfach die Nummer von dem Pin, den man benutzen möchte und ob es INPUT der OUTPUT ist.
+Wir haben ja schon Pins besprochen und dass man diese als Input oder Output festlegen muss. Das kann man jetzt in der IDE machen! Ob ein Pin Input oder Output ist legt man nur einmal fest. Das kommt also **in die Setup Funktion**. Zum Festlegen von Input und Output gibt es bereits eine vorgefertigte Funktion **"pinMode"**. Dieser gibt man als Argumente einfach die Nummer von dem Pin, den man benutzen möchte und ob es INPUT der OUTPUT ist.
 
 Also Beispielsweise so:
 
@@ -127,17 +127,17 @@ Code beispiele
 
 ##### AnalogRead()
 
-**AnalogRead** ist das äquivalent von DigitalRead aber für **analoge INPUT Pins**, mit AnalogRead kann gelesen werden was gerade für eine Spannung an dem analogen INPUT Pin anliegt. Dieser Wert sollte direkt als Variable gespeichert werden. Dabei ist wichtig, dass AnalogRead einen Wert zwischen 0 und 1023 ausgibt, der repräsentiert was für ein Signal, bzw. was für eine Spannung am analogen Pin anliegt. 
+**AnalogRead** ist das Äquivalent von DigitalRead aber für **analoge INPUT Pins**, mit AnalogRead kann gelesen werden was gerade für eine Spannung an dem analogen INPUT Pin anliegt. Dieser Wert sollte direkt als Variable gespeichert werden. Dabei ist wichtig, dass AnalogRead einen Wert zwischen 0 und 1023 ausgibt, der repräsentiert was für ein Signal, bzw. was für eine Spannung am analogen Pin anliegt. 
 
 
 ##### AnalogWrite()
 
-**AnalogWrite** ist das **analoge Äquivalent für digitalWrite**. Hier kannst du einen **Wert zwischen 0 und 255** an einen **analogen OUTPUT Pin** anlegen. (Dies legt dann fest was für eine Spanung zwischen 0V und Betriebsspannung an diesem anliegen soll.)
+**AnalogWrite** ist das **analoge Äquivalent für digitalWrite**. Hier kannst du einen **Wert zwischen 0 und 255** an einen **analogen OUTPUT Pin** anlegen. (Dies legt dann fest was für eine Spannung, zwischen 0V und Betriebsspannung, an diesem anliegen soll.)
 
 
 ##### delay()
 
-Auch praktisch ist die **delay Funktion**. Diese sorgt dafür, dass das gesamte Programm eine gweisse Zeit anhält. Hier kann man in den Klammern als Parameter einfach angeben, wie lange das Programm warten soll, bis es weiterläuft. Die Zeit gibt man dabei in Millisekunden an. Ein Delay von einer Sekunde sähe also zum Beispiel so aus.
+Auch praktisch ist die **delay Funktion**. Diese sorgt dafür, dass das gesamte Programm eine gewisse Zeit anhält. Hier kann man in den Klammern als Parameter einfach angeben, wie lange das Programm warten soll, bis es weiterläuft. Die Zeit gibt man dabei in Millisekunden an. Ein Delay von einer Sekunde sähe also zum Beispiel so aus.
 
 ```cpp
 delay(1000);
