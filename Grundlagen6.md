@@ -18,18 +18,24 @@ Aber hier wollen wir Euch ein paar neue Grundkonzepte des Programmierens näherb
 
 Aber wie erstellt man ein solches Array. Hier einmal die Syntax:
 
-    int array[10]; // Ein Array mit dem Namen "array" erzeugen, das aus 10 Integern besteht
+```cpp
+int array[10]; // Ein Array mit dem Namen "array" erzeugen, das aus 10 Integern besteht
+```
 
 Anschließend kann man auf die **einzelnen Variablen im Array** mit einem **Index** zugreifen, den man in die **eckigen Klammern [ ]** schreibt. Dabei wird im Prinzip jeder Integer im Array nummeriert, wobei mit 0 für das erste Element begonnen wird. Diesen Kann man nutzen, um einem Integer im Array einen bestimmten Wert zuzuweisen.
 
-    array[0] // erster Eintrag des Arrays
-    array[9] // letztes Eintrag eines Arrays der Länge 10
+```cpp
+array[0] // erster Eintrag des Arrays
+array[9] // letztes Eintrag eines Arrays der Länge 10
 
-    array[0] = 3; //ersten Eintrag als 3 festlegen
+array[0] = 3; //ersten Eintrag als 3 festlegen
+```
 
 Man kann auch die **Werte der Variablen direkt zuweisen, wenn man das Array erstellt**. Die **Länge wird dabei automatisch festgelegt** und die Werte werden in **geschweiften Klammern { }** getrennt mit Kommas angegeben
 
-    int array[] = {1, 2, 3, 4, 5};
+```cpp
+int array[] = {1, 2, 3, 4, 5};
+```
 
 <div class="aufgabe">
 <h3>🛠️ Aufgabe</h3>
@@ -49,9 +55,11 @@ Man kann auch die **Werte der Variablen direkt zuweisen, wenn man das Array erst
 
 Die **While** (= englisch für "während") Schleife führt einen Code Abschnitt solange aus **während eine bestimmte Bedingung wahr ist**.
 
-    while (Bedingung) {
-          //Code der wiederholt wird
-    }
+```cpp
+while (Bedingung) {
+      //Code der wiederholt wird
+}
+```
 
 Die **Bedingung** kann dabei zum Beispiel ein **Vergleich von zwei Werten** sein. Beispielsweise die Aussage: Variable1 > Variable2. In diesem Fall läuft die Schleife solange diese Aussage stimmt.
 
@@ -62,31 +70,41 @@ Wichtig ist dabei, dass die Schleife erst abbricht sobald der Code im Schleifenk
 
 Die **For-Schleife** ist besonders **praktisch wenn man genau weiß wie oft ein Code Abschnitt wiederholt werden muss**. Und ist für uns auch hier am hilfreichsten. Sie arbeitet wie die While-Schleife auch mit einer Bedingung. Der **Schleifenkopf**, in dem zuvor nur die Bedingung stand ist aber etwas komplizierter aufgebaut.
 
-    for (Schleifenvariable deklarieren ; Abbruchbedingung ; Anpassen der Schleifenvariable) {
-          //Code der wiederholt wird
-    }
+```cpp
+for (Schleifenvariable deklarieren ; Abbruchbedingung ; Anpassen der Schleifenvariable) {
+      //Code der wiederholt wird
+}
+```
 
-Im ersten Teil des Schleifenkopfes erstellt man die sogenannte **Schleifenvariable**. Diese könnt Ihr euch als **Zähler** vorstellen, der zählt bei dem **wievielten Schleifendurchlauf** wir uns zur Zeit befinden und ist standardmäßig ein Integer mit dem Namen **"i"**, dem zu beginn der Wert 0 zugewiesen wird. Als nächstes legt man die **Abbruchbedingung** fest. Diese könnt Ihr euch vorstellen wie die Bedingung bei der **While-Schleife**. Sobald die Bedingung nicht mehr wahr ist und der Schleifenkörper zuende durchlaufen wurde bricht die Schleife ab. Die Bedingung enthält standardmäßig die **Schleifenvariable** und **wie oft die Schleife wiederholt werden soll**. Man würde also zum Beispiel sagen, solange die Schleifenvariable kleiner als ein bestimmter Wert ist, soll die Schleife laufen. Zuletzt wird im Schleifenkopf auch das Anpassen der Schleifenvariable festgelegt. Wenn wie oft die Schleife durchläuft davon abängt welchen Wert die Schleifenvariable hat, dann muss sich diese mit der Zeit ändern. Hierbei wird die Variable standardmäßig immer um eins erhöht. 
+Im ersten Teil des Schleifenkopfes erstellt man die sogenannte **Schleifenvariable**. Diese könnt Ihr euch als **Zähler** vorstellen, der zählt bei dem **wievielten Schleifendurchlauf** wir uns zur Zeit befinden und ist standardmäßig ein Integer mit dem Namen **"i"**, dem zu beginn der Wert 0 zugewiesen wird. 
+Als nächstes legt man die **Abbruchbedingung** fest. Diese könnt Ihr euch vorstellen wie die Bedingung bei der **While-Schleife**. Sobald die Bedingung nicht mehr wahr ist und der Schleifenkörper zuende durchlaufen wurde bricht die Schleife ab. Die Bedingung enthält standardmäßig die **Schleifenvariable** und **wie oft die Schleife wiederholt werden soll**. Man würde also zum Beispiel sagen, solange die Schleifenvariable kleiner als ein bestimmter Wert ist, soll die Schleife laufen.
+Zuletzt wird im Schleifenkopf auch das Anpassen der Schleifenvariable festgelegt. Wenn wie oft die Schleife durchläuft davon abängt welchen Wert die Schleifenvariable hat, dann muss sich diese mit der Zeit ändern. Hierbei wird die Variable standardmäßig immer um eins erhöht. 
 
 Man kann **For-Schleifen** sehr gut nutzen, um Arrays zu durchlaufen.
 
 Beispiel:
 Wir haben ein Array mit 5 Werten
 
-    int array[] = {1, 2, 3, 4, 5};
+```cpp
+int array[] = {1, 2, 3, 4, 5};
+```
 
 Hierbei ist die Abbruchbedingung "i < 5" , sie wiederholt sich also so lange wie i kleiner als 5 ist. Dabei beginnt i bei dem Wert 0, und jedes Mal nachdem der Code in der Schleife einmal durchgelaufen ist, wird i um 1 erhöht. Ihr könnt euch vorstellen, dass jedes mal, wenn die Schleife einmal durchläuft zurück in den Schleifenkopfe gesprungen wird, hier wird dann erneut überprüft, ob die Bedingung noch wahr ist und wenn ja, wird die Schleife wieder ausgeführt. i ist also zu Beginn 0, nach dem nächsten Durchlauf 1, nach dem nächsten 2 etc.
 
-    for (int i = 0; i < 5; i++) {
-          Serial.println("%d", array[i]);
-    }
+```cpp
+for (int i = 0; i < 5; i++) {
+      Serial.println("%d", array[i]);
+}
+```
 
 Praktischerweise ist i auch eine reguläre Variable und kann innerhalb der Schleife als solche benutzt werden. Da i die Werte von 0 bis 4 durchläuft, und ein Array der Länge 5 mit den Zahlen 0 bis 4 nummeriert ist, kann man i perfekt nutzen um auf die Variablen im Array zuzugreifen.
 
-diese Schleife würde also alle werte im array durchegehen und ausgeben
+Diese Schleife würde also alle Werte im Array durchgehen und ausgeben.
 
-Extrainfo:
-Hier seht Ihr im Schleifenkopf dort, wo die Schleifenvariable erhöht werden soll den Ausdruck "i++". Dies ist lediglich eine verkürzte Schreibweise für "i = i + 1" und erhöht i um 1:
+
+> 💡 **Hinweise:**
+> - Hier seht Ihr im Schleifenkopf dort, wo die Schleifenvariable erhöht werden soll den Ausdruck "i++". Dies ist lediglich eine verkürzte Schreibweise für "i = i  + 1" und erhöht i um 1.
+
 
 <div class="aufgabe">
 <h3>🛠️ Aufgabe</h3>
