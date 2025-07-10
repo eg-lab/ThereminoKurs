@@ -48,7 +48,7 @@ Warum? Wir nutzen <code>INPUT_PULLUP</code>. Das bedeutet: Der Pin wird vom Ardu
 ### Schaltplan
 
 <div class="schaltplan-box">
-  <img src="img/Schaltung_g3_v2.jpg" alt="Schaltplan Button">
+  <img src="img/Schaltung_g3_UNO.png" alt="Schaltplan Button">
 </div>
 
 ### Code

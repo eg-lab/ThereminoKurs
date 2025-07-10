@@ -106,7 +106,7 @@ Damit kannst du den Arduino so programmieren, dass er je nach Zustand des Button
 ### Schaltplan
 
 <div class="schaltplan-box">
-  <img src="img/Schaltung_g4.jpg" alt="Schaltplan Button und LED">
+  <img src="img/Schaltung_g4_UNO.png" alt="Schaltplan Button und LED">
 </div>
 
 <!-- 
