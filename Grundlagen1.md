@@ -34,7 +34,7 @@ Aber was ist nun der Unterschied zwischen analogen und digitalen Pins? Der liegt
 
 
 ### Die Arduino IDE
-Wie schon erwähnt können wir digitale und analoge Pins sowohl als Input oder als Output benutzen. Wofür ein Pin genau benutzt wird ist erstmal nicht klar festgelegt, das können wir aber durch Programmieren der Arduinos festlegen.
+Wie schon erwähnt können wir digitale und analoge Pins sowohl als Input als auch als Output benutzen. Wofür ein Pin genau benutzt wird ist erstmal nicht klar festgelegt, das können wir aber durch Programmieren der Arduinos festlegen.
 
 Dafür schauen wir uns jetzt mal an wie wir das machen. Genauer schauen wir uns jetzt die **Arduino IDE** an. IDE ist kurz für Integrated Development Environment und ist einfach nur ein Programm in dem wir unseren Code schreiben können und das uns hilft diesen dann auf die Arduinos hochzuladen. 
 
@@ -88,9 +88,39 @@ Der **Pfeil nach rechts** **lädt euer Programm auf den Arduino**, wobei der Cod
 Der Letzte Knopf mit dem **Dreieck und dem kleinen Käfer** ist für **Debugging**. Also um deinen Code auf Fehler zu testen. Damit werden wir uns hier aber noch nicht auseinandersetzen weil wir nicht so komplizierte Dinge machen 
 
 
-### Grundlegende Funktionen der Arduino IDE
+### Grundlegende Funktionen der Arduino IDE und Programmiersyntax
 
 Jetzt wollen wir euch ein paar wichtige Grundfunktionen der Arduino IDE näherbringen.
+
+Extrainfos: Variablen
+
+Variablen sind wie ihr sie auch aus Mathe kennt ein Platzhalter für alle möglichen Werte eines bestimmten Wertebereichs. Beim Programmieren könnt ihr sie euch als Objekt eines bestimmten Typs vorstellen indem ihr zu diesem passende Werte speichern könnt. Mit Variablen könnt ihr dann weiterrechnen wie ihr es mit dem Wert, den ihr darin gespeichert habt machen würdet und seinen Wert auch im Laufe eures Programms verändern. 
+Den Typ bzw. Datentyp den eine Variable haben kann speichert bestimmt welche Art von Wert man in ihr speichern kann. Also zum Beispiel eine ganze Zahl, eine Kommazahl, einen einzelnen Buchstaben etc.
+
+Die verschiedenen Datentypen mit denen wir arbeiten werden sind erstmal hauptsächlich Integer (ganze Zahlen) und Floats (Kommazahlen).
+
+In C++, also der Programmiersprache, die wir heute nutzen werden, erstellt man Variablen wie folgt:
+
+```cpp
+int ganze_Zahl;
+float kommazahl;
+```
+Wenn man die Variable das erste Mal erstellt muss man vor den Namen, den man ihr gibt den Datentyp schreiben, den sie haben soll, damit der Computer richtig mit ihr umgeht. Werte kann man ihnen einfach mit einem "=" zuweisen. Ist die Variable schon vorher erstellt worden muss der Datentyp auch nicht mehr davor geschrieben werden.
+
+```cpp
+ganze_Zahl = 3;
+float kommazahl = 1.7;
+```
+
+Natürlich kann man einer Variablen auch direkt, wenn man sie erstellt einen Wert zuweisen.
+
+```cpp
+int ganze_Zahl = 8;
+float kommazahl = 2.7;
+```
+
+Das Semikolon ";" zeigt das Ende einer Zeile an und sollte nicht vergessen werden.
+
 
 Funktionen kennt ihr schon von Setup und Loop. Im Allgemeinen kann eine Funktion aber alles mögliche sein. Oft kann man ihr gewisse Werte geben, mit denen die Funktion arbeiten soll. Und man erhält einen Wert als Rückgabe oder Ergebnis der Funktion. Ein regulärer Funktionsaufruf einer Funktion "beispiel" sähe also zum Beispiel so aus
 
