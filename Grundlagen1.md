@@ -124,7 +124,8 @@ int ganze_Zahl = 8;
 float kommazahl = 2.7;
 ```
 
-Das Semikolon ";" zeigt das Ende einer Zeile an und sollte nicht vergessen werden.
+> 💡 **Hinweise:**
+> - *Das Semikolon ";" zeigt das Ende einer Zeile an und sollte nicht vergessen werden.*
 
 #### Funktionen
 
@@ -139,7 +140,7 @@ Hier würde eine Funktion **"beispiel"** mit den Parametern **parameter_a** und 
 #### pinMode
 Wir haben ja schon Pins besprochen und dass man diese als Input oder Output festlegen muss. Das kann man jetzt in der IDE machen! Ob ein Pin Input oder Output ist legt man nur einmal fest. Das kommt also **in die Setup Funktion**. Zum Festlegen von Input und Output gibt es bereits eine vorgefertigte Funktion **"pinMode"**. Dieser gibt man als Argumente einfach die Nummer von dem Pin, den man benutzen möchte und ob es INPUT der OUTPUT ist.
 
-Also Beispielsweise so:
+Also beispielsweise so:
 
 ```cpp
 pinMode(10, INPUT);
