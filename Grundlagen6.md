@@ -7,6 +7,10 @@
 
 ## Grundlagen 6 - Eine Melodie spielen
 
+$$
+T = \frac{1}{f}
+$$
+
 Nun wisst ihr wie man einen Ton spielt und wie man dessen Höhe anpassen kann. Jetzt wollen wir uns kurz anschauen, wie man mit wenig Code eine ganze Melodie spielt.
 
 Natürlich könnte man einen Ton spielen, ein Delay einfügen, um festzulegen wie lange dieser gespielt wird und das für jeden Ton den man spielen möchte wiederholen.
