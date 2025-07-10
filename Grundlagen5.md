@@ -11,6 +11,10 @@
 
 **In diesem Kapitel lernst Du, wie man mit einem Piezo-Summer einen Ton spielen kann.** 
 
+$$
+T = \frac{1}{f}
+$$
+
 Wir hören einen Ton, wenn eine Schallwelle auf das Trommelfell in unseren Ohren trifft. Diese Schallwelle hat eine bestimmte *Amplitude*. Die Amplitude gibt die Höhe bzw. Tiefe der Wellenberge bzw. Wellentäler an und hängt mit der Lautsärke des Tons zusammen. 
 
 Wellenfunktionen sind außerdem periodische Funktionen. Das heißt, dass ein bestimmter Funktionswert in gleichbleibenden Abständen wieder auftaucht. Die *sinus*-Funktion hat zum Beispiel die Periode 2 \( \pi \), weil sin(0) = sin(0 + 2 \( \pi \)) = sin(0 + 2 \( \pi \) + 2 \( \pi \)) ist. Die *Periodendauer T* gibt an, wie viel Zeit das Durchlaufen einer Periode in Anspruch nimmt. 
