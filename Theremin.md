@@ -20,16 +20,16 @@ Bei einem herkömmlichen Theremin werden Töne erzeugt, wenn du deine Hand beweg
 Hier findest du einige Schaltpläne als Anregung. Du musst sie nicht genau nachbauen. Wenn du eine eigene Idee hast, kannst du sie auch kombinieren oder ändern. Wenn du dir unsicher bist, ob deine Schaltung funktioniert, frag lieber nochmal nach. 
 
 <div class="schaltplan-box">
-  <img src="img/Schaltung_theremin.jpg" alt="Theremin-Grundschaltung">
+  <img src="img/Schaltung_Theremin.png" alt="Theremin-Grundschaltung">
   <p><em>Beispiel: Ultraschallsensor + Piezo für Töne</em></p>
 </div>
 
 <div class="schaltplan-box">
-  <img src="img/Schaltung_theremin_led.jpg" alt="Theremin mit LED">
+  <img src="img/Schaltung_t3.png" alt="Theremin mit LED">
   <p><em>Beispiel: Ultraschallsensor + LED, die je nach Abstand leuchtet</em></p>
 </div>
 
-<div class="schaltplan-box">
+<!-- <div class="schaltplan-box">
   <img src="img/Schaltung_theremin_button.jpg" alt="Theremin mit Taster">
   <p><em>Beispiel: Zusätzlich ein Taster zum Umschalten</em></p>
 </div>
@@ -37,7 +37,7 @@ Hier findest du einige Schaltpläne als Anregung. Du musst sie nicht genau nachb
 <div class="schaltplan-box">
   <img src="img/Schaltung_theremin_phototransistor.jpg" alt="Theremin mit Phototransistor">
   <p><em>Beispiel: Phototransistor für ein weiteres Steuersignal (optional)</em></p>
-</div>
+</div> -->
 
 
 
