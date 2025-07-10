@@ -14,33 +14,49 @@ Wie ihr wisst, wollen wir heute mit Arduinos arbeiten. Aber was ist das überhau
 Aber wie arbeitet man mit einem Arduino. Am wichtigsten für die Kommunikation mit dem Arduino sind die verschiedenen Anschlüsse oder **Pins**.
 Dabei gibt es verschiedene Arten. Für uns wichtig sind erstmal nur die Pins für die **Stromversorgung**, sowie **digitale** und **analoge Pins**.
 
-Bei den Pins für die **Stromversorgung** handelt es sich im Prinzip um Plus und Minuspole an denen der Arduino eine Betriebsspannung erzeugen kann, wenn er an einen Computer oder Laptop angeschlossen ist. Dadurch brauchen wir also keine äußere Spannungsquelle wenn wir beispielsweise eine LED anschließen wollen. Ihr könnt einfach den + und --Pol des Arduinos dafür benutzen. 
+Bei den Pins für die **Stromversorgung** handelt es sich im Prinzip um Plus und Minuspole an denen der Arduino eine Betriebsspannung erzeugen kann, wenn er an einen Computer oder Laptop angeschlossen ist. Dadurch brauchen wir also keine äußere Spannungsquelle wenn wir beispielsweise eine LED anschließen wollen. Ihr könnt einfach den **+ und - Pol** des Arduinos dafür benutzen. 
 
 Weiterhin gibt es die **digitalen und analogen Pins**. Das sind im Prinzip alles Pins die wir benutzen können um Signale von außen an den Arduino weiterzuleiten oder Signale vom Arduino selbst an andere Bauteile auszusenden. Beim Arduino sind diese Signale einfach verschieden hohe Spannungen, die vom Arduino und anderen Beispielen entsprechend interpretiert werden.
 
 Man kann die Pins also als **Input** für den Arduino oder **Output** aus dem Arduino heraus benutzen. Ein Beispiel wäre ein Temperatursensor. Dieser misst die Temperatur und gibt ein Signal zurück, das die Informationen für die Temperatur enthält. Dieses Signal kann dan an einen Input Pin des Arduinos weitergeleitet werden. Dieser erhält dann die Infos von dem Temperatursensor und kann damit arbeiten. Von den Output Pins aus kann der Arduino dann selbst Signale an ein anderes Bauteil weiterleiten. Zum Beispiel kann er einem Display signalisieren, was dieser anzeigen soll.
 
-Aber was ist nun der Unterschied zwischen analogen und digitalen Pins? Der liegt einfach darin, was für Signale die Pins empfangen und weiterleiten können. **Digitale Pins** senden nur digitale Signale. Das heißt, dass diese Signale **nur bestimmte Zustände annehmen können**: bei uns sind das HIGH und LOW. Dabei entspricht HIGH einer hohen Spannung an diesem Pin und LOW einer niedrigen Spannung. Ihr könnt euch HIGH als ein "an" und LOW als ein "aus" vorstellen.
+Aber was ist nun der Unterschied zwischen analogen und digitalen Pins? Der liegt einfach darin, was für Signale die Pins empfangen und weiterleiten können. **Digitale Pins** senden nur digitale Signale. Das heißt, dass diese Signale **nur bestimmte Zustände annehmen können**: bei uns sind das **HIGH** und **LOW**. Dabei entspricht **HIGH** einer **hohen Spannung** an diesem Pin und **LOW** einer **niedrigen Spannung**. Ihr könnt euch HIGH als ein "an" und LOW als ein "aus" vorstellen.
 
 **Analoge** Pins können nur analoge Signale empfangen oder weiterleiten. Analoge Signale sind im Gegensatz zu digitalen **kontinuierlich**. Sie können bei uns also **alle möglichen Werte in einem bestimmten Wertebereich annehmen**. 
 
-Wie schon erwähnt können wir digitale und analoge Pins sowohl als Input oder als Output benutzen. Wofür ein Pin genau benutzt wird ist erstmal nicht klar festgelegt, das können wir aber durch Programmieren der Arduinos festlegen.
+<div class="aufgabe">
+<h3>🛠️ Aufgabe</h3>
+<ol>
+  <li>Schau dir den Arduino an und finde alle erwähnten Arten von Pins</li>
+</ol>
+</div>
+
+
 
 ### Die Arduino IDE
+Wie schon erwähnt können wir digitale und analoge Pins sowohl als Input oder als Output benutzen. Wofür ein Pin genau benutzt wird ist erstmal nicht klar festgelegt, das können wir aber durch Programmieren der Arduinos festlegen.
 
 Dafür schauen wir uns jetzt mal an wie wir das machen. Genauer schauen wir uns jetzt die **Arduino IDE** an. IDE ist kurz für Integrated Development Enviroment und ist einfach nur ein Programm in dem wir unseren Code schreiben können und das uns hilft diesen dann auf die Arduinos hochzuladen. 
+
+<div class="aufgabe">
+<h3>🛠️ Aufgabe</h3>
+<ol>
+  <li>Lies dir genau die Infos durch</li>
+  <li>Finde parallel die erwähnten Funktionen in der Arduino IDE</li>
+</ol>
+</div>
 
 Wenn ihr die Arduino IDE öffnet seht ihr direkt einen sogenannten neuen **Sketch**. Das ist einfach eine vorbereitete fast leere Datei in den ihr euren Code schreiben werdet
 
 Wenn du einen neuen Sketch öffnest siehst du direkt einige Zeilen Code. Dies ist die allgemeine Struktur für einen Arduino Sketch. Man schriebt den Code zwar in der Programmiersprache C++, aber für Arduinos und so zimelich jeden Mikrocontroller kann man sich an diese Struktur halten. 
 
 ```cpp
-int setup() {
-    //smthg
+void setup() {
+    //Setup Code, der einmal ausgeführt wird
 }
 
-int loop() {
-    //smthg else
+void loop() {
+    //Hauptteil des Codes, der wiederholt ausgeführt wird
 }
 ```
 
@@ -56,6 +72,15 @@ Für unser Projekt wirst du dich eigentlich nur in diesen beiden Funktionen wied
 #### Verbindung mit dem Arduino
 
 Bevor wir irgendetwas auf den Arduino hochladen können müssen wir diesen aber zuerst einmal **mit der IDE verbinden**, damit sie weiß um was für einen Mikrocontroller es sich handelt etc. Dafür könnt ihr oben auf der **dunkelgrünen Leiste** einmal auf das **Auswahlfeld neben dem USB Zeichen** klicken und dann unter **Boards** nach **Arduino Uno** suchen und diesen auswählen.
+
+Ein offener Sketch sollte so aussehen
+
+<div class="aufgabe">
+<h3>🛠️ Aufgabe</h3>
+<ol>
+  <li>Verbinde deinen Arduino Uno mit der Arduino IDE</li>
+</ol>
+</div>
 
 Neben dieser Auswahlleiste sind auch drei andere Knöpfe. Der **Haken** kompiliert euren Code einmal. Das heißt, dass er ihn **für den Computer und den Arduino verständlich macht**. Und checkt außerdem, ob ihr irgendwelche syntaktischen Fehler in eurem Code gemacht habt. z.B ein Semikolon vergessen. Ob der Code auch so funktioniert wie ihr möchtet kann dabei nur begrenzt getestet werden.
 Der **Pfeil nach rechts** **läd euer Programm auf den Arduino**, wobei der Code auch nochmal **kompiliert** wird. Der Arduino führt sobald der Code hochgeladen wurde **einmal die Setup Funktion** durch und **danach immer wieder die Loop Funktion**.
@@ -91,7 +116,7 @@ Und wie kann man über diesen Pin jetzt Signale empfangen oder senden? Dafür gi
 
 ##### DigitalRead()
 
-**DigitalRead** kann für einen **digitalen INPUT Pin** aufgerufen werden und erkennt ob das Signal, das dieser sendet gerade HIGH oder LOW ist und speichert es für dich in einer Variablen mit der du dann arbeiten kannst.
+**DigitalRead** kann für einen **digitalen INPUT Pin** aufgerufen werden und erkennt ob das Signal, das dieser sendet gerade HIGH oder LOW ist. Diesen Wert kannst und solltest du direkt in einer Variablen speichern, um dann damit weiter zu arbeiten
 
 ##### DigitalWrite()
 
@@ -102,7 +127,7 @@ Code beispiele
 
 ##### AnalogRead()
 
-**AnalogRead** ist das äquivalent von DigitalRead aber für **analoge INPUT Pins**, mit AnalogRead kann gelesen werden was gerade für eine Spannung an dem analogen INPUT Pin anliegt und speichert sie wieder in einer Variablen. Dabei ist wichtig, dass AnalogRead einen Wert zwischen 0 und 1023 ausgibt, der repräsentiert was für ein Signal (eine Spannung) am analogen Pin anliegt. 
+**AnalogRead** ist das äquivalent von DigitalRead aber für **analoge INPUT Pins**, mit AnalogRead kann gelesen werden was gerade für eine Spannung an dem analogen INPUT Pin anliegt. Dieser Wert sollte direkt als Variable gespeichert werden. Dabei ist wichtig, dass AnalogRead einen Wert zwischen 0 und 1023 ausgibt, der repräsentiert was für ein Signal, bzw. was für eine Spannung am analogen Pin anliegt. 
 
 
 ##### AnalogWrite()
