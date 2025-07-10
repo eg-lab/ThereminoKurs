@@ -28,7 +28,7 @@ Ein Phototransistor ermöglich uns also ein **Spannung abhängig von der Lichtin
 ### Schaltplan
 
 <div class="schaltplan-box">
-  <img src="img/phototransistor_aufbau" alt="Schaltplan Phototransistor">
+  <img src="img/phototransistor_aufbau.jpg" alt="Schaltplan Phototransistor">
 </div>
 
 
