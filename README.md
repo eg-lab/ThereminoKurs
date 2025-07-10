@@ -27,7 +27,7 @@ Für diesen Kurs benötigt jede Arbeitsgruppe (bestehend aus 1 bis 2 Schülerinn
 | LEDs                      | mind. 2          | z. B. rot, blau                               |
 | Widerstände               | mehrere          | 220–330 Ohm für LEDs, ggf. 10k Ohm für Taster |
 | Taster (Button)           | 1–2              |                                               |
-| Jumper-Kabel              | ca. 6            | männlich-männlich, verschiedene Farben        |
+| Jumper-Kabel              | ca. 6            | Stecker-Stecker, verschiedene Farben        |
 | Ultraschallsensor         | 1                | für das Theremin                              |
 | Piezo-Lautsprecher        | 1                | für Tonausgabe                                |
 | Optional: Phototransistor | 1                | für Bonus-Aufgaben                            |
@@ -36,6 +36,7 @@ Für diesen Kurs benötigt jede Arbeitsgruppe (bestehend aus 1 bis 2 Schülerinn
 ## 🔗 Quellen & Inspiration
 
 - Grundlagen 3 – Button Tutorial: [roboticsbackend.com/arduino-push-button-tutorial](https://roboticsbackend.com/arduino-push-button-tutorial/)
+- Theremin: [https://www.circuits-diy.com/ultrasonic-sensor-with-piezo-buzzer-arduino-tutorial/https://www.circuits-diy.com](ultrasonic-sensor-with-piezo-buzzer-arduino-tutorial/)
 
 ## 🌐 Externe Bildquellen
 
