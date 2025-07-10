@@ -1,4 +1,6 @@
 <link rel="stylesheet" href="assets/css/custom.css?v=2">
+<script id="MathJax-script" async
+ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <div class="nav-container">
   <a href="Grundlagen4" class="button">Zurück</a>
@@ -11,7 +13,7 @@
 
 Wir hören einen Ton, wenn eine Schallwelle auf das Trommelfell in unseren Ohren trifft. Diese Schallwelle hat eine bestimmte *Amplitude*. Die Amplitude gibt die Höhe bzw. Tiefe der Wellenberge bzw. Wellentäler an und hängt mit der Lautsärke des Tons zusammen. 
 
-Wellenfunktionen sind außerdem periodische Funktionen. Das heißt, dass ein bestimmter Funktionswert in gleichbleibenden Abständen wieder auftaucht. Die *sinus*-Funktion hat zum Beispiel die Periode 2 $\pi$, weil sin(0) = sin(0 + 2 $\pi$) = sin(0 + 2 $\pi$ + 2 $\pi$) ist. Die *Periodendauer T* gibt an, wie viel Zeit das Durchlaufen einer Periode in Anspruch nimmt. 
+Wellenfunktionen sind außerdem periodische Funktionen. Das heißt, dass ein bestimmter Funktionswert in gleichbleibenden Abständen wieder auftaucht. Die *sinus*-Funktion hat zum Beispiel die Periode 2 \( \pi \), weil sin(0) = sin(0 + 2 \( \pi \)) = sin(0 + 2 \( \pi \) + 2 \( \pi \)) ist. Die *Periodendauer T* gibt an, wie viel Zeit das Durchlaufen einer Periode in Anspruch nimmt. 
 
 Einer Schallwelle kann man außerdem eine *Frequenz f* zuordnen. Diese gibt an, wie viele Perioden pro Sekunde durchlaufen werden und lässt sich wie folgt berechnen: *f* = 1/T. Die Frequenz mit der Tonhöhe zusammen, also zum Beispiel damit, ob wir ein **c** oder ein **d** hören. Die Einheit der Frequenz ist Hertz, was mit Hz abgekürzt wird, und so viel wie *pro Sekunde* bedeutet.
 
