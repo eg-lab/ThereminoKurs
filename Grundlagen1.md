@@ -19,7 +19,7 @@ Wie ihr wisst, wollen wir heute mit Arduinos arbeiten. Aber was ist das überhau
 Aber wie arbeitet man mit einem Arduino. Am wichtigsten für die Kommunikation mit dem Arduino sind die verschiedenen Anschlüsse oder **Pins**.
 Dabei gibt es verschiedene Arten. Für uns wichtig sind erstmal nur die Pins für die **Stromversorgung**, sowie **digitale** und **analoge Pins**.
 
-Bei den Pins für die **Stromversorgung** handelt es sich im Prinzip um Plus und Minuspole an denen der Arduino eine Betriebsspannung erzeugen kann, wenn er an einen Computer oder Laptop angeschlossen ist. Dadurch brauchen wir also keine äußere Spannungsquelle wenn wir beispielsweise eine LED anschließen wollen. Ihr könnt einfach den **+ und - Pol** des Arduinos dafür benutzen. 
+Bei den Pins für die **Stromversorgung** handelt es sich im Prinzip um Plus und Minuspole an denen der Arduino eine Betriebsspannung erzeugen kann, wenn er an einen Computer oder Laptop angeschlossen ist. Dadurch brauchen wir also keine äußere Spannungsquelle wenn wir beispielsweise eine LED anschließen wollen. Ihr könnt einfach die **5V oder 3.3V Pins (Pluspole)** bzw **GND Pins (Minuspole)** des Arduinos dafür benutzen. 
 
 Weiterhin gibt es die **digitalen und analogen Pins**. Das sind im Prinzip alles Pins die wir benutzen können um Signale von außen an den Arduino weiterzuleiten oder Signale vom Arduino selbst an andere Bauteile auszusenden. Beim Arduino sind diese Signale einfach verschieden hohe Spannungen, die vom Arduino und anderen Beispielen entsprechend interpretiert werden.
 
@@ -53,7 +53,7 @@ Dafür schauen wir uns jetzt mal an wie wir das machen. Genauer schauen wir uns 
 
 Wenn ihr die Arduino IDE öffnet seht ihr direkt einen sogenannten neuen **Sketch**. Das ist einfach eine vorbereitete fast leere Datei in den ihr euren Code schreiben werdet
 
-Wenn du einen neuen Sketch öffnest siehst du direkt einige Zeilen Code. Dies ist die allgemeine Struktur für einen Arduino Sketch. Man schriebt den Code zwar in der Programmiersprache C++, aber für Arduinos und so ziemlich jeden Mikrocontroller kann man sich an diese Struktur halten. 
+Wenn du einen neuen Sketch öffnest siehst du direkt einige Zeilen Code. Dies ist die allgemeine Struktur für einen Arduino Sketch.
 
 ```cpp
 void setup() {
