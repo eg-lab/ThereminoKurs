@@ -88,7 +88,7 @@ Der **Pfeil nach rechts** **lädt euer Programm auf den Arduino**, wobei der Cod
 Der Letzte Knopf mit dem **Dreieck und dem kleinen Käfer** ist für **Debugging**. Also um deinen Code auf Fehler zu testen. Damit werden wir uns hier aber noch nicht auseinandersetzen weil wir nicht so komplizierte Dinge machen 
 
 
-#### Grundlegende Funktionen der Arduino IDE
+### Grundlegende Funktionen der Arduino IDE
 
 Jetzt wollen wir euch ein paar wichtige Grundfunktionen der Arduino IDE näherbringen.
 
@@ -100,7 +100,7 @@ int variable = beispiel(parameter_a, parameter_b);
 
 Hier würde eine Funktion "beispiel" mit den Parametern parameter_a und parameter_b aufgerufen werden. Diese nutzt dann die ihr übergebenen Parameter und berechnet zum Beispiel irgendeinen neuen Wert. Dieser Wert kann in einer neuen Variablen gespeichert werden, hier in "variable":
 
-##### pinMode
+#### pinMode
 Wir haben ja schon Pins besprochen und dass man diese als Input oder Output festlegen muss. Das kann man jetzt in der IDE machen! Ob ein Pin Input oder Output ist legt man nur einmal fest. Das kommt also **in die Setup Funktion**. Zum Festlegen von Input und Output gibt es bereits eine vorgefertigte Funktion **"pinMode"**. Dieser gibt man als Argumente einfach die Nummer von dem Pin, den man benutzen möchte und ob es INPUT der OUTPUT ist.
 
 Also Beispielsweise so:
@@ -110,32 +110,46 @@ pinMode(10, INPUT);
 ```
 
 
-##### Read- und Write Funktionen
+#### Read- und Write Funktionen
 
 Und wie kann man über diesen Pin jetzt Signale empfangen oder senden? Dafür gibt es weitere vorgefertigte Funktionen. Nämlich die **Read- und Write Funktionen**. Dabei gibt es jeweils eine für digitale Pins und analoge Pins.
 
-##### DigitalRead()
+#### DigitalRead()
 
 **DigitalRead** kann für einen **digitalen INPUT Pin** aufgerufen werden und erkennt ob das Signal, das dieser sendet gerade HIGH oder LOW ist. Diesen Wert kannst und solltest du direkt in einer Variablen speichern, um dann damit weiter zu arbeiten
 
-##### DigitalWrite()
+```cpp
+int gelesener_Wert = digitalRead(input_pin);
+```
+
+#### DigitalWrite()
 
 **DigitalWrite** kann für einen **digitalen OUTPUT Pin** aufgerufen werden und legt fest, ob an diesem Pin jetzt das Signal **HIGH oder LOW** gesendet werden soll
 
-Code beispiele
+```cpp
+digitalWrite(output_pin, wert) // "wert" kann HIGH oder LOW sein
+```
 
 
-##### AnalogRead()
+#### AnalogRead()
 
 **AnalogRead** ist das Äquivalent von DigitalRead aber für **analoge INPUT Pins**, mit AnalogRead kann gelesen werden was gerade für eine Spannung an dem analogen INPUT Pin anliegt. Dieser Wert sollte direkt als Variable gespeichert werden. Dabei ist wichtig, dass AnalogRead einen Wert zwischen 0 und 1023 ausgibt, der repräsentiert was für ein Signal, bzw. was für eine Spannung am analogen Pin anliegt. 
 
+```cpp
+int gelesener_Wert = analogRead(input_pin);
+```
 
-##### AnalogWrite()
+
+#### AnalogWrite()
 
 **AnalogWrite** ist das **analoge Äquivalent für digitalWrite**. Hier kannst du einen **Wert zwischen 0 und 255** an einen **analogen OUTPUT Pin** anlegen. (Dies legt dann fest was für eine Spannung, zwischen 0V und Betriebsspannung, an diesem anliegen soll.)
 
+```cpp
+analogWrite(output_pin, wert) // "wert" kann zwischen 0 und 255 liegen
+```
 
-##### delay()
+
+#### delay()
 
 Auch praktisch ist die **delay Funktion**. Diese sorgt dafür, dass das gesamte Programm eine gewisse Zeit anhält. Hier kann man in den Klammern als Parameter einfach angeben, wie lange das Programm warten soll, bis es weiterläuft. Die Zeit gibt man dabei in Millisekunden an. Ein Delay von einer Sekunde sähe also zum Beispiel so aus.
 
@@ -144,7 +158,7 @@ delay(1000);
 ```
 
 
-##### Kommentare
+#### Kommentare
 
 Wenn ihr für bessere Verständlichkeit kleine Notizen zu eurem Code machen möchtet könnt ihr einfach Kommentare direkt in den Quellcode schreiben. // am Beginn einer Zeile signalisieren dabei einen Kommentar und sorgen dafür, dass diese Zeile einfach vom Computer ignoriert wird.
 
