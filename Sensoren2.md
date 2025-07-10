@@ -25,6 +25,12 @@ Ein Phototransistor ermöglich uns also ein **Spannung abhängig von der Lichtin
 </ol>
 </div>
 
+### Schaltplan
+
+<div class="schaltplan-box">
+  <img src="img/phototransistor_aufbau" alt="Schaltplan Phototransistor">
+</div>
+
 
 Bei unserem Theremin haben wir es bisher geschafft abhängig von dem Abstand von unserer Hand zum Ultraschallsensor unterschiedliche Töne zu spielen. Den Phototransistor wollen wir jetzt nutzen, um **abhängig von der Lichtintensität festzulegen, in welcher Oktave wir uns befinden**.
 
