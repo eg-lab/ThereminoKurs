@@ -16,16 +16,16 @@ Wie ihr wisst, wollen wir heute mit Arduinos arbeiten. Aber was ist das überhau
 
 ### Aufbau des Arduinos
 #### Pins
-Aber wie arbeitet man mit einem Arduino. Am wichtigsten für die Kommunikation mit dem Arduino sind die verschiedenen Anschlüsse oder **Pins**.
+Nun wollen wir uns anschauen, wie man mit einem Arduino arbeitet. Am wichtigsten für die Kommunikation mit dem Arduino sind die verschiedenen Anschlüsse oder **Pins**.
 Dabei gibt es verschiedene Arten. Für uns wichtig sind erstmal nur die Pins für die **Stromversorgung**, sowie **digitale** und **analoge Pins**.
 
 Bei den Pins für die **Stromversorgung** handelt es sich im Prinzip um Plus und Minuspole an denen der Arduino eine Betriebsspannung erzeugen kann, wenn er an einen Computer oder Laptop angeschlossen ist. Dadurch brauchen wir also keine äußere Spannungsquelle wenn wir beispielsweise eine LED anschließen wollen. Ihr könnt einfach die **5V oder 3.3V Pins (Pluspole)** bzw **GND Pins (Minuspole)** des Arduinos dafür benutzen. 
 
 Weiterhin gibt es die **digitalen und analogen Pins**. Das sind im Prinzip alles Pins die wir benutzen können um Signale von außen an den Arduino weiterzuleiten oder Signale vom Arduino selbst an andere Bauteile auszusenden. Beim Arduino sind diese Signale einfach verschieden hohe Spannungen, die vom Arduino und anderen Beispielen entsprechend interpretiert werden.
 
-Man kann die Pins also als **Input** für den Arduino oder **Output** aus dem Arduino heraus benutzen. Ein Beispiel wäre ein Temperatursensor. Dieser misst die Temperatur und gibt ein Signal zurück, das die Informationen für die Temperatur enthält. Dieses Signal kann dann an einen Input Pin des Arduinos weitergeleitet werden. Dieser erhält dann die Infos von dem Temperatursensor und kann damit arbeiten. Von den Output Pins aus kann der Arduino dann selbst Signale an ein anderes Bauteil weiterleiten. Zum Beispiel kann er einem Display signalisieren, was dieser anzeigen soll.
+Man kann diese Pins also als **Input** für den Arduino oder **Output** aus dem Arduino heraus benutzen. Ein Beispiel wäre ein Temperatursensor. Dieser misst die Temperatur und gibt ein Signal zurück, das die Informationen für die Temperatur enthält. Dieses Signal kann dann an einen Input Pin des Arduinos weitergeleitet werden. Dieser erhält dann die Infos von dem Temperatursensor und kann damit arbeiten. Von den Output Pins aus kann der Arduino dann selbst Signale an ein anderes Bauteil weiterleiten. Zum Beispiel kann er einem Display signalisieren, was dieser anzeigen soll.
 
-Aber was ist nun der Unterschied zwischen analogen und digitalen Pins? Der liegt einfach darin, was für Signale die Pins empfangen und weiterleiten können. **Digitale Pins** senden nur digitale Signale. Das heißt, dass diese Signale **nur bestimmte Zustände annehmen können**: bei uns sind das **HIGH** und **LOW**. Dabei entspricht **HIGH** einer **hohen Spannung** an diesem Pin und **LOW** einer **niedrigen Spannung**. Ihr könnt euch HIGH als ein "an" und LOW als ein "aus" vorstellen.
+Der Unterschied zwischen analogen und digitalen Pins liegt einfach darin, was für Signale die Pins empfangen und weiterleiten können. **Digitale Pins** senden nur digitale Signale. Das heißt, dass diese Signale **nur bestimmte Zustände annehmen können**: bei uns sind das **HIGH** und **LOW**. Dabei entspricht **HIGH** einer **hohen Spannung** an diesem Pin und **LOW** einer **niedrigen Spannung**. Ihr könnt euch HIGH als ein "an" und LOW als ein "aus" vorstellen.
 
 **Analoge** Pins können nur analoge Signale empfangen oder weiterleiten. Analoge Signale sind im Gegensatz zu digitalen **kontinuierlich**. Sie können bei uns also **alle möglichen Werte in einem bestimmten Wertebereich annehmen**. 
 
