@@ -14,15 +14,15 @@ Aber hier wollen wir Euch ein paar neue Grundkonzepte des Programmierens näherb
 
 ### Arrays
 
-**Arrays** könnt Ihr euch vorstellen wie eine **Liste oder Tabelle** an einzelnen **Variablen vom gleichen Datentyp**. Also zum Beispiel einem Integer oder einem float. Ihr könnt beim Erstellen dieser Liste **festlegen wie lang** sie sein soll und sie anschließend **mit verschiedenen Werten füllen**.
+**Arrays** könnt Ihr euch vorstellen wie eine **Liste oder Tabelle** an einzelnen **Variablen vom gleichen Datentyp**. Also zum Beispiel einem Integer oder einem Float. Ihr könnt beim Erstellen dieser Liste **festlegen wie lang** sie sein soll und sie anschließend **mit verschiedenen Werten füllen**.
 
-Aber wie erstellt man ein solches Array. Hier einmal die Syntax:
+Aber wie erstellt man ein solches Array? Hier einmal die Syntax:
 
 ```cpp
 int array[10]; // Ein Array mit dem Namen "array" erzeugen, das aus 10 Integern besteht
 ```
 
-Anschließend kann man auf die **einzelnen Variablen im Array** mit einem **Index** zugreifen, den man in die **eckigen Klammern [ ]** schreibt. Dabei wird im Prinzip jeder Integer im Array nummeriert, wobei mit 0 für das erste Element begonnen wird. Diesen Kann man nutzen, um einem Integer im Array einen bestimmten Wert zuzuweisen.
+Die **einzelnen Variablen im Array** haben jeweils einen **Index**. Das ist einfach eine Zahl, die angibt **an welcher Stelle im Array** die Variable steht. Dabei wird im Prinzip jede Variable im Array nummeriert, wobei mit **0 für das erste Element begonnen wird**, dann 1 für das zweite und so weiter. Den Index kann man nutzen, um auf eine Variable im Array direkt zuzugreifen. Mit dieser kann man dann zum Beispiel rechnen, oder ihr einen neuen Wert zuweisen:
 
 ```cpp
 array[0] // erster Eintrag des Arrays
@@ -93,7 +93,7 @@ Hierbei ist die Abbruchbedingung "i < 5" , sie wiederholt sich also so lange wie
 
 ```cpp
 for (int i = 0; i < 5; i++) {
-      Serial.println("%d", array[i]);
+      Serial.println(array[i]);
 }
 ```
 
