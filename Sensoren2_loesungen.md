@@ -1,3 +1,5 @@
+## Lösungsvorschlag für die Aufgabe
+
 ```cpp
 #define photoPin A0
 #define tonePin 3
