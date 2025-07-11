@@ -124,7 +124,7 @@ int ganze_Zahl = 8;
 float kommazahl = 2.7;
 ```
 
-> 💡 **Hinweise:**
+> 💡 **Hinweis:**
 > - *Das Semikolon ";" zeigt das Ende einer Zeile an und sollte nicht vergessen werden.*
 
 #### Funktionen
