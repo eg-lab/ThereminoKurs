@@ -1,4 +1,4 @@
-## Lösungsvorschläge für die Aufgabe
+## Lösungsvorschlag für die Aufgabe
 
 
 ```cpp
