@@ -66,8 +66,8 @@ tonMatrix[2][0];
 Hierbei steht in den **ersten** eckigen Klammern [ ] **aus welcher Oktave** von 0 bis 5 Ihr einen Ton spielen möchtet. In den **zweiten** eckigen Klammern [ ] steht **der Ton, den Ihr spielen möchtet**. Die Töne beginnen mit C beim Index 0, über C# bei 1, D bei 2, und so weiter bis zu H beim Index 11.
 Im Code Beispiel würde man also die Frequenz von einem C der zweiten Oktave erhalten.
 
-> 💡 **Hinweis:**
-> *Einbinden solltest Du den Code am besten außerhalb von Setup und Loop direkt unter deinen Pin Definitionen*
+> - 💡 **Hinweis:**
+> -*Einbinden solltest Du den Code am besten außerhalb von Setup und Loop direkt unter deinen Pin Definitionen*
 
 
 
