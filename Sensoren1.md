@@ -41,13 +41,8 @@ Jetzt wissen wir ungefähr, wie ein Ultraschallsensor funktioniert. Der Ultrasch
 
 <p align="center"><img src="img/UltraschallSensorBild.png" width="300" alt="Ultraschallsensor HC-SR04"></p>
 
-## 🛠️ Aufgabe: Ultraschall-Sensor anschließen
+## 🛠️ Aufgabe: Ultraschall-Sensor anschließenv
 
-1. Schließe den Ultraschall nach folgendem Schaltplan an deinen Arduino an.
-
-Um den Ultraschall-Sensor anzusteuern brauchen wir eine neue Funktion: die Funktion ``pulseIn(pin, value)``. Dieser Funktion übergibt man einen ``pin``, an dem der Arduino Werte einlesen soll. Außerdem erhält die Funktion den ``value`` HIGH oder LOW. Wir werden der Funktion den **Echo-Pin** und den Wert **HIGH** übergeben. Die Funktion wartet dann darauf, dass der Echo-pin auf HIGH geschaltet wird - das entspricht dem Absenden des Ultraschall-Signals - und misst die Zeit, die vergeht, bis der Echo-Pin wieder auf LOW geschaltet wird - also dem Moment, in dem das Ultraschall-Signal wieder beim Sensor ankommt. Die Rückgabe-Wert der Funktion ist dann die gemessene Zeit in Mikrosekunden. 
-
-2. Kopiere den folgenden **Code** in einen neuen Sketch in der Arduino IDE
 ```cpp
 // Festlegung der digitalen Pins für Trig & Echo
 #define triggerPin 3
@@ -85,6 +80,15 @@ void loop() {
   delay(1000); // Kurzes Warten, damit der Sensor nicht überfordert wird
 }
 ```
+
+1. Schließe den Ultraschall nach folgendem Schaltplan an deinen Arduino an.
+
+Um den Ultraschall-Sensor anzusteuern brauchen wir eine neue Funktion: die Funktion ``pulseIn(pin, value)``. Dieser Funktion übergibt man einen ``pin``, an dem der Arduino Werte einlesen soll. Außerdem erhält die Funktion den ``value`` HIGH oder LOW. Wir werden der Funktion den **Echo-Pin** und den Wert **HIGH** übergeben. Die Funktion wartet dann darauf, dass der Echo-pin auf HIGH geschaltet wird - das entspricht dem Absenden des Ultraschall-Signals - und misst die Zeit, die vergeht, bis der Echo-Pin wieder auf LOW geschaltet wird - also dem Moment, in dem das Ultraschall-Signal wieder beim Sensor ankommt. Die Rückgabe-Wert der Funktion ist dann die gemessene Zeit in Mikrosekunden. 
+
+2. Kopiere den folgenden **Code** in einen neuen Sketch in der Arduino IDE
+
+
+
 > 💡 _Wie Dir vielleicht aufgefallen ist, steht in diesem Code gar keine der am Anfang erwähnten ``read()``-Funktionen. Das hängt damit zusammen, dass bereits in der ``pulseIn()``-Funktion ein ``read()``-Befehl verbaut ist._
 
 3. Schreibe an die in ``void loop()`` markierte Stelle ein paar Zeilen Code, mit denen Du
