@@ -81,19 +81,20 @@ void loop() {
 }
 ```
 
-1. Schließe den Ultraschall nach folgendem Schaltplan an deinen Arduino an.
+<div class="aufgabe">
+<h3>🛠️ Aufgabe</h3>
+<ol>
+  <li>Schließe den Ultraschall nach folgendem Schaltplan an deinen Arduino an.</li>
+  <li>Kopiere den folgenden **Code** in einen neuen Sketch in der Arduino IDE.
+  </li>
+  <li>Schreibe an die in ``void loop()`` markierte Stelle ein paar Zeilen Code, mit denen Du die **Distanz** aus der gemessenen Zeit **berechnest** und die Distanz im **seriellen Monitor** ausgibst.</li>
+</ol>
+</div>
+
 
 Um den Ultraschall-Sensor anzusteuern brauchen wir eine neue Funktion: die Funktion ``pulseIn(pin, value)``. Dieser Funktion übergibt man einen ``pin``, an dem der Arduino Werte einlesen soll. Außerdem erhält die Funktion den ``value`` HIGH oder LOW. Wir werden der Funktion den **Echo-Pin** und den Wert **HIGH** übergeben. Die Funktion wartet dann darauf, dass der Echo-pin auf HIGH geschaltet wird - das entspricht dem Absenden des Ultraschall-Signals - und misst die Zeit, die vergeht, bis der Echo-Pin wieder auf LOW geschaltet wird - also dem Moment, in dem das Ultraschall-Signal wieder beim Sensor ankommt. Die Rückgabe-Wert der Funktion ist dann die gemessene Zeit in Mikrosekunden. 
 
-2. Kopiere den folgenden **Code** in einen neuen Sketch in der Arduino IDE
-
-
-
 > 💡 _Wie Dir vielleicht aufgefallen ist, steht in diesem Code gar keine der am Anfang erwähnten ``read()``-Funktionen. Das hängt damit zusammen, dass bereits in der ``pulseIn()``-Funktion ein ``read()``-Befehl verbaut ist._
-
-3. Schreibe an die in ``void loop()`` markierte Stelle ein paar Zeilen Code, mit denen Du
-  * die **Distanz** aus der gemessenen Zeit **berechnest** und 
-  * die Distanz im **seriellen Monitor** ausgibst.
 
 ---
 
