@@ -58,9 +58,8 @@ int array[] = {1, 2, 3, 4, 5};
 
 So spart man sich das ständige Kopieren von Code.  
 
-<details>
-<summary>ℹ️ While-Schleife</summary>
-<p>
+#### While-Schleife
+
 Die **While-Schleife** wiederholt Code so lange, wie die Bedingung wahr ist:
 
 ```cpp
@@ -70,12 +69,9 @@ while (Bedingung) {
 ```
 
 Beispiel: `while (Variable1 > Variable2)` läuft so lange, bis die Bedingung falsch wird.  
-</p>
-</details>
 
-<details>
-<summary>ℹ️ For-Schleife</summary>
-<p>
+#### For-Schleife
+
 Die **For-Schleife** ist besonders praktisch, wenn man schon weiß, wie oft etwas wiederholt werden soll.  
 
 ```cpp
@@ -97,8 +93,6 @@ for (int i = 0; i < 5; i++) {
 - `i++` bedeutet: i wird nach jedem Durchlauf um 1 erhöht  
 
 👉 Sehr praktisch, um ein Array Element für Element durchzugehen.  
-</p>
-</details>
 
 ---
 
