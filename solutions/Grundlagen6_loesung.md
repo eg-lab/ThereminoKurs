@@ -1,6 +1,5 @@
 ## Lösungsvorschlag für die Aufgabe
 
-
 ```cpp
 
 #define tonePin 3
