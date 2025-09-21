@@ -28,19 +28,16 @@ Am wichtigsten für die Arbeit mit dem Arduino sind die **Pins** – die Anschl�
 - **Digitale Pins**: können ein- oder ausgeschaltet sein (**HIGH/LOW**).  
 - **Analoge Pins**: messen Werte in einem Bereich von 0 bis 1023.
 
-<details>
-<summary>ℹ️ Mehr Infos zu Pins</summary>
-<p>
+
 Man kann Pins als **Input** (Eingang) oder **Output** (Ausgang) verwenden.  
-Beispiel:  
+
+**Beispiele:**  
 - Ein Temperatursensor gibt Daten an einen Input-Pin.  
 - Über einen Output-Pin kann der Arduino z. B. eine LED ansteuern.  
 
 Der Unterschied zwischen digitalen und analogen Signalen:  
-- **Digital**: nur "an" (HIGH) oder "aus" (LOW).  
-- **Analog**: kontinuierliche Werte (z. B. 357).  
-</p>
-</details>
+- **Digital**: nur „an“ (HIGH) oder „aus“ (LOW).  
+- **Analog**: kontinuierliche Werte (z. B. 357).
 
 <div class="aufgabe">
 <h3>🛠️ Aufgabe</h3>
@@ -103,33 +100,31 @@ In derselben Leiste gibt es drei wichtige Knöpfe:
 
 Damit wir Bauteile steuern können, brauchen wir ein paar Grundkonzepte.  
 
-<details>
-<summary>ℹ️ Variablen</summary>
-<p>
+#### Variablen
+
 **Variablen** sind Platzhalter für Werte.  
 Beispiel:  
+
 ```cpp
 int ganze_Zahl = 8;
 float kommazahl = 2.7;
 ```
+
 - <code>int</code> → ganze Zahl  
 - <code>float</code> → Kommazahl  
 
 💡 Wichtig: Jede Zeile endet mit einem <code>;</code>  
-</p>
-</details>
 
-<details>
-<summary>ℹ️ Funktionen</summary>
-<p>
+#### Funktionen
+
 Funktionen sind Code-Blöcke, die aufgerufen werden können.  
 Beispiel:  
+
 ```cpp
 int variable = beispiel(a, b);
 ```
+
 Sie nehmen Werte (Parameter) entgegen und geben oft einen Wert zurück.  
-</p>
-</details>
 
 ---
 
@@ -142,16 +137,14 @@ Sie nehmen Werte (Parameter) entgegen und geben oft einen Wert zurück.
 - `analogWrite(Pin, Wert)` → gibt einen Wert (0–255) an einem Pin aus  
 - `delay(ms)` → pausiert das Programm für x Millisekunden  
 
-<details>
-<summary>ℹ️ Kommentare</summary>
-<p>
+#### Kommentare
+
 Mit <code>//</code> kannst Du eine Zeile als Kommentar kennzeichnen.  
 Beispiel:  
+
 ```cpp
 // Diese Zeile wird vom Computer ignoriert
 ```
-</p>
-</details>
 
 ---
 
