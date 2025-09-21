@@ -87,6 +87,7 @@ Das Ergebnis ist die gemessene Zeit in **Mikrosekunden**.
   <img src="img/Schaltung_sensor1.png" alt="Schaltplan Ultraschallsensor">
 </div>
 
+
 ### Code
 
 ```cpp
