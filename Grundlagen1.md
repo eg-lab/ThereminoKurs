@@ -13,12 +13,10 @@ Wie Ihr wisst, wollen wir heute mit Arduinos arbeiten. Aber was ist das überhau
   <img src="img/Arduinos.png" width="300" class="rounded" alt="Arduino Uno">
 </div>
 
----
-
 ### Aufbau des Arduinos und *Pins*
 
 Nun wollen wir uns anschauen, wie man mit einem Arduino arbeitet. Am wichtigsten für die Kommunikation mit dem Arduino sind die verschiedenen Anschlüsse oder **Pins**.
-Dabei gibt es verschiedene Arten. Für uns wichtig sind erstmal nur drei Typen:
+Dabei gibt es verschiedene Arten. Für uns wichtig sind zunächst nur folgende drei Typen:
 
 - Pins für die **Stromversorgung**:  
   + 5V / 3.3V → Pluspole  
@@ -27,10 +25,6 @@ Dabei gibt es verschiedene Arten. Für uns wichtig sind erstmal nur drei Typen:
 - **Analoge Pins**: messen Werte in einem Bereich von 0 bis 1023.
 
 Man kann Pins als **Input** (Eingang) oder **Output** (Ausgang) verwenden.  
-
-**Beispiele:**  
-- Ein Temperatursensor gibt Daten an einen Input-Pin.  
-- Über einen Output-Pin kann der Arduino z. B. eine LED ansteuern.  
 
 Der Unterschied zwischen digitalen und analogen Signalen:  
 - **Digital**: nur „an“ (HIGH) oder „aus“ (LOW).  
@@ -72,7 +66,7 @@ void loop() {
 
 ---
 
-#### Verbindung mit dem Arduino
+### Verbindung mit dem Arduino
 
 Bevor Du Code hochladen kannst, musst Du dein Board auswählen:  
 Klicke in der grünen Leiste auf das Auswahlfeld neben dem USB-Symbol → **Board auswählen → Arduino Uno**.  
@@ -91,9 +85,8 @@ In derselben Leiste gibt es drei wichtige Knöpfe:
 
 ### Grundlegende Funktionen & Programmiersyntax
 
-Damit wir Bauteile steuern können, brauchen wir ein paar Grundlagen der Programmierung.
+Damit wir Bauteile steuern können, brauchen wir ein paar Grundlagen der Programmierung. Hier sind die wichtigsten Konzepte:
 
----
 
 **Variablen** sind benannte Speicherplätze im Arbeitsspeicher des Mikrocontrollers. Sie halten Werte, die während des Programmlaufs gelesen, verändert und überschrieben werden können.  
 Jede Variable hat einen **Datentyp**, der bestimmt, welche Art von Wert darin gespeichert werden kann (z. B. ganze Zahl, Kommazahl, Zeichen).
