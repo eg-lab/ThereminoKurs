@@ -57,24 +57,25 @@ Um Töne abzuspielen, nutzen wir einen **Piezo-Summer**. In diesem ist ein Piezo
       </ul>
     </li>
   </ol>
-
-  <p><em>Falls Du unsicher bist, schau in die vorherigen Grundlagen-Abschnitte.</em></p>
 </div>
 
 ---
 
-## 🛠️ Aufgabe: Überprüfung des Klangs
+<div class="aufgabe">
+<h3>🛠️ Aufgabe: Überprüfung des Klangs</h3>
 
-Tatsächlich ist in der Arduino IDE bereits eine Funktion hinterlegt, die genau das macht, was Du gerade selbst geschrieben hast. Das ist die sogenannte ``tone()``-Funktion.
+Tatsächlich ist in der Arduino IDE bereits eine Funktion hinterlegt, die genau das macht, was Du gerade selbst geschrieben hast. Das ist die sogenannte <code>tone()</code>-Funktion.
 
 ```cpp
 // Spielt den Ton mit der Frequenz 440 auf dem am digtalen Pin 3 angeschlossenen Piezo-Summer
 tone(3,440);
 ```
 
-Schreibe nun Dein Programm aus der vorherigen Aufgabe so um, dass Du anstelle des An- und Ausmachens des digitalen Pins die ``tone()``-Funktion nutzt, um den Kammerton a zu erzeugen. Hört sich beides gleich an oder hörst Du einen Unterschied?
+Schreibe nun Dein Programm aus der vorherigen Aufgabe so um, dass Du anstelle des An- und Ausmachens des digitalen Pins die <code>tone()</code>-Funktion nutzt, um den Kammerton a zu erzeugen. Hört sich beides gleich an oder hörst Du einen Unterschied?
 
-## ✨ Bonusaufgabe für ganz Schnelle
+</div>
+
+<!-- ## ✨ Bonusaufgabe für ganz Schnelle
 
 **Baue einen Button ein, der den Piezo-Summer anschalten kann.**
 
@@ -83,7 +84,7 @@ Das Geräusch, das der Piezo-Summer macht, ist nicht unbedingt besonders schön.
 <details>
 <summary>💡 Tipp anzeigen</summary>
 <p>Orientiere Dich an dem Code, den Du in Grundlagen 4 geschrieben hast!</p>
-</details>
+</details> -->
 
 <p class="spacing-1">&nbsp;</p>
 
