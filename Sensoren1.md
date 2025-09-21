@@ -7,9 +7,9 @@
 
 ## Sensoren 1 - Ultraschallsensor anschließen 🔊
 
-Nun wollen wir uns dem Thema Sensoren widmen. Sensoren sind ganz allgemein elektronische Bauteile, die auf irgendeine Art Ihre Umgebung und Änderungen in der Umgebung wahrnehmen und die gewonnen Informationen an den Microcontroller weitergeben können. Ihr habt bereits einen Sensor kennegelernt: den Button. Auch sammelt eine Information über seine Umgebung (*wurde er gerdückt/ nicht gedrückt*) und gibt sie an den Arduino weiter.
+Nun wollen wir uns dem Thema Sensoren widmen. Sensoren sind ganz allgemein elektronische Bauteile, die auf irgendeine Art Ihre Umgebung und Änderungen in der Umgebung wahrnehmen und die gewonnen Informationen an den Microcontroller weitergeben können. Ihr habt bereits einen Sensor kennegelernt: den Button. Auch dieser sammelt eine Information über seine Umgebung (*wurde er gerdückt/ nicht gedrückt*) und gibt sie an den Arduino weiter.
 
-Da Auslesen von Sensor-Daten funktionert häufig über einen ``read``-Befehl. Es gibt zwei verschiedenen Versionen:
+Das Auslesen von Sensor-Daten funktionert häufig über einen ``read``-Befehl. Es gibt zwei verschiedenen Versionen:
 
 ```cpp
 analogRead(Pin); // Auslesen von Daten an einem analogen Pin, die gemessenen Werte können ganze Zahlen zwischen 0 und 1023 sein
@@ -25,7 +25,7 @@ Sowohl die Fledermaus als auch ein Ultraschallsensor senden eine Schallwelle aus
 
 <p align="left"><img src="img/UltraschallSensor.jpg" width="300" alt="Funktionsprinzip des Ultraschallsensors"></p>
 
-Die Ultraschallwelle breitet sich wie alle Schallwellen mit Schallgeschwindigkeit $c_{S}$ aus. Kennen wir die Zeit $t$, die für eine Strecke benötigt wird, und die Geschwindigkeit mit der sich fortbewegt wird, so können wir daraus die Länge $l$ der Strecke selbst berechnen: 
+Die Ultraschallwelle breitet sich - wie alle Schallwellen - mit Schallgeschwindigkeit $c_{S}$ aus. Kennen wir die Zeit $t$, die für eine Strecke benötigt wird, und die Geschwindigkeit mit der sich etwas fortbewegt, so können wir daraus die Länge $l$ der Strecke selbst berechnen: 
 
 <p align="center"> $$l = c_S \cdot t$$ </p>
 
