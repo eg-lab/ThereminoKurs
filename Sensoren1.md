@@ -9,8 +9,7 @@
 
 **In diesem Kapitel lernst Du, wie man mit einem Ultraschallsensor Abstände messen kann.**
 
-Sensoren sind ganz allgemein elektronische Bauteile, die ihre Umgebung wahrnehmen und Informationen an den Microcontroller weitergeben.  
-Einen Sensor hast Du schon kennengelernt: den Button. Auch er sammelt eine Information (*wurde er gedrückt oder nicht?*) und gibt sie an den Arduino weiter.
+Sensoren sind ganz allgemein elektronische Bauteile, die ihre Umgebung wahrnehmen und Informationen an den Microcontroller weitergeben. Einen Sensor hast Du schon kennengelernt: den Button. Auch er sammelt eine Information (*wurde er gedrückt oder nicht?*) und gibt sie an den Arduino weiter.
 
 Das Auslesen von Sensor-Daten funktioniert häufig über einen `read`-Befehl. Es gibt zwei verschiedene Versionen:
 

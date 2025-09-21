@@ -26,8 +26,6 @@ Um Töne abzuspielen, nutzen wir einen **Piezo-Summer**. In diesem ist ein Piezo
 <div class="aufgabe">
   <h3>🛠️ Aufgabe: Kammerton A erzeugen</h3>
 
-  <p>Wir wollen zunächst den Kammerton <strong>A</strong> erzeugen.</p>
-
   <blockquote>
     <em>Der Kammerton <strong>A</strong> ist der Ton, der von einem Orchester zu Beginn eines Konzerts von allen Instrumenten zum Einstimmen gespielt wird. Er liegt ungefähr bei 440&nbsp;Hz.</em>
   </blockquote>
@@ -43,7 +41,7 @@ Um Töne abzuspielen, nutzen wir einen **Piezo-Summer**. In diesem ist ein Piezo
            • Welche Bedeutung hat die Zeit <code>2·t</code> – welcher Größe entspricht sie?</p>
       </details>
       <details>
-        <summary>✅ Lösung anzeigen</summary>
+        <summary>💡 Lösung anzeigen</summary>
         <p>„An“ entspricht dem Wellenberg, „Aus“ dem Wellental. Ein Wellenberg plus Wellental ergeben eine Periode <em>T</em>. Da <em>f = 1/T</em>, gilt <em>T = 1/f</em> und damit <em>t = T/2 = 1/(2·f)</em>. Für 440&nbsp;Hz: <em>t ≈ 1136&nbsp;µs</em>.</p>
       </details>
     </li>
