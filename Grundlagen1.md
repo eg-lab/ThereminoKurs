@@ -7,8 +7,7 @@
 
 ## Grundlagen 1 – Den Arduino kennenlernen
 
-Wie Ihr wisst, wollen wir heute mit Arduinos arbeiten. Aber was ist das überhaupt?  
-Ein **Arduino** ist ein Mikrocontroller – also ein kleiner Computer, der für bestimmte Aufgaben programmiert werden kann. Du kannst ihn so einstellen, dass er genau das macht, was Du möchtest.
+Wie Ihr wisst, wollen wir heute mit Arduinos arbeiten. Aber was ist das überhaupt? Ein **Arduino** ist ein Mikrocontroller – also ein kleiner Computer, der für bestimmte Aufgaben programmiert werden kann. Du kannst ihn so einstellen, dass er genau das macht, was Du möchtest.
 
 <div class="schaltplan-box">
   <img src="img/Arduinos.png" width="300" class="rounded" alt="Arduino Uno">
@@ -16,9 +15,7 @@ Ein **Arduino** ist ein Mikrocontroller – also ein kleiner Computer, der für 
 
 ---
 
-### Aufbau des Arduinos
-
-#### Pins
+### Aufbau des Arduinos und Pins
 
 Am wichtigsten für die Arbeit mit dem Arduino sind die **Pins** – die Anschlüsse, über die Bauteile verbunden oder Signale gemessen werden.  
 
