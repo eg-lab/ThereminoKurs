@@ -5,54 +5,88 @@
   <a href="Sensoren2" class="button">Weiter</a>
 </div>
 
-## Sensoren 1 - Ultraschallsensor anschließen 🔊
+## Sensoren 1 – Ultraschallsensor anschließen 🔊
 
-Nun wollen wir uns dem Thema Sensoren widmen. Sensoren sind ganz allgemein elektronische Bauteile, die auf irgendeine Art Ihre Umgebung und Änderungen in der Umgebung wahrnehmen und die gewonnen Informationen an den Microcontroller weitergeben können. Ihr habt bereits einen Sensor kennegelernt: den Button. Auch dieser sammelt eine Information über seine Umgebung (*wurde er gerdückt/ nicht gedrückt*) und gibt sie an den Arduino weiter.
+**In diesem Kapitel lernst Du, wie man mit einem Ultraschallsensor Abstände messen kann.**
 
-Das Auslesen von Sensor-Daten funktionert häufig über einen ``read``-Befehl. Es gibt zwei verschiedenen Versionen:
+Sensoren sind ganz allgemein elektronische Bauteile, die ihre Umgebung wahrnehmen und Informationen an den Microcontroller weitergeben.  
+Einen Sensor hast Du schon kennengelernt: den Button. Auch er sammelt eine Information (*wurde er gedrückt oder nicht?*) und gibt sie an den Arduino weiter.
+
+Das Auslesen von Sensor-Daten funktioniert häufig über einen `read`-Befehl. Es gibt zwei verschiedene Versionen:
 
 ```cpp
-analogRead(Pin); // Auslesen von Daten an einem analogen Pin, die gemessenen Werte können ganze Zahlen zwischen 0 und 1023 sein
-digitalRead(Pin); // Auslesen von Daten an einem digitalen Pin, die gemessenen Daten sind entweder 0 oder 1
+analogRead(Pin);   // liefert Werte von 0 bis 1023 (analoge Pins)
+digitalRead(Pin);  // liefert nur 0 oder 1 (digitale Pins)
 ```
 
-**Wir wollen uns nun den Ultraschallsensor genauer anschauen.**
+---
 
-Ein Ultarschallsensor ist ein Sensor, mit dem sich Abstände bestimmen lassen. Das Prinzip, auf dem er beruht, ist das selbe mit dem Fledermäuse ihre Umgebung wahrnehmen.
+### Funktionsprinzip
 
-<p align="left"><img src="img/Fledermaus.png" width="200" alt="Fledermaus bemerkt Beute"></p>
+Ein Ultraschallsensor ist ein Sensor, mit dem sich Abstände bestimmen lassen. Das Prinzip ist ähnlich wie bei Fledermäusen.
 
-Sowohl die Fledermaus als auch ein Ultraschallsensor senden eine Schallwelle aus, die im Ultrachschall-Bereich liegt. Ein Mensch kann solche Schallwellen nicht mehr wahrnehmen, weil die Frequenz zu hoch für unsere Ohren ist. Trifft die Ultraschallwelle auf ein Hindernis (z.B. einen Käfer oder eine Wand), so wird sie reflektiert. Ein Teil der Welle wird so reflektiert, dass er wieder beim Sender - der Fledermaus oder dem Sensor - ankommt. Zwischen dem los Schicken und wieder Ankommen vergeht etwas Zeit. Je weiter das Objekt, an dem die Welle reflektiert wurde, entfernt ist, desto mehr Zeit vergeht, bis die Welle wieder beim Sender ankommt.
+<p align="center">
+  <img src="img/Fledermaus.png" width="200" class="rounded" alt="Fledermaus bemerkt Beute">
+</p>
 
-<p align="left"><img src="img/UltraschallSensor.jpg" width="300" alt="Funktionsprinzip des Ultraschallsensors"></p>
+Sowohl die Fledermaus als auch ein Ultraschallsensor senden eine Schallwelle aus, die im Ultrachschall-Bereich liegt. Ein Mensch kann solche Schallwellen nicht mehr wahrnehmen, weil die Frequenz zu hoch für unsere Ohren ist. Trifft die Ultraschallwelle auf ein Hindernis (z. B. eine Wand), so wird sie reflektiert. Ein Teil der Welle kommt wieder beim Sender an. Je weiter das Objekt entfernt ist, desto mehr Zeit vergeht.
 
-Die Ultraschallwelle breitet sich - wie alle Schallwellen - mit Schallgeschwindigkeit $c_{S}$ aus. Kennen wir die Zeit $t$, die für eine Strecke benötigt wird, und die Geschwindigkeit mit der sich etwas fortbewegt, so können wir daraus die Länge $l$ der Strecke selbst berechnen:
+<p align="center">
+  <img src="img/UltraschallSensor.jpg" width="300" class="rounded" alt="Funktionsprinzip des Ultraschallsensors">
+</p>
 
-<p align="center"> $$l = c_S \cdot t$$ </p>
+Die Schallgeschwindigkeit ist *c<sub>S</sub>*. Kennt man die Zeit *t*, kann man die Länge *l* berechnen:
 
-Sowohl die Fledermaus, als auch wir, wenn wir den Ultraschallsensor benutzen, müssen beachten, dass die Zeit $t_{mess}$, die wir zwischen Absenden und Empfangen der Ultraschallwelle, die Zeit für Hin- **und** Rückweg ist. Die Formel, die wir nutzen, muss also lauten:
+<p align="center">l = c<sub>S</sub> · t</p>
 
-<p align="center"> $$l = c_S \cdot \frac{t_{mess}}{2}$$ </p>
+Da die Welle Hin- und Rückweg braucht:
 
-Jetzt wissen wir ungefähr, wie ein Ultraschallsensor funktioniert. Der Ultraschallsensor hat 4 Pins:
-* **VCC-Pin** Dieser Pin wird an den _5-Volt-Pin_ des Arduinos angeschlossen und dient zur Stromversorgung.
-* **Gnd-Pin** Dieser Pin wird an den _Gnd-Pin_ des Arduinos angeschossen und dient der Erdung.
-* **Trig-Pin** Dieser Pin wird an einen _digitalen Pin_ des Arduinos angeschlossen. Am Trigger-Pin wird festgelegt, wann das Ultraschall-Signal losgesandt wird.
-* **Echo-Pin** Dieser Pin wird auch an einen _digitalen Pin_ des Arduinos angeschlossen. An diesem Pin wird das zurück reflektierte Ultraschall-Signal empfangen.
+<p align="center">l = c<sub>S</sub> · (t<sub>mess</sub> / 2)</p>
 
-<p align="center"><img src="img/UltraschallSensorBild.png" width="300" alt="Ultraschallsensor HC-SR04"></p>
+---
+
+### Anschlüsse des Sensors
+
+Der Ultraschallsensor hat 4 Pins:
+
+- **VCC** → an den 5V-Pin des Arduinos  
+- **GND** → an den GND-Pin des Arduinos  
+- **TRIG** → an einen digitalen Pin (Signal aussenden)  
+- **ECHO** → an einen digitalen Pin (Signal empfangen)
+
+<p align="center">
+  <img src="img/UltraschallSensorBild.png" width="300" class="rounded" alt="Ultraschallsensor HC-SR04">
+</p>
+
+---
+
+### Die Funktion `pulseIn()`
+
+Um den Ultraschallsensor anzusteuern, brauchen wir eine neue Funktion: **`pulseIn(pin, value)`**  
+
+- `pin` → der Pin, an dem der Arduino den Puls einliest (hier: Echo-Pin)  
+- `value` → HIGH oder LOW  
+
+Die Funktion wartet darauf, dass der Pin auf den gewünschten Wert wechselt (bei uns: HIGH).  
+Dann misst sie, wie lange der Pin in diesem Zustand bleibt, bis er wieder auf LOW fällt.  
+Das Ergebnis ist die gemessene Zeit in **Mikrosekunden**.
+
+---
 
 <div class="aufgabe">
 <h3>🛠️ Aufgabe</h3>
 <ol>
-  <li>Schließe den Ultraschall nach folgendem Schaltplan an deinen Arduino an.</li>
-  <li>Kopiere den folgenden **Code** in einen neuen Sketch in der Arduino IDE.
-  </li>
-  <li>Schreibe an die in ``void loop()`` markierte Stelle ein paar Zeilen Code, mit denen Du die **Distanz** aus der gemessenen Zeit **berechnest** und die Distanz im **seriellen Monitor** ausgibst.</li>
+  <li>Schließe den Ultraschallsensor nach dem Schaltplan an Deinen Arduino an.</li>
+  <li>Kopiere den folgenden Code in einen neuen Sketch in der Arduino IDE.</li>
+  <li>Schreibe in <code>void loop()</code> Code, der die Distanz berechnet und im seriellen Monitor ausgibt.</li>
 </ol>
 </div>
 
-Um den Ultraschall-Sensor anzusteuern brauchen wir eine neue Funktion: die Funktion ``pulseIn(pin, value)``. Dieser Funktion übergibt man einen ``pin``, an dem der Arduino Werte einlesen soll. Außerdem erhält die Funktion den ``value`` HIGH oder LOW. Wir werden der Funktion den **Echo-Pin** und den Wert **HIGH** übergeben. Die Funktion wartet dann darauf, dass der Echo-pin auf HIGH geschaltet wird - das entspricht dem Absenden des Ultraschall-Signals - und misst die Zeit, die vergeht, bis der Echo-Pin wieder auf LOW geschaltet wird - also dem Moment, in dem das Ultraschall-Signal wieder beim Sensor ankommt. Die Rückgabe-Wert der Funktion ist dann die gemessene Zeit in Mikrosekunden.
+### Schaltplan
+
+<div class="schaltplan-box">
+  <img src="img/Schaltung_sensor1.png" alt="Schaltplan Ultraschallsensor">
+</div>
 
 ### Code
 
@@ -94,11 +128,14 @@ void loop() {
 }
 ```
 
-> 💡 _Wie Dir vielleicht aufgefallen ist, steht in diesem Code gar keine der am Anfang erwähnten ``read()``-Funktionen. Das hängt damit zusammen, dass bereits in der ``pulseIn()``-Funktion ein ``read()``-Befehl verbaut ist._
+<div class="merkbox">
+💡 Hinweis: In <code>pulseIn()</code> steckt bereits ein <code>read()</code>-Befehl. Deshalb brauchst Du hier kein extra <code>digitalRead()</code>.
+</div>
 
 ---
 
-Nun hast Du alle Grundlagen, die Du brauchst um ein Theremin zu bauen. Wenn Du Lust hast kannst Du gleich damit starten. Falls Du Dir noch einen weiteren Sensor anschauen möchtest, kannst Du das jedoch auch gerne tun. Im optionalen Kapitel Sensoren 2 kannst Du lernen, wie man einen Phototransistor anschließt, und diesen anschließend auch in Dein Theremin einbauen.
+Nun hast Du alle Grundlagen, die Du brauchst, um ein Theremin zu bauen.  
+Wenn Du Lust hast, kannst Du gleich damit starten. Oder Du schaust Dir im optionalen Kapitel **Sensoren 2** an, wie man einen Phototransistor anschließt und in Dein Projekt integriert.
 
 <p class="spacing-1">&nbsp;</p>
 

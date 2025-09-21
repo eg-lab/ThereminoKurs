@@ -5,19 +5,23 @@
   <a href="Abschluss" class="button">Weiter</a>
 </div>
 
-## Projekt: Dein eigenes Theremin 🎶✨
+## Projekt – Dein eigenes Theremin 🎶✨
 
-**Jetzt wird es endlich kreativ! Du kombinierst alles, was du bisher gelernt hast, und baust dein eigenes Instrument!**
+**Jetzt wird es kreativ! Du kombinierst alles, was Du bisher gelernt hast, und baust dein eigenes Instrument.**
 
-Bei einem herkömmlichen Theremin werden Töne erzeugt, wenn du deine Hand bewegst. Du kannst hier den Ultraschallsensor verwenden, damit sich der Ton je nach Abstand verändert. Zusätzlich kannst du weitere Elemente einbauen: LEDs, Taster, Phototransistoren – alles, was dir einfällt. Dein Ziel ist es, ein eigenes, einzigartiges Musikinstrument zu erfinden und zu programmieren.
+Bei einem herkömmlichen Theremin werden Töne erzeugt, wenn Du deine Hand bewegst. Du kannst den Ultraschallsensor verwenden, damit sich der Ton je nach Abstand verändert. Zusätzlich kannst Du weitere Elemente einbauen: LEDs, Taster, Phototransistoren – alles, was dir einfällt.  
+Dein Ziel ist es, ein eigenes, einzigartiges Musikinstrument zu erfinden und zu programmieren.
 
 <div class="merkbox">
-💡 Erinnerung an die Sicherheit: Denk immer daran, vor dem Umstecken von Kabeln den USB-Stecker abzuziehen, damit nichts kaputtgeht.
+💡 Erinnerung an die Sicherheit: Zieh vor dem Umstecken von Kabeln immer den USB-Stecker ab, damit nichts kaputtgeht.
 </div>
+
+---
 
 ### Schaltplan-Beispiele
 
-Hier findest du einige Schaltpläne als Anregung. Du musst sie nicht genau nachbauen. Wenn du eine eigene Idee hast, kannst du sie auch kombinieren oder ändern. Wenn du dir unsicher bist, ob deine Schaltung funktioniert, frag lieber nochmal nach.
+Hier findest Du einige Schaltpläne als Anregung. Du musst sie nicht genau nachbauen. Wenn Du eine eigene Idee hast, kannst Du sie auch kombinieren oder abwandeln.  
+Wenn Du dir unsicher bist, ob deine Schaltung funktioniert, frag lieber nochmal nach.
 
 <div class="schaltplan-box">
   <img src="img/Schaltung_theremin_v2.png" alt="Theremin-Grundschaltung">
@@ -29,28 +33,32 @@ Hier findest du einige Schaltpläne als Anregung. Du musst sie nicht genau nachb
   <p><em>Beispiel: Ultraschallsensor + LED, die je nach Abstand leuchtet</em></p>
 </div>
 
-<!-- <div class="schaltplan-box">
+<!-- Optional weitere Beispiele:
+<div class="schaltplan-box">
   <img src="img/Schaltung_theremin_button.jpg" alt="Theremin mit Taster">
   <p><em>Beispiel: Zusätzlich ein Taster zum Umschalten</em></p>
 </div>
 
 <div class="schaltplan-box">
   <img src="img/Schaltung_theremin_phototransistor.jpg" alt="Theremin mit Phototransistor">
-  <p><em>Beispiel: Phototransistor für ein weiteres Steuersignal (optional)</em></p>
-</div> -->
+  <p><em>Beispiel: Phototransistor für ein weiteres Steuersignal</em></p>
+</div>
+-->
+
+---
 
 <div class="aufgabe">
 <h3>🛠️ Aufgabe: Erfinde dein eigenes Instrument</h3>
 <ol>
-  <li>Überlege dir, wie dein Instrument funktionieren soll.
+  <li>Überlege dir, wie dein Instrument funktionieren soll:
     <ul>
       <li>Soll der Ton je nach Abstand steigen oder fallen?</li>
       <li>Sollen LEDs je nach Entfernung blinken oder die Farbe wechseln?</li>
       <li>Soll ein Taster den Ton an- oder ausschalten?</li>
     </ul>
   </li>
-  <li>Such dir eine Schlatung aus und baue deine Schaltung auf dem Breadboard auf.</li>
-  <li>Schreibe deinen eigenen Sketch in der Arduino IDE – nutze alle Bausteine, die du kennst:
+  <li>Wähle eine Schaltung aus und baue sie auf deinem Breadboard auf.</li>
+  <li>Schreibe deinen eigenen Sketch in der Arduino IDE – nutze alle Bausteine, die Du kennst:
     <ul>
       <li><code>tone()</code> und <code>noTone()</code></li>
       <li><code>digitalWrite()</code> und <code>analogRead()</code></li>
@@ -58,21 +66,24 @@ Hier findest du einige Schaltpläne als Anregung. Du musst sie nicht genau nachb
       <li>Variablen und vielleicht sogar Schleifen</li>
     </ul>
   </li>
-  <li>Teste dein Instrument – verbessere es, bis es genau so funktioniert, wie du es dir vorstellst.</li>
+  <li>Teste dein Instrument – verbessere es, bis es genau so funktioniert, wie Du es dir vorstellst.</li>
 </ol>
 </div>
 
 <details>
 <summary>💡 Tipp anzeigen</summary>
 <p>
-Falls du nicht weißt, wo du anfangen sollst: Starte mit dem Theremin-Code aus dem letzten Kapitel. Teste erst nur den Ton. Wenn das funktioniert, füge Schritt für Schritt LEDs oder andere Sensoren hinzu.
+Falls Du nicht weißt, wo Du anfangen sollst: Starte mit dem Theremin-Code aus dem letzten Kapitel.  
+Teste erst nur den Ton. Wenn das funktioniert, füge Schritt für Schritt LEDs oder andere Sensoren hinzu.
 </p>
 </details>
 
-<h2>✨ Präsentation & Konzert</h2>
-<p>
-Stellt euer Instrument der Gruppe vor. Erklärt, wie ihr es gebaut habt, und zeigt live, wie es funktioniert. Wer mag, kann ein kleines Konzert spielen oder ein lustiges Geräusch vorstellen.
-</p>
+---
+
+## ✨ Präsentation & Konzert
+
+Stellt euer Instrument der Gruppe vor. Erklärt, wie ihr es gebaut habt, und zeigt live, wie es funktioniert.  
+Wer mag, kann ein kleines Konzert spielen oder ein lustiges Geräusch vorstellen.
 
 <p class="spacing-1">&nbsp;</p>
 

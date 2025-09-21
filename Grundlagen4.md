@@ -7,9 +7,9 @@
 
 ## Grundlagen 4 – Button und LED verbinden ▶️ ➕ 💡
 
-**In diesem Kapitel lernst du, wie du den Button mit einer LED verbindest.**
+**In diesem Kapitel lernst Du, wie Du den Button mit einer LED verbindest.**
 
-Die LED soll leuchten, solange du den Button gedrückt hältst. Damit das funktioniert, müssen wir zunächst ein neues Konzept verstehen: **Bedingungen**. Mit `if` kannst du dem Arduino sagen:
+Die LED soll leuchten, solange Du den Button gedrückt hältst. Damit das funktioniert, müssen wir zunächst ein neues Konzept verstehen: **Bedingungen**. Mit `if` kannst Du dem Arduino sagen:
 
 > *__Wenn__ eine Bedingung stimmt, mache etwas.*  
 > *__Ansonsten__ mache etwas anderes.*
@@ -26,10 +26,10 @@ else {
 ```
 
 <div class="merkbox">
-💡 Mit <code>if</code> kannst du Bedingungen abfragen und dein Programm intelligent reagieren lassen. Egal ob du ein Licht einschaltest, einen Ton abspielst oder ein Display steuerst, <code>if</code> steckt in so gut wie jedem Programm.
+💡 Mit <code>if</code> kannst Du Bedingungen abfragen und dein Programm intelligent reagieren lassen. Egal ob Du ein Licht einschaltest, einen Ton abspielst oder ein Display steuerst, <code>if</code> steckt in so gut wie jedem Programm.
 </div>
 
-In unserem Fall ist die Bedingung, ob der Button gedrückt ist. Damit du verstehst, wie `if` funktioniert, üben wir zuerst, den Status des Buttons im Serial Monitor auszugeben. Das hilft dir, sicherzustellen, dass der Button korrekt angeschlossen ist und der Arduino den Zustand richtig erkennt.
+In unserem Fall ist die Bedingung, ob der Button gedrückt ist. Damit Du verstehst, wie `if` funktioniert, üben wir zuerst, den Status des Buttons im Serial Monitor auszugeben. Das hilft dir, sicherzustellen, dass der Button korrekt angeschlossen ist und der Arduino den Zustand richtig erkennt.
 
 <div class="aufgabe">
 <h3>🛠️ Aufgabe: Status ausgeben</h3>
@@ -66,15 +66,15 @@ void loop()
 }
 ```
 
-Jetzt weißt du, wie du den Zustand eines Buttons prüfst und anzeigen lässt. Im nächsten Schritt wollen wir das Ergebnis nicht nur im Serial Monitor ausgeben, sondern mit der LED sichtbar machen.
+Jetzt weißt Du, wie Du den Zustand eines Buttons prüfst und anzeigen lässt. Im nächsten Schritt wollen wir das Ergebnis nicht nur im Serial Monitor ausgeben, sondern mit der LED sichtbar machen.
 
 <div class="merkbox">
-💡 Wenn du <code>INPUT_PULLUP</code> nutzt, bedeutet das:<br>
+💡 Wenn Du <code>INPUT_PULLUP</code> nutzt, bedeutet das:<br>
 Nicht gedrückt = <code>HIGH</code> (1)<br>
 Gedrückt = <code>LOW</code> (0)
 </div>
 
-Damit kannst du den Arduino so programmieren, dass er je nach Zustand des Buttons entscheidet, ob die LED leuchtet oder nicht. Genau dafür brauchen wir die `if`-Abfrage.
+Damit kannst Du den Arduino so programmieren, dass er je nach Zustand des Buttons entscheidet, ob die LED leuchtet oder nicht. Genau dafür brauchen wir die `if`-Abfrage.
 
 <div class="aufgabe">
 <h3>🛠️ Aufgabe: LED mit dem Button steuern</h3>
@@ -95,13 +95,13 @@ Damit kannst du den Arduino so programmieren, dass er je nach Zustand des Button
       <li>Die LED ausschalten, wenn der Button nicht gedrückt ist.</li>
     </ul>
   </li>
-  <li>Teste deine Schaltung. Drücke den Button – die LED sollte leuchten, solange du ihn gedrückt hältst.</li>
+  <li>Teste deine Schaltung. Drücke den Button – die LED sollte leuchten, solange Du ihn gedrückt hältst.</li>
 </ol>
 </div>
 
 <details>
 <summary>💡 Tipp anzeigen</summary>
-<p><em>Falls du nicht weiterweißt, schaue dir den Code aus <strong>Grundlagen 3</strong> (Button lesen) und den Code aus <strong>Grundlagen 2</strong> (LED blinken) an und kombiniere beide Ideen.</em></p>
+<p><em>Falls Du nicht weiterweißt, schaue dir den Code aus <strong>Grundlagen 3</strong> (Button lesen) und den Code aus <strong>Grundlagen 2</strong> (LED blinken) an und kombiniere beide Ideen.</em></p>
 </details>
 
 ### Schaltplan
@@ -113,7 +113,7 @@ Damit kannst du den Arduino so programmieren, dass er je nach Zustand des Button
 <!-- 
 <div class="aufgabe">
 <h3>✨ Bonusaufgabe für ganz Schnelle</h3>
-<p>Kannst du den Button so programmieren, dass die LED bei jedem Drücken umschaltet?</p>
+<p>Kannst Du den Button so programmieren, dass die LED bei jedem Drücken umschaltet?</p>
 <ul>
   <li>Beim ersten Druck geht die LED an.</li>
   <li>Beim zweiten Druck geht sie aus.</li>

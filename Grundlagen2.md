@@ -7,7 +7,7 @@
 
 ## Grundlagen 2 – LED anschließen 💡
 
-**In diesem Kapitel lernst du, wie du eine LED richtig anschließt und sie mit dem Arduino blinken lässt.**
+**In diesem Kapitel lernst Du, wie Du eine LED richtig anschließt und sie mit dem Arduino blinken lässt.**
 
 **LED** bedeutet *Light Emitting Diode*. LEDs können Licht produzieren, wenn man einen Strom an sie anlegt. Dabei ist es jedoch wichtig, in welche Richtung man sie anschließt. Den Pluspol schließt man bei einer LED immer an das lange Beinchen, den Minuspol immer an das kürzere.
 
@@ -27,7 +27,7 @@ LEDs bestehen aus einem speziellen Halbleitermaterial, das Strom nur in eine Ric
 ➖ Kurzes Bein = Minuspol
 </div>
 
-Damit die LED nicht kaputtgeht, brauchst du einen **Widerstand**. Ein Widerstand ist ein elektrisches Bauteil, an dem Spannung abfällt. Er sorgt dafür, dass nicht zu viel Strom durch die LED fließt.
+Damit die LED nicht kaputtgeht, brauchst Du einen **Widerstand**. Ein Widerstand ist ein elektrisches Bauteil, an dem Spannung abfällt. Er sorgt dafür, dass nicht zu viel Strom durch die LED fließt.
 
 <details>
 <summary>ℹ️ Mehr Infos</summary>
@@ -46,7 +46,7 @@ Wir bauen die Schaltung auf dem **Breadboard** auf. Das Breadboard ist der Ort, 
   <img src="img/breadboard.jpg" width="300" class="rounded" alt="Breadboard.">
 </p>
 
-Mit den Kabel verbinden wir unsere Bauteile. Eine Konvention, an die wir uns halten wollen, ist: Alle Kabel, die zum Pluspol (*5V / D1 / etc.*) führen, sind rot, alle Kabel, die zum Minuspol (*G / Gnd*) führen, sind schwarz.
+Mit den Kabeln verbinden wir unsere Bauteile. Eine Konvention, an die wir uns halten wollen, ist: Alle Kabel, die zum Pluspol (*5V / D1 / etc.*) führen, sind rot, alle Kabel, die zum Minuspol (*G / Gnd*) führen, sind schwarz.
 
 <div class="merkbox">
 🔴➕ Rote Kabel verbinden den Pluspol.<br>
@@ -57,7 +57,7 @@ Mit den Kabel verbinden wir unsere Bauteile. Eine Konvention, an die wir uns hal
   <img src="img/kabel_plus_minus.jpg" width="300" class="rounded" alt="Kabel.">
 </p>
 
-Um zu wissen, wie man Bauteile verbinden soll, erstellt man zuerst einen **Schaltplan**. Bevor man eine Schaltung wirklich aufbaut, wird der Schaltplan auf Papier oder am Computer gezeichnet. Dort erkennt man genau, wie alle Teile miteinander verbunden werden müssen. In diesem Kurs bekommst du die meisten Schaltpläne vorgegeben. So kannst du dich darauf konzentrieren, das Stecken und Programmieren zu üben, ohne selbst einen kompletten Plan zu entwerfen. Es ist sehr wichtig, dass du die Schaltungen genau nachbaust – auch kleine Fehler (zum Beispiel vertauschte Kabel) führen oft dazu, dass nichts funktioniert.
+Um zu wissen, wie man Bauteile verbinden soll, erstellt man zuerst einen **Schaltplan**. Bevor man eine Schaltung wirklich aufbaut, wird der Schaltplan auf Papier oder am Computer gezeichnet. Dort erkennt man genau, wie alle Teile miteinander verbunden werden müssen. In diesem Kurs bekommst Du die meisten Schaltpläne vorgegeben. So kannst Du Dich darauf konzentrieren, das Stecken und Programmieren zu üben, ohne selbst einen kompletten Plan zu entwerfen. Es ist sehr wichtig, dass Du die Schaltungen genau nachbaust – auch kleine Fehler (zum Beispiel vertauschte Kabel) führen oft dazu, dass nichts funktioniert.
 
 <details>
 <summary>ℹ️ Mehr Infos</summary>
@@ -74,11 +74,6 @@ Ein Schaltplan ist wie eine <strong>Landkarte für Elektronik</strong>. Er zeigt
   <li>Beobachte, was passiert. Was macht der Code?</li>
 </ol>
 </div>
-
-<details>
-<summary>💡 Hinweis anzeigen</summary>
-<p><em>Wenn du nichts beobachten kannst, überprüfe bitte deine Schaltung.</em></p>
-</details>
 
 ### Schaltplan
 
