@@ -28,7 +28,6 @@ Am wichtigsten für die Arbeit mit dem Arduino sind die **Pins** – die Anschl�
 - **Digitale Pins**: können ein- oder ausgeschaltet sein (**HIGH/LOW**).  
 - **Analoge Pins**: messen Werte in einem Bereich von 0 bis 1023.
 
-
 Man kann Pins als **Input** (Eingang) oder **Output** (Ausgang) verwenden.  
 
 **Beispiele:**  
@@ -126,17 +125,6 @@ int variable = beispiel(a, b);
 
 Sie nehmen Werte (Parameter) entgegen und geben oft einen Wert zurück.  
 
----
-
-### Wichtige Arduino-Befehle
-
-- `pinMode(Pin, INPUT/OUTPUT)` → legt fest, ob ein Pin Eingang oder Ausgang ist  
-- `digitalWrite(Pin, HIGH/LOW)` → schaltet einen Pin an oder aus  
-- `digitalRead(Pin)` → liest, ob ein digitaler Eingang HIGH oder LOW ist  
-- `analogRead(Pin)` → liest einen Wert (0–1023) von einem analogen Eingang  
-- `analogWrite(Pin, Wert)` → gibt einen Wert (0–255) an einem Pin aus  
-- `delay(ms)` → pausiert das Programm für x Millisekunden  
-
 #### Kommentare
 
 Mit <code>//</code> kannst Du eine Zeile als Kommentar kennzeichnen.  
@@ -145,6 +133,15 @@ Beispiel:
 ```cpp
 // Diese Zeile wird vom Computer ignoriert
 ```
+
+#### Wichtige Arduino-Befehle
+
+- `pinMode(Pin, INPUT/OUTPUT)` → legt fest, ob ein Pin Eingang oder Ausgang ist  
+- `digitalWrite(Pin, HIGH/LOW)` → schaltet einen Pin an oder aus  
+- `digitalRead(Pin)` → liest, ob ein digitaler Eingang HIGH oder LOW ist  
+- `analogRead(Pin)` → liest einen Wert (0–1023) von einem analogen Eingang  
+- `analogWrite(Pin, Wert)` → gibt einen Wert (0–255) an einem Pin aus  
+- `delay(ms)` → pausiert das Programm für x Millisekunden  
 
 ---
 
