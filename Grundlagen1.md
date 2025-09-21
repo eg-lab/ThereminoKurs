@@ -15,8 +15,7 @@ Wie Ihr wisst, wollen wir heute mit Arduinos arbeiten. Aber was ist das überhau
 
 ### Aufbau des Arduinos und *Pins*
 
-Nun wollen wir uns anschauen, wie man mit einem Arduino arbeitet. Am wichtigsten für die Kommunikation mit dem Arduino sind die verschiedenen Anschlüsse oder **Pins**.
-Dabei gibt es verschiedene Arten. Für uns wichtig sind zunächst nur folgende drei Typen:
+Nun wollen wir uns anschauen, wie man mit einem Arduino arbeitet. Am wichtigsten für die Kommunikation mit dem Arduino sind die verschiedenen **Pins** (= Anschlüsse). Dabei gibt es verschiedene Arten von Pins. Für uns wichtig sind zunächst nur folgende drei Typen:
 
 - Pins für die **Stromversorgung**:  
   + 5V / 3.3V → Pluspole  
@@ -26,9 +25,7 @@ Dabei gibt es verschiedene Arten. Für uns wichtig sind zunächst nur folgende d
 
 Man kann Pins als **Input** (Eingang) oder **Output** (Ausgang) verwenden.  
 
-Der Unterschied zwischen digitalen und analogen Signalen:  
-- **Digital**: nur „an“ (HIGH) oder „aus“ (LOW).  
-- **Analog**: kontinuierliche Werte (z. B. 357).
+Der Unterschied zwischen analogen und digitalen Pins liegt einfach darin, was für Signale die Pins empfangen und weiterleiten können. **Digitale Pins** senden nur digitale Signale. Das heißt, dass diese Signale **nur bestimmte Zustände annehmen können**: bei uns sind das **HIGH** und **LOW**. Dabei entspricht **HIGH** einer **hohen Spannung** an diesem Pin und **LOW** einer **niedrigen Spannung**. Ihr könnt euch HIGH als ein "an" und LOW als ein "aus" vorstellen.
 
 <div class="aufgabe">
 <h3>🛠️ Aufgabe</h3>

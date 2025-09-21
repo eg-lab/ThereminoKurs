@@ -8,7 +8,7 @@ Ganz wichtig: **Immer die Stromzufuhr (USB-Kabel) vom Arduino abziehen**, bevor 
 
 Wenn Du nicht weiterweißt oder etwas nicht funktioniert, **frage unbedingt nach Hilfe**.
 
-Viel Spaß beim Experimentieren und Programmieren!
+_Ansonsten: Viel Spaß beim Experimentieren und Programmieren!_
 
 <p class="spacing-1">&nbsp;</p>
 
