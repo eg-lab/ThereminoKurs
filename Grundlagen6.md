@@ -88,8 +88,6 @@ for (int i = 0; i < 5; i++) {
 
 👉 Sehr praktisch, um ein Array Element für Element durchzugehen.  
 
----
-
 ### Beispiel: Array mit For-Schleife
 
 ```cpp
@@ -108,8 +106,6 @@ So könnt Ihr eine komplette Liste abarbeiten – etwa eine ganze Melodie!
 
 > 💡 **Hinweis:**  
 > - `i++` ist nur eine Abkürzung für `i = i + 1`.
-
----
 
 <div class="aufgabe">
 <h3>🛠️ Aufgabe</h3>
