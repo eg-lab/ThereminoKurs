@@ -54,11 +54,7 @@ int array[] = {1, 2, 3, 4, 5};
 
 ### Schleifen
 
-**Schleifen** sind ein grundlegendes Konzept beim Programmieren. Sie wiederholen einen Code-Abschnitt automatisch – solange eine Bedingung erfüllt ist oder eine bestimmte Anzahl an Durchläufen erreicht wurde.  
-
-So spart man sich das ständige Kopieren von Code.  
-
-#### While-Schleife
+**Schleifen** sind ein grundlegendes Konzept beim Programmieren. Sie wiederholen einen Code-Abschnitt automatisch – solange eine Bedingung erfüllt ist oder eine bestimmte Anzahl an Durchläufen erreicht wurde. So spart man sich das ständige Kopieren von Code.  
 
 Die **While-Schleife** wiederholt Code so lange, wie die Bedingung wahr ist:
 
@@ -69,8 +65,6 @@ while (Bedingung) {
 ```
 
 Beispiel: `while (Variable1 > Variable2)` läuft so lange, bis die Bedingung falsch wird.  
-
-#### For-Schleife
 
 Die **For-Schleife** ist besonders praktisch, wenn man schon weiß, wie oft etwas wiederholt werden soll.  
 
