@@ -13,6 +13,7 @@ Die vollständigen Kursmaterialien gibt es hier:
   - [Lösungen Grundlagen 4](https://github.com/eg-lab/ThereminoKurs/blob/main/Grundlagen4_loesung.mdn)
   - [Lösungen Grundlagen 5](https://github.com/eg-lab/ThereminoKurs/blob/main/Grundlagen5_loesung.mdn)
   - [Lösungen Sensoren 1](https://github.com/eg-lab/ThereminoKurs/blob/main/Sensoren1_loesungen.mdn)
+  - [Thermino Beispiel](https://github.com/eg-lab/ThereminoKurs/blob/main/SC_Theremino.ino)
 
 ## 📂 Materialien
 
