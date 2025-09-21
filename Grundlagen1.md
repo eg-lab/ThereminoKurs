@@ -15,11 +15,12 @@ Wie Ihr wisst, wollen wir heute mit Arduinos arbeiten. Aber was ist das überhau
 
 ---
 
-### Aufbau des Arduinos und Pins
+### Aufbau des Arduinos und *Pins*
 
-Am wichtigsten für die Arbeit mit dem Arduino sind die **Pins** – die Anschlüsse, über die Bauteile verbunden oder Signale gemessen werden.  
+Nun wollen wir uns anschauen, wie man mit einem Arduino arbeitet. Am wichtigsten für die Kommunikation mit dem Arduino sind die verschiedenen Anschlüsse oder **Pins**.
+Dabei gibt es verschiedene Arten. Für uns wichtig sind erstmal nur drei Typen:
 
-- **Stromversorgung**:  
+- Pins für die **Stromversorgung**:  
   + 5V / 3.3V → Pluspole  
   + GND → Minuspole  
 - **Digitale Pins**: können ein- oder ausgeschaltet sein (**HIGH/LOW**).  
@@ -94,44 +95,90 @@ In derselben Leiste gibt es drei wichtige Knöpfe:
 
 ### Grundlegende Funktionen & Programmiersyntax
 
-Damit wir Bauteile steuern können, brauchen wir ein paar Grundkonzepte.  
+Damit wir Bauteile steuern können, brauchen wir ein paar Grundlagen der Programmierung.
+
+---
 
 #### Variablen
 
-**Variablen** sind Platzhalter für Werte.  
-Beispiel:  
+**Variablen** sind benannte Speicherplätze im Arbeitsspeicher des Mikrocontrollers. Sie halten Werte, die während des Programmlaufs gelesen, verändert und überschrieben werden können.  
+Jede Variable hat einen **Datentyp**, der bestimmt, welche Art von Wert darin gespeichert werden kann (z. B. ganze Zahl, Kommazahl, Zeichen).
+
+Beispiele in C++ (der Programmiersprache, die auch auf Arduino verwendet wird):
+
+```cpp
+int ganze_Zahl;      // Variable für eine ganze Zahl (Integer)
+float kommazahl;     // Variable für eine Kommazahl (Float)
+```
+
+Beim **Anlegen** einer Variablen wird der Datentyp vor den Namen geschrieben. Einen Wert weist man mit `=` zu:
+
+```cpp
+ganze_Zahl = 3;
+kommazahl = 1.7;
+```
+
+Oder direkt bei der Deklaration:
 
 ```cpp
 int ganze_Zahl = 8;
 float kommazahl = 2.7;
 ```
 
-- <code>int</code> → ganze Zahl  
-- <code>float</code> → Kommazahl  
+- `int` → ganze Zahl (Integer)  
+- `float` → Kommazahl (Floating Point)
 
-💡 Wichtig: Jede Zeile endet mit einem <code>;</code>  
+💡 **Wichtig:** Jede Codezeile endet mit einem `;`
+
+---
 
 #### Funktionen
 
-Funktionen sind Code-Blöcke, die aufgerufen werden können.  
-Beispiel:  
+**Funktionen** fassen wiederverwendbaren Code zusammen. Man ruft sie über ihren Namen auf, kann **Parameter** (Eingabewerte) übergeben und erhält oft einen **Rückgabewert**.
+
+Beispiel eines Funktionsaufrufs:
 
 ```cpp
-int variable = beispiel(a, b);
+int variable = beispiel(parameter_a, parameter_b);
 ```
 
-Sie nehmen Werte (Parameter) entgegen und geben oft einen Wert zurück.  
+Hier wird die Funktion `beispiel()` mit zwei Parametern ausgeführt. Ihr Rückgabewert wird in `variable` gespeichert.
+
+Eine mögliche Funktionsdefinition dazu:
+
+```cpp
+int beispiel(int a, int b) {
+  int summe = a + b;
+  return summe;  // gibt die Summe zurück
+}
+```
+
+Auch `setup()` und `loop()`, die Du schon kennst, sind Funktionen:
+- `setup()` läuft genau einmal beim Start.
+- `loop()` wird danach endlos wiederholt.
+
+---
 
 #### Kommentare
 
-Mit <code>//</code> kannst Du eine Zeile als Kommentar kennzeichnen.  
-Beispiel:  
+Kommentare sind Notizen im Code, die vom Compiler ignoriert werden. Sie helfen, den Code verständlicher zu machen.
 
 ```cpp
-// Diese Zeile wird vom Computer ignoriert
+// Diese Zeile wird nicht ausgeführt
 ```
 
-#### Wichtige Arduino-Befehle
+Mehrzeilige Kommentare schreibt man mit `/* ... */`:
+
+```cpp
+/*
+Dies ist ein
+mehrzeiliger Kommentar
+*/
+```
+
+---
+
+### Wichtige Arduino-Befehle
 
 - `pinMode(Pin, INPUT/OUTPUT)` → legt fest, ob ein Pin Eingang oder Ausgang ist  
 - `digitalWrite(Pin, HIGH/LOW)` → schaltet einen Pin an oder aus  
