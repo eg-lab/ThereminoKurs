@@ -92,10 +92,10 @@ Das Ergebnis ist die gemessene Zeit in **Mikrosekunden**.
 
 ```cpp
 // Festlegung der digitalen Pins für Trig & Echo
-#define triggerPin 3
-#define echoPin 4
+#define triggerPin 13
+#define echoPin 12
 
-// Speichern der Schallgeschwindigtkeit in Konstante in der Einheit Meter pro Micorsekunde
+// Speichern der Schallgeschwindigtkeit in Konstante in der Einheit Meter pro Mikrosekunde
 #define schall 0.0343
 
 // Deklaration von Variablen zum Speichern ...
