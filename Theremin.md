@@ -70,13 +70,6 @@ Wenn Du dir unsicher bist, ob deine Schaltung funktioniert, frag lieber nochmal 
 </ol>
 </div>
 
-<details>
-<summary>💡 Tipp anzeigen</summary>
-<p>
-Falls Du nicht weißt, wo Du anfangen sollst: Starte mit dem Code aus dem letzten Kapitel.  
-Teste erst nur den Ton. Wenn das funktioniert, füge Schritt für Schritt LEDs oder andere Sensoren hinzu.
-</p>
-</details>
 
 ---
 
