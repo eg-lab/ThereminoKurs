@@ -49,8 +49,6 @@ int array[] = {1, 2, 3, 4, 5};
 
 **Schleifen** sind ein grundlegendes Konzept beim Programmieren. Man nutzt sie, wenn man den **gleichen oder einen ähnlichen Code Abschnitt mehrere Male durchführen** möchte. Allgemein gibt es eine Bedingung, die gegeben sein muss damit die Schleife sich weiter wiederholt und ein Codeabschnitt der wiederholt werden soll. Dabei gibt es einige verschiedene Varianten an Schleifen, die sich leicht unterscheiden. Die Bedingung steht in den regulären Klammern ( ). Die man zusammen mit der Angabe um welche Schleifenart es sich handelt den **Schleifenkopf**.
 
-
-
 #### While Schleife
 
 Die **While** (= englisch für "während") Schleife führt einen Code Abschnitt solange aus **während eine bestimmte Bedingung wahr ist**.
@@ -76,9 +74,9 @@ for (Schleifenvariable deklarieren ; Abbruchbedingung ; Anpassen der Schleifenva
 }
 ```
 
-Im ersten Teil des Schleifenkopfes erstellt man die sogenannte **Schleifenvariable**. Diese könnt Ihr euch als **Zähler** vorstellen, der zählt bei dem **wievielten Schleifendurchlauf** wir uns zur Zeit befinden und ist standardmäßig ein Integer mit dem Namen **"i"**, dem zu beginn der Wert 0 zugewiesen wird. 
+Im ersten Teil des Schleifenkopfes erstellt man die sogenannte **Schleifenvariable**. Diese könnt Ihr euch als **Zähler** vorstellen, der zählt bei dem **wievielten Schleifendurchlauf** wir uns zur Zeit befinden und ist standardmäßig ein Integer mit dem Namen **"i"**, dem zu beginn der Wert 0 zugewiesen wird.
 Als nächstes legt man die **Abbruchbedingung** fest. Diese könnt Ihr euch vorstellen wie die Bedingung bei der **While-Schleife**. Sobald die Bedingung nicht mehr wahr ist und der Schleifenkörper zuende durchlaufen wurde bricht die Schleife ab. Die Bedingung enthält standardmäßig die **Schleifenvariable** und **wie oft die Schleife wiederholt werden soll**. Man würde also zum Beispiel sagen, solange die Schleifenvariable kleiner als ein bestimmter Wert ist, soll die Schleife laufen.
-Zuletzt wird im Schleifenkopf auch das Anpassen der Schleifenvariable festgelegt. Wenn wie oft die Schleife durchläuft davon abängt welchen Wert die Schleifenvariable hat, dann muss sich diese mit der Zeit ändern. Hierbei wird die Variable standardmäßig immer um eins erhöht. 
+Zuletzt wird im Schleifenkopf auch das Anpassen der Schleifenvariable festgelegt. Wenn wie oft die Schleife durchläuft davon abängt welchen Wert die Schleifenvariable hat, dann muss sich diese mit der Zeit ändern. Hierbei wird die Variable standardmäßig immer um eins erhöht.
 
 Man kann **For-Schleifen** sehr gut nutzen, um Arrays zu durchlaufen.
 

@@ -14,7 +14,6 @@ Einen Transistor könnt ihr euch allgemein wie eine Art **Schalter oder Verstär
 
 In unserem Fall wollen wir uns speziell mit **Phototransistoren** auseinandersetzen. Diese haben keinen klassischen Basisanschluss sondern **funktionieren durch Lichteinfall**. Zwischen Emitter und Kollektor liegt eine Spannung an. Diese reicht zunächst nicht aus um einen Strom durch das Transistormaterial zu erzeugen. Das Material ist aber so beschaffen, dass **bei Beleuchtung Ladungsträger im Inneren erzeugt werden**, die dafür sorgen, dass ein **Stromfluss möglich** ist. **Stärkere Beleuchtung bedeutet mehr Stromfluss und eine höhere Spannung am Ausgang**. Diese kann man über einen analogen Arduino Pin messen.
 
-
 Ein Phototransistor ermöglich uns also ein **Spannung abhängig von der Lichtintensität zu messen**. Dies wollen wir nun nutzen, um unser Theremin noch ein wenig zu erweitern. Ihr habt ja bereits einen Sensor über einen analogen Pin angeschlossen. Der Phototransitor funktioniert ähnlich.
 
 <div class="aufgabe">
@@ -31,7 +30,6 @@ Ein Phototransistor ermöglich uns also ein **Spannung abhängig von der Lichtin
   <img src="img/photransistor_aufbau.jpg" alt="Schaltplan Phototransistor">
 </div>
 
-
 Bei unserem Theremin haben wir es bisher geschafft abhängig von dem Abstand von unserer Hand zum Ultraschallsensor unterschiedliche Töne zu spielen. Den Phototransistor wollen wir jetzt nutzen, um **abhängig von der Lichtintensität festzulegen, in welcher Oktave wir uns befinden**.
 
 <div class="aufgabe">
@@ -44,9 +42,8 @@ Bei unserem Theremin haben wir es bisher geschafft abhängig von dem Abstand von
 </div>
 
 #### Hilfestellung
+
 Als kleine Hilfe könnt Ihr diese Struktur in euren Code einbinden.
-
-
 
 Hierbei handelt es sich um ein **2-dimensionales Array**. Also ein Array aus Arrays. Es enthält die **Frequenzen jeder Note (auch Halbtöne) einer Oktave über 6 Oktaven**. Ihr könnt dieses Array nutzen, um **basierend auf dem Ton, den ihr spielen wollt und der Oktave, die ihr bestimmt habt die richtige Frequenz zu ermitteln**. Der Zugriff auf den jeweiligen Wert funktioniert fast so wie bei regulären Arrays.
 
@@ -60,14 +57,9 @@ Im Code Beispiel würde man also die Frequenz von einem C der zweiten Oktave erh
 > - 💡 **Hinweis:**
 > -*Einbinden solltest Du den Code am besten außerhalb von Setup und Loop direkt unter deinen Pin Definitionen*
 
-
-
-
-
 <p class="spacing-1">&nbsp;</p>
 
 ---
-
 
 <div class="nav-container">
   <a href="Sensoren1" class="button">Zurück</a>

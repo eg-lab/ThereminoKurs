@@ -15,6 +15,7 @@ Das Auslesen von Sensor-Daten funktionert häufig über einen ``read``-Befehl. E
 analogRead(Pin); // Auslesen von Daten an einem analogen Pin, die gemessenen Werte können ganze Zahlen zwischen 0 und 1023 sein
 digitalRead(Pin); // Auslesen von Daten an einem digitalen Pin, die gemessenen Daten sind entweder 0 oder 1
 ```
+
 **Wir wollen uns nun den Ultraschallsensor genauer anschauen.**
 
 Ein Ultarschallsensor ist ein Sensor, mit dem sich Abstände bestimmen lassen. Das Prinzip, auf dem er beruht, ist das selbe mit dem Fledermäuse ihre Umgebung wahrnehmen.
@@ -25,7 +26,7 @@ Sowohl die Fledermaus als auch ein Ultraschallsensor senden eine Schallwelle aus
 
 <p align="left"><img src="img/UltraschallSensor.jpg" width="300" alt="Funktionsprinzip des Ultraschallsensors"></p>
 
-Die Ultraschallwelle breitet sich - wie alle Schallwellen - mit Schallgeschwindigkeit $c_{S}$ aus. Kennen wir die Zeit $t$, die für eine Strecke benötigt wird, und die Geschwindigkeit mit der sich etwas fortbewegt, so können wir daraus die Länge $l$ der Strecke selbst berechnen: 
+Die Ultraschallwelle breitet sich - wie alle Schallwellen - mit Schallgeschwindigkeit $c_{S}$ aus. Kennen wir die Zeit $t$, die für eine Strecke benötigt wird, und die Geschwindigkeit mit der sich etwas fortbewegt, so können wir daraus die Länge $l$ der Strecke selbst berechnen:
 
 <p align="center"> $$l = c_S \cdot t$$ </p>
 
@@ -41,8 +42,6 @@ Jetzt wissen wir ungefähr, wie ein Ultraschallsensor funktioniert. Der Ultrasch
 
 <p align="center"><img src="img/UltraschallSensorBild.png" width="300" alt="Ultraschallsensor HC-SR04"></p>
 
-
-
 <div class="aufgabe">
 <h3>🛠️ Aufgabe</h3>
 <ol>
@@ -53,8 +52,7 @@ Jetzt wissen wir ungefähr, wie ein Ultraschallsensor funktioniert. Der Ultrasch
 </ol>
 </div>
 
-
-Um den Ultraschall-Sensor anzusteuern brauchen wir eine neue Funktion: die Funktion ``pulseIn(pin, value)``. Dieser Funktion übergibt man einen ``pin``, an dem der Arduino Werte einlesen soll. Außerdem erhält die Funktion den ``value`` HIGH oder LOW. Wir werden der Funktion den **Echo-Pin** und den Wert **HIGH** übergeben. Die Funktion wartet dann darauf, dass der Echo-pin auf HIGH geschaltet wird - das entspricht dem Absenden des Ultraschall-Signals - und misst die Zeit, die vergeht, bis der Echo-Pin wieder auf LOW geschaltet wird - also dem Moment, in dem das Ultraschall-Signal wieder beim Sensor ankommt. Die Rückgabe-Wert der Funktion ist dann die gemessene Zeit in Mikrosekunden. 
+Um den Ultraschall-Sensor anzusteuern brauchen wir eine neue Funktion: die Funktion ``pulseIn(pin, value)``. Dieser Funktion übergibt man einen ``pin``, an dem der Arduino Werte einlesen soll. Außerdem erhält die Funktion den ``value`` HIGH oder LOW. Wir werden der Funktion den **Echo-Pin** und den Wert **HIGH** übergeben. Die Funktion wartet dann darauf, dass der Echo-pin auf HIGH geschaltet wird - das entspricht dem Absenden des Ultraschall-Signals - und misst die Zeit, die vergeht, bis der Echo-Pin wieder auf LOW geschaltet wird - also dem Moment, in dem das Ultraschall-Signal wieder beim Sensor ankommt. Die Rückgabe-Wert der Funktion ist dann die gemessene Zeit in Mikrosekunden.
 
 ### Code
 
@@ -110,12 +108,3 @@ Nun hast Du alle Grundlagen, die Du brauchst um ein Theremin zu bauen. Wenn Du L
   <a href="Grundlagen6" class="button">Zurück</a>
   <a href="Sensoren2" class="button">Weiter</a>
 </div>
-
-
-
-
-
-
-
-
-

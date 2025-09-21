@@ -17,7 +17,7 @@ Bei einem herkömmlichen Theremin werden Töne erzeugt, wenn du deine Hand beweg
 
 ### Schaltplan-Beispiele
 
-Hier findest du einige Schaltpläne als Anregung. Du musst sie nicht genau nachbauen. Wenn du eine eigene Idee hast, kannst du sie auch kombinieren oder ändern. Wenn du dir unsicher bist, ob deine Schaltung funktioniert, frag lieber nochmal nach. 
+Hier findest du einige Schaltpläne als Anregung. Du musst sie nicht genau nachbauen. Wenn du eine eigene Idee hast, kannst du sie auch kombinieren oder ändern. Wenn du dir unsicher bist, ob deine Schaltung funktioniert, frag lieber nochmal nach.
 
 <div class="schaltplan-box">
   <img src="img/Schaltung_theremin_v2.png" alt="Theremin-Grundschaltung">
@@ -38,8 +38,6 @@ Hier findest du einige Schaltpläne als Anregung. Du musst sie nicht genau nachb
   <img src="img/Schaltung_theremin_phototransistor.jpg" alt="Theremin mit Phototransistor">
   <p><em>Beispiel: Phototransistor für ein weiteres Steuersignal (optional)</em></p>
 </div> -->
-
-
 
 <div class="aufgabe">
 <h3>🛠️ Aufgabe: Erfinde dein eigenes Instrument</h3>
