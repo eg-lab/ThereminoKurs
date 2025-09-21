@@ -23,7 +23,7 @@ digitalRead(Pin);  // liefert nur 0 oder 1 (digitale Pins)
 
 ### Funktionsprinzip
 
-Ein Ultraschallsensor ist ein Sensor, mit dem sich Abstände bestimmen lassen. Das Prinzip ist ähnlich wie bei Fledermäusen.
+Ein Ultraschallsensor ist ein Sensor, mit dem sich Abstände bestimmen lassen. Das Prinzip, auf dem er beruht, ist das selbe mit dem Fledermäuse ihre Umgebung wahrnehmen.
 
 <p align="center">
   <img src="img/Fledermaus.png" width="200" class="rounded" alt="Fledermaus bemerkt Beute">
