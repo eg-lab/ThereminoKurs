@@ -28,6 +28,8 @@ Damit wir sehen können, ob der Button gedrückt ist, geben wir den Status im Se
   <img src="img/serial_monitor.png" width="300" class="rounded" alt="Serial Monitor">
 </p>
 
+---
+
 <div class="aufgabe">
 <h3>🛠️ Aufgabe</h3>
 <ol>

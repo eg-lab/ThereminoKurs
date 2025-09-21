@@ -66,6 +66,8 @@ Ein Schaltplan ist wie eine <strong>Landkarte für Elektronik</strong>. Er zeigt
 </p>
 </details>
 
+---
+
 <div class="aufgabe">
 <h3>🛠️ Aufgabe</h3>
 <ol>

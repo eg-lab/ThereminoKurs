@@ -31,6 +31,8 @@ else {
 
 In unserem Fall ist die Bedingung, ob der Button gedrückt ist. Damit Du verstehst, wie `if` funktioniert, üben wir zuerst, den Status des Buttons im Serial Monitor auszugeben. Das hilft dir, sicherzustellen, dass der Button korrekt angeschlossen ist und der Arduino den Zustand richtig erkennt.
 
+---
+
 <div class="aufgabe">
 <h3>🛠️ Aufgabe: Status ausgeben</h3>
 <ol>
@@ -75,6 +77,8 @@ Gedrückt = <code>LOW</code> (0)
 </div>
 
 Damit kannst Du den Arduino so programmieren, dass er je nach Zustand des Buttons entscheidet, ob die LED leuchtet oder nicht. Genau dafür brauchen wir die `if`-Abfrage.
+
+---
 
 <div class="aufgabe">
 <h3>🛠️ Aufgabe: LED mit dem Button steuern</h3>

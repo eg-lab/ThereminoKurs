@@ -38,9 +38,7 @@ Der Unterschied zwischen digitalen und analogen Signalen:
 
 <div class="aufgabe">
 <h3>🛠️ Aufgabe</h3>
-<ol>
-  <li>Schau dir deinen Arduino an und finde die 5V-, GND-, digitalen und analogen Pins.</li>
-</ol>
+<p>Schau dir deinen Arduino an und finde die 5V-, GND-, digitalen und analogen Pins.</p>
 </div>
 
 ---
@@ -81,9 +79,7 @@ Klicke in der grünen Leiste auf das Auswahlfeld neben dem USB-Symbol → **Boar
 
 <div class="aufgabe">
 <h3>🛠️ Aufgabe</h3>
-<ol>
-  <li>Verbinde deinen Arduino Uno mit der Arduino IDE.</li>
-</ol>
+<p>Verbinde deinen Arduino Uno mit der Arduino IDE.</p>
 </div>
 
 In derselben Leiste gibt es drei wichtige Knöpfe:  
