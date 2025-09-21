@@ -84,7 +84,7 @@ Das Ergebnis ist die gemessene Zeit in **Mikrosekunden**.
 ### Schaltplan
 
 <div class="schaltplan-box">
-  <img src="img/Schaltung_sensor1.png" alt="Schaltplan Ultraschallsensor">
+  <img src="img/Schaltung_s1_UNO.png"  alt="Schaltplan Ultraschallsensor">
 </div>
 
 
