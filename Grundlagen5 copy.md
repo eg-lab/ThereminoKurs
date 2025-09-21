@@ -19,49 +19,34 @@ Einer Schallwelle kann man außerdem eine *Frequenz f* zuordnen. Diese gibt an, 
 
 Um Töne abzuspielen, nutzen wir einen **Piezo-Summer**. In diesem ist ein Piezo-Kristall verbaut. Der Piezo-Kristall dehnt sich aus, wenn wir eine Spannung anlegen, und kehrt in seinen ursprünglichen Zustand zurück, wenn wir die Spannung wieder wegnehmen. Um nun einen Ton einer bestimmten Frequenz zu erzeugen, schalten wir die Spannung in einem bestimmten Takt ein und wieder aus. Das darfst Du nun einmal selbst ausprobieren.
 
-<p align="center"><img src="img/SinusHighLow.jpg" width="300" alt="Sinus und Rechteck-Funktion"></p>
+<p align="left"><img src="img/SinusHighLow.jpg" width="300" alt="Sinus und Rechteck-Funktion"></p>
 
----
+## 🛠️ Aufgabe: Kammerton a erzeugen
 
-<div class="aufgabe">
-  <h3>🛠️ Aufgabe: Kammerton A erzeugen</h3>
+Wir wollen zunächst den Kammerton **a** erzeugen.
 
-  <p>Wir wollen zunächst den Kammerton <strong>A</strong> erzeugen.</p>
+> *Der Kammerton **a** ist der Ton, der von einem Orchester zu Beginn eines Konzertes von allen Instrumenten zum Einstimmen gespielt wird. Er liegt ungefähr bei 440 Hz.*
 
-  <blockquote>
-    <em>Der Kammerton <strong>A</strong> ist der Ton, der von einem Orchester zu Beginn eines Konzerts von allen Instrumenten zum Einstimmen gespielt wird. Er liegt ungefähr bei 440&nbsp;Hz.</em>
-  </blockquote>
+1. **Schaltung**:
+   Beim Piezo-Summer handelt es sich um ein ungerichtetes elektrisches Bauelement, das heißt, es ist egal, wie rum man ihn anschließt. Ein Anschluss wird mit einem digitalen Pin verbunden, der andere mit dem Gnd-Pin. Baue die Schaltung auf.
+2. **Vorüberlegung**:
+   Wir wollen einen Ton mit der Frequenz *f = 440 Hz* abspielen. Dazu müssen wir an den Piezo für eine bestimmte Zeit *t* eine Spannung anlegen und sie anschließend für die Zeit *t* wieder auschalten. Wie groß ist *t*?
+> 💡 **Hinweise:**
+> - *Welcher Teil der Schallwelle entsteht, wenn die Spannung angelegt wird? Welcher Teil der Welle entsteht, wenn die Spannung ausgeschaltet wird?*
+> - *Welche Bedeutung hat die Zeit 2t für die Welle? Welcher oben engeführten Größe entspricht sie?*
 
-  <ol>
-    <li><strong>Schaltung:</strong> Beim Piezo-Summer handelt es sich um ein ungerichtetes Bauteil, d.&nbsp;h. es ist egal, wie <em>herum</em> Du ihn anschließt. Ein Anschluss an einen digitalen Pin, der andere an <code>GND</code>. Baue die Schaltung auf.</li>
+Wenn Du nicht weiter kommst, frag uns gerne. Zur Überprüfung Deiner Lösung kannst Du hier schauen:
+<details><summary>Lösung</summary> Die Phase, in der die Spannung angelegt wird entspricht einem Wellenberg, die Phase in der die Spannung abgeschaltet ist einem Wellental. Die Zeit, die, beim Durchlaufen genau eines Wellenberges und eines WEllentals vergeht ist die Periodendauer T. Die Zeit t ist somit die Hälfte der Periodendauer. Also f = 1/T <--> T = 1/f und somit t = T/2 = 1/2f. </details>
 
-    <li><strong>Vorüberlegung:</strong> Wir wollen einen Ton mit der Frequenz <em>f = 440&nbsp;Hz</em> abspielen. Dazu legst Du für eine Zeit <em>t</em> eine Spannung an und schaltest sie anschließend für die Zeit <em>t</em> wieder aus. Wie groß ist <em>t</em>?
-      <details>
-        <summary>💡 Hinweise anzeigen</summary>
-        <p>• Welche Phase entsteht, wenn die Spannung anliegt (Wellenberg)?<br>
-           • Welche Phase entsteht, wenn die Spannung aus ist (Wellental)?<br>
-           • Welche Bedeutung hat die Zeit <code>2·t</code> – welcher Größe entspricht sie?</p>
-      </details>
-      <details>
-        <summary>✅ Lösung anzeigen</summary>
-        <p>„An“ entspricht dem Wellenberg, „Aus“ dem Wellental. Ein Wellenberg plus Wellental ergeben eine Periode <em>T</em>. Da <em>f = 1/T</em>, gilt <em>T = 1/f</em> und damit <em>t = T/2 = 1/(2·f)</em>. Für 440&nbsp;Hz: <em>t ≈ 1136&nbsp;µs</em>.</p>
-      </details>
-    </li>
-
-    <li><strong>Code schreiben:</strong> Erstelle ein Programm, das den Kammerton A erzeugt.
-      <ul>
-        <li>Lege eine Variable (z.&nbsp;B. <code>unsigned int</code>) für <em>t</em> in Mikrosekunden an.</li>
-        <li>Setze den Piezo-Pin auf <code>OUTPUT</code>.</li>
-        <li>Schalte den Pin abwechselnd <code>HIGH</code> und <code>LOW</code>.</li>
-        <li>Nutze <code>delayMicroseconds(t)</code> (nicht <code>delay()</code>), da wir im µs-Bereich sind.</li>
-      </ul>
-    </li>
-  </ol>
-
-  <p><em>Falls Du unsicher bist, schau in die vorherigen Grundlagen-Abschnitte.</em></p>
-</div>
-
----
+**Code**
+   Jetzt wollen wir ein Programm schreiben, dass den Kammerton a erzeugt.
+   Erstelle eine Variable vom Datentyp ``int`` , in der die berechnete Zeit *t* gespeichert ist.
+   __Piezo-Pin ansteuern__
+       - Muss der digitale Pin, an den der Piezo angeschlossen ist im INPUT- oder im OUTPUT-Modus betrieben werden?
+       - Mit welcher Dir schon bekannten Funktion kann man digitale Pins ein oder ausschalten?
+       - Bisher haben wir die Dauer, die ein Pin an oder aus sein soll mit der ``delay()``-Funktion festgelegt. Wenn wir ``delay(100)`` schreiben, wartet der Microcontroller 100 Millisekunden, bis er in die nächste Code-Zeile springt. Die von Dir berechnete Zeit *t* liegt im unteren Millisekunden-Bereich. In diesem Bereich ist die einfache ``delay()``-Funktion zu ungenau. Nutze daher die Funktion ``delayMicroseconds()``, in der die Eingabe als Microsekunden interpretiert werden.
+  
+> *Falls Du Dir bei den Aufgaben unsicher bist, frag gerne nach oder schau in die vorherigen Grundlagen-Abschnitte!*
 
 ## 🛠️ Aufgabe: Überprüfung des Klangs
 

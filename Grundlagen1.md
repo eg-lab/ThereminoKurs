@@ -99,8 +99,6 @@ Damit wir Bauteile steuern können, brauchen wir ein paar Grundlagen der Program
 
 ---
 
-#### Variablen
-
 **Variablen** sind benannte Speicherplätze im Arbeitsspeicher des Mikrocontrollers. Sie halten Werte, die während des Programmlaufs gelesen, verändert und überschrieben werden können.  
 Jede Variable hat einen **Datentyp**, der bestimmt, welche Art von Wert darin gespeichert werden kann (z. B. ganze Zahl, Kommazahl, Zeichen).
 
@@ -132,8 +130,6 @@ float kommazahl = 2.7;
 
 ---
 
-#### Funktionen
-
 **Funktionen** fassen wiederverwendbaren Code zusammen. Man ruft sie über ihren Namen auf, kann **Parameter** (Eingabewerte) übergeben und erhält oft einen **Rückgabewert**.
 
 Beispiel eines Funktionsaufrufs:
@@ -159,9 +155,7 @@ Auch `setup()` und `loop()`, die Du schon kennst, sind Funktionen:
 
 ---
 
-#### Kommentare
-
-Kommentare sind Notizen im Code, die vom Compiler ignoriert werden. Sie helfen, den Code verständlicher zu machen.
+**Kommentare** sind Notizen im Code, die vom Compiler ignoriert werden. Sie helfen, den Code verständlicher zu machen.
 
 ```cpp
 // Diese Zeile wird nicht ausgeführt
