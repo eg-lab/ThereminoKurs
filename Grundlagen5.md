@@ -66,10 +66,11 @@ Um Töne abzuspielen, nutzen wir einen **Piezo-Summer**. In diesem ist ein Piezo
 
 Tatsächlich ist in der Arduino IDE bereits eine Funktion hinterlegt, die genau das macht, was Du gerade selbst geschrieben hast. Das ist die sogenannte <code>tone()</code>-Funktion.
 
-```cpp
-// Spielt den Ton mit der Frequenz 440 auf dem am digtalen Pin 3 angeschlossenen Piezo-Summer
-tone(3,440);
-```
+  <pre><code class="language-cpp">
+// Spielt den Ton mit der Frequenz 440 Hz
+// auf dem an digitalen Pin 3 angeschlossenen Piezo-Summer
+tone(3, 440);
+  </code></pre>
 
 Schreibe nun Dein Programm aus der vorherigen Aufgabe so um, dass Du anstelle des An- und Ausmachens des digitalen Pins die <code>tone()</code>-Funktion nutzt, um den Kammerton a zu erzeugen. Hört sich beides gleich an oder hörst Du einen Unterschied?
 
