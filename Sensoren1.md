@@ -137,6 +137,44 @@ void loop() {
 Nun hast Du alle Grundlagen, die Du brauchst, um ein Theremin zu bauen.  
 Wenn Du Lust hast, kannst Du gleich damit starten. Oder Du schaust Dir im optionalen Kapitel **Sensoren 2** an, wie man einen Phototransistor anschließt und in Dein Projekt integriert.
 
+---
+
+<details>
+  <summary>Lösungsvorschlag</summary>
+  <pre><code class="language-cpp">
+
+#define triggerPin 3
+#define echoPin 4
+
+#define schall 0.0343
+
+float duration;
+float distance;
+
+
+void setup() {
+  Serial.begin(9600);
+  
+  pinMode(triggerPin, OUTPUT);
+  pinMode(echoPin,INPUT);
+  
+
+}
+
+void loop() {
+  digitalWrite(triggerPin,HIGH);
+  delayMicroseconds(10);
+  digitalWrite(triggerPin,LOW);
+
+  duration = pulseIn(echoPin,HIGH);
+
+  distance = (duration/2)*schall;
+  Serial.println(distance);
+
+  delay(1000);
+}
+</code></pre></details>
+
 <p class="spacing-1">&nbsp;</p>
 
 ---
