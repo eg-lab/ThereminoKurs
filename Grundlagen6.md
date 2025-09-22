@@ -216,6 +216,25 @@ So könnt Ihr eine komplette Liste abarbeiten – etwa eine ganze Melodie!
 #define NOTE_DS8 4978
 </code></pre></details>
 
+<details>
+  <summary>Lösungsvorschlag</summary>
+  <pre><code class="language-cpp">
+#define tonePin 3
+    
+void setup() {
+  pinMode(tone_PIN, OUTPUT);
+}
+
+void loop () {    
+  float melodie[] = {261.63, 293.66, 349.23, 293.66, 392.00, 392.00, 349.23};
+  
+  for (int i = 0; i < 6; i++) {
+          tone(tone_PIN, melodie[i]);
+          delay(1000);
+  }
+}
+</code></pre></details>
+
 <p class="spacing-1">&nbsp;</p> 
 
 ---
