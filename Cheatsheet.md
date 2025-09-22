@@ -2,5 +2,5 @@
 
 
 <div class="schaltplan-box">
-  <img src="img/IMG-20250922-WA0000.jpg)" alt="Cheat Sheet">
+  <img src="img/IMG-20250922-WA0000.jpg" alt="Cheat Sheet">
 </div>
