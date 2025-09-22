@@ -76,7 +76,7 @@ Wenn Du dir unsicher bist, ob deine Schaltung funktioniert, frag lieber nochmal 
 ## ✨ Präsentation & Konzert
 
 Stellt euer Instrument der Gruppe vor. Erklärt, wie ihr es gebaut habt, und zeigt live, wie es funktioniert.  
-Wer mag, kann ein kleines Konzert spielen oder ein lustiges Geräusch vorstellen.
+Wer mag, kann ein kleines Konzert spielen oder ein lustiges Geräusch vorstellen. Falls ihr Lösungscode haben möchtet, könnt ihr euch an [diesem Beispiel](https://github.com/eg-lab/ThereminoKurs/blob/main/SC_Theremino.ino) orientieren.
 
 <p class="spacing-1">&nbsp;</p>
 
