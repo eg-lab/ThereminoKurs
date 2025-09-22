@@ -56,7 +56,7 @@ Warum? Wir nutzen <code>INPUT_PULLUP</code>. Das bedeutet: Der Pin wird vom Ardu
 ### Code
 
 ```cpp
-#define buttonPin D1
+#define buttonPin 2
 
 void setup() {
   Serial.begin(9600);
