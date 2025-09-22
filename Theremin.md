@@ -25,12 +25,12 @@ Wenn Du dir unsicher bist, ob deine Schaltung funktioniert, frag lieber nochmal 
 
 <div class="schaltplan-box">
   <img src="img/Schaltung_theremin_v2.png" alt="Theremin-Grundschaltung">
-  <p><em>Beispiel: Ultraschallsensor + Piezo für Töne</em></p>
+  <p><em>Beispiel: Ultraschallsensor + Piezo für Töne. ACHTUNG! Schaltet den Ultraschall-Sensor spiegelverkehrt, damit keine Kabel im Weg sind.</em></p>
 </div>
 
 <div class="schaltplan-box">
   <img src="img/Schaltung_t3_v2.png" alt="Theremin mit LED">
-  <p><em>Beispiel: Ultraschallsensor + LED, die je nach Abstand leuchtet</em></p>
+  <p><em>Beispiel: Ultraschallsensor + LED, die je nach Abstand leuchtet. ACHTUNG! Schaltet den Ultraschall-Sensor spiegelverkehrt, damit keine Kabel im Weg sind.</em></p>
 </div>
 
 <!-- Optional weitere Beispiele:
