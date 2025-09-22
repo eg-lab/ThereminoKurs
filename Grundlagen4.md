@@ -46,7 +46,7 @@ In unserem Fall ist die Bedingung, ob der Button gedrückt ist. Damit Du versteh
 ### Code
   
 ```cpp
-#define BUTTON_PIN D1
+#define BUTTON_PIN 2
 
 void setup()
 {
@@ -86,9 +86,8 @@ Damit kannst Du den Arduino so programmieren, dass er je nach Zustand des Button
   <li>Baue die Schaltung aus dem Schaltplan nach.
     <ul>
       <li>Ein Pin des Buttons wird mit GND verbunden.</li>
-      <li>Der andere Pin geht an D1.</li>
-      <li>Die LED wird mit einem Vorwiderstand an D7 angeschlossen.</li>
-      <li>Achte darauf, dass das lange Bein der LED an D7 angeschlossen ist.</li>
+      <li>Der andere Pin geht an 2.</li>
+      <li>Die LED wird mit einem Vorwiderstand angeschlossen.</li>
     </ul>
   </li>
   <li>Schreibe deinen eigenen Code, der folgendes tut:
