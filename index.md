@@ -38,9 +38,9 @@ Ein Theremin ist ein Instrument, das berührungslos gespielt wird. Anders als be
 - [Theremin bauen](Theremin)
 - [Abschluss](Abschluss)
 
-### Cheat Sheet
+### Hilfestellungen 
 
-- [Cheat Sheet](Cheatsheet)
+- [Cheat Sheet](Cheat sheet)
 
 <p class="spacing-1">&nbsp;</p>
 ---
