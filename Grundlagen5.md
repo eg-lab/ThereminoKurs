@@ -85,6 +85,14 @@ Das Geräusch, das der Piezo-Summer macht, ist nicht unbedingt besonders schön.
 <p>Orientiere Dich an dem Code, den Du in Grundlagen 4 geschrieben hast!</p>
 </details> -->
 
+---
+
+### Schaltplan
+
+<div class="schaltplan-box">
+  <img src="img/Schaltung_g5_UNO.png" alt="Schaltplan ">
+</div>
+
 <p class="spacing-1">&nbsp;</p>
 
 ---
