@@ -119,7 +119,7 @@ So könnt Ihr eine komplette Liste abarbeiten – etwa eine ganze Melodie!
 
 
 <details>
-  <summary>ℹ️ Töne</summary>
+  <summary>🎵 Töne</summary>
   <pre><code class="language-cpp">
 /*************************************************
    Public Constants
