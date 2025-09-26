@@ -48,12 +48,7 @@ Für diesen Kurs benötigt jede Arbeitsgruppe (bestehend aus 1 bis 2 Schülerinn
 
 ## 🚧 To Dos
 
-- [ ] Schaltungen auch für den UNO statt WEMOS erstellen
-- [ ] Restliche Schaltpläne erstellen
-- [ ] Markdowns vereinheitlichen
-- [ ] Aufgaben fertigstellen
-- [ ] Materialien überprüfen
-- [ ] Kurs durchführen und Feedback einholen
+- [ ] Kursalternative für WEMOS erstellen
 
 ## 💡 Hinweise für Lehrkräfte
 
@@ -68,6 +63,6 @@ Dieser Kurs wurde von Emma, Elena und Rabea entwickelt. Der Kurs darf **von alle
 
 Kommerzielle Verwendung, Verbreitung gegen Entgelt oder Veränderungen des Materials mit dem Ziel kommerziellen Gewinns sind ohne vorherige Rücksprache nicht gestattet. Falls du Fragen zur Nutzung oder Lizenz hast, [schreib uns gerne](tech@starcode.de).
 
-© 2025 Emma Galow, Elena Lopez Gerner, Rabea Eschenhagen
+© 2025 Emma Galow, Elena López Gerner, Rabea Eschenhagen
 
 
