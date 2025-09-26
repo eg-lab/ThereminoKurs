@@ -44,18 +44,18 @@ Für diesen Kurs benötigt jede Arbeitsgruppe (bestehend aus 1 bis 2 Schülerinn
 - Startseite: [Theremin-Foto](https://web.physics.ucsb.edu/~lecturedemonstrations/digital%20photos/Theremin.jpg)
 - Sensoren 1: [Fledermaus-Bild](https://nawi-werft.de/bausteine/ultraschallsensor/Bilder/fledermaus.jpg)
 
-
-
 ## 🚧 To Dos
 
 - [ ] Kursalternative für WEMOS erstellen
+- [ ] Mehr Aufgaben zu Kapitel 1 hinzufügen
+- [ ] Lösungen bereitstellen
+- [ ] Mehr Tipps zu späteren Aufgaben hinzufügen (Ab Grundlagen 5 war es  zu schwer)
 
 ## 💡 Hinweise für Lehrkräfte
 
 - Alle Aufgaben sind so gestaltet, dass sie ohne Vorkenntnisse lösbar sind.
-- Tipps und Hintergrundinfos sind in ausklappbaren Boxen hinterlegt (`<details>`).
-- Bonusaufgaben können flexibel eingesetzt oder weggelassen werden.
-- Achte darauf, dass alle Schaltungen sorgfältig überprüft werden, bevor Strom angeschlossen wird.
+- Wir haben bei der ersten Dürchführung ca. 50 Minuten Vorbereitungs- bzw. Aufbauzeit gebraucht (zu dritt).
+- Oberstufenschülerinnen sind in 4 Stunden fast fertig geworden (alle Bonusaufgaben übersprungen und zwischendurch Lösungen bereitgestellt)
 
 ## 📄 Lizenz und Nutzung
 
